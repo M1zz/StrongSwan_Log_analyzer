@@ -1,0 +1,618 @@
+Jul 15 07:36:10 ubuntu anacron[33122]: Job `cron.daily' terminated
+Jul 15 07:36:10 ubuntu anacron[33122]: Normal exit (1 job run)
+Jul 15 07:44:01 ubuntu systemd-timesyncd[539]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+Jul 15 07:44:11 ubuntu systemd-timesyncd[539]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+Jul 15 07:44:22 ubuntu systemd-timesyncd[539]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Jul 15 22:57:10 ubuntu systemd[1642]: Time has been changed
+Jul 15 22:57:10 ubuntu systemd[1]: Time has been changed
+Jul 15 22:57:10 ubuntu systemd[1]: apt-daily.timer: Adding 1h 29min 36.840427s random time.
+Jul 15 22:57:10 ubuntu systemd[1]: snapd.refresh.timer: Adding 5min 34.868225s random time.
+Jul 15 22:57:10 ubuntu systemd[988]: Time has been changed
+Jul 15 22:57:10 ubuntu systemd[1]: Starting Daily apt activities...
+Jul 15 22:57:10 ubuntu systemd[1]: snapd.refresh.timer: Adding 37min 7.839820s random time.
+Jul 15 22:57:11 ubuntu systemd[1]: Started Daily apt activities.
+Jul 15 22:57:11 ubuntu systemd[1]: apt-daily.timer: Adding 7h 48min 33.748051s random time.
+Jul 15 22:57:11 ubuntu systemd[1]: apt-daily.timer: Adding 6h 39min 18.739915s random time.
+Jul 15 23:12:15 ubuntu systemd[1]: Started CUPS Scheduler.
+Jul 15 23:13:35 ubuntu NetworkManager[802]: <info>  [1500185615.1658] manager: disable requested (sleeping: no  enabled: yes)
+Jul 15 23:13:35 ubuntu NetworkManager[802]: <info>  [1500185615.1671] manager: disabling...
+Jul 15 23:13:35 ubuntu NetworkManager[802]: <info>  [1500185615.1709] audit: op="networking-control" arg="off" pid=33427 uid=0 result="success"
+Jul 15 23:18:04 ubuntu systemd[988]: Time has been changed
+Jul 15 23:18:04 ubuntu systemd[1]: Time has been changed
+Jul 15 23:18:04 ubuntu systemd[1]: apt-daily.timer: Adding 11h 33min 267.997ms random time.
+Jul 15 23:18:04 ubuntu systemd[1]: snapd.refresh.timer: Adding 5h 42min 9.034107s random time.
+Jul 15 23:18:04 ubuntu systemd[1642]: Time has been changed
+Jul 15 23:18:05 ubuntu NetworkManager[802]: <info>  [1500185885.0121] manager: enable requested (sleeping: no  enabled: no)
+Jul 15 23:18:05 ubuntu NetworkManager[802]: <info>  [1500185885.0128] manager: re-enabling...
+Jul 15 23:18:05 ubuntu NetworkManager[802]: <info>  [1500185885.0136] audit: op="networking-control" arg="on" pid=33439 uid=0 result="success"
+Jul 15 23:18:05 ubuntu kernel: [20557.567741] usb 2-2.1: USB disconnect, device number 5
+Jul 15 23:18:05 ubuntu systemd[1]: Starting Load/Save RF Kill Switch Status...
+Jul 15 23:18:05 ubuntu systemd[1]: Started Load/Save RF Kill Switch Status.
+Jul 15 23:18:05 ubuntu systemd[1]: bluetooth.target: Unit not needed anymore. Stopping.
+Jul 15 23:18:05 ubuntu systemd[1]: Stopped target Bluetooth.
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Endpoint unregistered: sender=:1.38 path=/MediaEndpoint/A2DPSource
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Endpoint unregistered: sender=:1.38 path=/MediaEndpoint/A2DPSink
+Jul 15 23:18:05 ubuntu colord-sane: [bjnp] create_broadcast_socket: ERROR - bind socket to local address failed - Cannot assign requested address
+Jul 15 23:18:05 ubuntu kernel: [20557.883962] usb 2-2.1: new full-speed USB device number 6 using uhci_hcd
+Jul 15 23:18:05 ubuntu kernel: [20558.008473] usb 2-2.1: New USB device found, idVendor=0e0f, idProduct=0008
+Jul 15 23:18:05 ubuntu kernel: [20558.008475] usb 2-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Jul 15 23:18:05 ubuntu kernel: [20558.008477] usb 2-2.1: Product: Virtual Bluetooth Adapter
+Jul 15 23:18:05 ubuntu kernel: [20558.008478] usb 2-2.1: Manufacturer: VMware
+Jul 15 23:18:05 ubuntu kernel: [20558.008479] usb 2-2.1: SerialNumber: 000650268328
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Failed to obtain handles for "Service Changed" characteristic
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Not enough free handles to register service
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Error adding Link Loss service
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Not enough free handles to register service
+Jul 15 23:18:05 ubuntu bluetoothd[976]: message repeated 2 times: [ Not enough free handles to register service]
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Current Time Service could not be registered
+Jul 15 23:18:05 ubuntu bluetoothd[976]: gatt-time-server: Input/output error (5)
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Not enough free handles to register service
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Not enough free handles to register service
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Sap driver initialization failed.
+Jul 15 23:18:05 ubuntu bluetoothd[976]: sap-server: Operation not permitted (1)
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Endpoint registered: sender=:1.38 path=/MediaEndpoint/A2DPSource
+Jul 15 23:18:05 ubuntu bluetoothd[976]: Endpoint registered: sender=:1.38 path=/MediaEndpoint/A2DPSink
+Jul 15 23:18:05 ubuntu systemd[1]: Reached target Bluetooth.
+Jul 15 23:18:31 ubuntu CRON[33464]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 15 23:24:02 ubuntu systemd-timesyncd[539]: Synchronized to time server 91.189.91.157:123 (ntp.ubuntu.com).
+Jul 15 23:27:57 ubuntu systemd-timesyncd[539]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Jul 15 23:27:58 ubuntu systemd-timesyncd[539]: Synchronized to time server 91.189.89.198:123 (ntp.ubuntu.com).
+Jul 15 23:28:31 ubuntu systemd[1]: Started CUPS Scheduler.
+Jul 15 23:33:07 ubuntu org.gtk.vfs.Daemon[1009]: A connection to the bus can't be made
+Jul 15 23:33:07 ubuntu systemd[1]: Started Session c2 of user strong.
+Jul 15 23:33:08 ubuntu org.ayatana.bamf[33568]: bamfdaemon start/running, process 33630
+Jul 15 23:33:09 ubuntu org.a11y.Bus[33568]: ** (process:33664): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+Jul 15 23:33:09 ubuntu org.a11y.Bus[33568]: Activating service name='org.a11y.atspi.Registry'
+Jul 15 23:33:09 ubuntu org.a11y.Bus[33568]: Successfully activated service 'org.a11y.atspi.Registry'
+Jul 15 23:33:09 ubuntu org.a11y.atspi.Registry[33677]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Jul 15 23:33:11 ubuntu rtkit-daemon[1145]: Successfully made thread 33821 of process 33821 (n/a) owned by '1000' high priority at nice level -11.
+Jul 15 23:33:11 ubuntu rtkit-daemon[1145]: Supervising 4 threads of 2 processes of 2 users.
+Jul 15 23:33:12 ubuntu pulseaudio[33821]: [pulseaudio] alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Supervising 4 threads of 2 processes of 2 users.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Successfully made thread 33843 of process 33821 (n/a) owned by '1000' RT at priority 5.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Supervising 5 threads of 2 processes of 2 users.
+Jul 15 23:33:12 ubuntu pulseaudio[33821]: [pulseaudio] alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Supervising 5 threads of 2 processes of 2 users.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Successfully made thread 33844 of process 33821 (n/a) owned by '1000' RT at priority 5.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Supervising 6 threads of 2 processes of 2 users.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Successfully made thread 33848 of process 33848 (n/a) owned by '1000' high priority at nice level -11.
+Jul 15 23:33:12 ubuntu rtkit-daemon[1145]: Supervising 7 threads of 3 processes of 2 users.
+Jul 15 23:33:12 ubuntu pulseaudio[33848]: [pulseaudio] pid.c: Daemon already running.
+Jul 15 23:33:12 ubuntu bluetoothd[976]: Endpoint registered: sender=:1.125 path=/MediaEndpoint/A2DPSource
+Jul 15 23:33:12 ubuntu bluetoothd[976]: Endpoint registered: sender=:1.125 path=/MediaEndpoint/A2DPSink
+Jul 15 23:33:12 ubuntu bluetoothd[976]: RFCOMM server failed for Headset Voice gateway: rfcomm_bind: Address already in use (98)
+Jul 15 23:33:12 ubuntu pulseaudio[33821]: [pulseaudio] backend-ofono.c: Failed to register as a handsfree audio agent with ofono: org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files
+Jul 15 23:33:12 ubuntu dbus[767]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'
+Jul 15 23:33:12 ubuntu systemd[1]: Starting Locale Service...
+Jul 15 23:33:12 ubuntu dbus[767]: [system] Successfully activated service 'org.freedesktop.locale1'
+Jul 15 23:33:12 ubuntu systemd[1]: Started Locale Service.
+Jul 15 23:33:13 ubuntu org.gnome.ScreenSaver[33568]: ** (gnome-screensaver:33791): WARNING **: Couldn't get presence status: The name org.gnome.SessionManager was not provided by any .service files
+Jul 15 23:33:13 ubuntu gnome-session[33724]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Jul 15 23:33:13 ubuntu gnome-session[33724]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Jul 15 23:33:13 ubuntu gnome-session[33724]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Jul 15 23:33:13 ubuntu gnome-session-binary[33724]: Entering running state
+Jul 15 23:33:14 ubuntu gnome-session[33724]: (process:33884): indicator-application-service-WARNING **: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+Jul 15 23:33:14 ubuntu gnome-session[33724]: (process:33884): indicator-application-service-WARNING **: Name Lost
+Jul 15 23:33:15 ubuntu dbus[767]: [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service'
+Jul 15 23:33:15 ubuntu systemd[1]: Starting Disk Manager...
+Jul 15 23:33:15 ubuntu udisksd[33921]: udisks daemon version 2.1.7 starting
+Jul 15 23:33:15 ubuntu dbus[767]: [system] Successfully activated service 'org.freedesktop.UDisks2'
+Jul 15 23:33:15 ubuntu systemd[1]: Started Disk Manager.
+Jul 15 23:33:15 ubuntu udisksd[33921]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Jul 15 23:33:15 ubuntu gnome-session[33724]: (gnome-software:33880): Gs-WARNING **: Failed to create permission org.freedesktop.packagekit.trigger-offline-update: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Action org.freedesktop.packagekit.trigger-offline-update is not registered
+Jul 15 23:33:15 ubuntu gnome-session[33724]: (gnome-software:33880): Gs-WARNING **: Failed to create permission org.freedesktop.packagekit.trigger-offline-update: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Action org.freedesktop.packagekit.trigger-offline-update is not registered
+Jul 15 23:33:15 ubuntu dbus[767]: [system] Activating service name='org.freedesktop.fwupd' (using servicehelper)
+Jul 15 23:33:15 ubuntu org.gtk.vfs.AfcVolumeMonitor[33568]: Volume monitor alive
+Jul 15 23:33:18 ubuntu org.gnome.ScreenSaver[33568]: ** Message: Lost the name, shutting down.
+Jul 15 23:33:19 ubuntu org.freedesktop.fwupd[767]: (fwupd:33959): Fu-WARNING **: Failed to coldplug: UEFI firmware updating not supported
+Jul 15 23:33:19 ubuntu dbus[767]: [system] Successfully activated service 'org.freedesktop.fwupd'
+Jul 15 23:33:28 ubuntu bluetoothd[976]: Endpoint unregistered: sender=:1.38 path=/MediaEndpoint/A2DPSource
+Jul 15 23:33:28 ubuntu bluetoothd[976]: Endpoint unregistered: sender=:1.38 path=/MediaEndpoint/A2DPSink
+Jul 15 23:33:28 ubuntu systemd[1]: Stopping User Manager for UID 108...
+Jul 15 23:33:28 ubuntu systemd[988]: Stopped target Default.
+Jul 15 23:33:28 ubuntu systemd[988]: Reached target Shutdown.
+Jul 15 23:33:28 ubuntu systemd[988]: Starting Exit the Session...
+Jul 15 23:33:28 ubuntu systemd[988]: Stopped target Basic System.
+Jul 15 23:33:28 ubuntu systemd[988]: Stopped target Sockets.
+Jul 15 23:33:28 ubuntu systemd[988]: Stopped target Paths.
+Jul 15 23:33:28 ubuntu systemd[988]: Stopped target Timers.
+Jul 15 23:33:28 ubuntu systemd[988]: Received SIGRTMIN+24 from PID 34059 (kill).
+Jul 15 23:33:28 ubuntu systemd[1]: Stopped User Manager for UID 108.
+Jul 15 23:33:28 ubuntu systemd[1]: Removed slice User Slice of lightdm.
+Jul 15 23:33:34 ubuntu org.gnome.zeitgeist.Engine[33568]: ** (zeitgeist-datahub:34085): WARNING **: zeitgeist-datahub.vala:229: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+Jul 15 23:34:19 ubuntu gnome-session[33724]: Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+Jul 15 23:36:41 ubuntu systemd[1]: Started Session 12 of user strong.
+Jul 15 23:45:40 ubuntu systemd[1]: Started CUPS Scheduler.
+Jul 15 23:56:50 ubuntu systemd[1]: Started Session 13 of user strong.
+Jul 16 16:03:21 ubuntu systemd[1]: Time has been changed
+Jul 16 16:03:21 ubuntu systemd[1642]: Time has been changed
+Jul 16 16:03:21 ubuntu systemd[1]: apt-daily.timer: Adding 3h 3min 45.189680s random time.
+Jul 16 16:03:21 ubuntu systemd[1]: snapd.refresh.timer: Adding 1h 25min 36.192713s random time.
+Jul 16 16:03:21 ubuntu systemd[1]: snapd.refresh.timer: Adding 4h 43min 47.343310s random time.
+Jul 16 16:03:21 ubuntu systemd[1]: Starting Daily apt activities...
+Jul 16 00:03:30 ubuntu systemd[1642]: Time has been changed
+Jul 16 00:03:30 ubuntu systemd[1]: Time has been changed
+Jul 16 00:03:30 ubuntu systemd[1]: snapd.refresh.timer: Adding 2h 27min 6.884738s random time.
+Jul 16 00:03:43 ubuntu charon: 09[NET] received packet: from 192.168.1.119[56730] to 192.168.1.211[500]
+Jul 16 00:03:43 ubuntu charon: 09[NET] waiting for data on sockets
+Jul 16 00:03:43 ubuntu charon: 06[MGR] checkout IKE_SA by message
+Jul 16 00:03:43 ubuntu charon: 06[MGR] created IKE_SA (unnamed)[3]
+Jul 16 00:03:43 ubuntu charon: 06[NET] received packet: from 192.168.1.119[56730] to 192.168.1.211[500] (746 bytes)
+Jul 16 00:03:43 ubuntu charon: 06[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Jul 16 00:03:43 ubuntu charon: 06[CFG] looking for an ike config for 192.168.1.211...192.168.1.119
+Jul 16 00:03:43 ubuntu charon: 06[CFG]   candidate: %any...%any, prio 28
+Jul 16 00:03:43 ubuntu charon: 06[CFG] found matching ike config: %any...%any with prio 28
+Jul 16 00:03:43 ubuntu charon: 06[IKE] 192.168.1.119 is initiating an IKE_SA
+Jul 16 00:03:43 ubuntu charon: 06[IKE] IKE_SA (unnamed)[3] state change: CREATED => CONNECTING
+Jul 16 00:03:43 ubuntu charon: 06[CFG] selecting proposal:
+Jul 16 00:03:43 ubuntu charon: 06[CFG]   proposal matches
+Jul 16 00:03:43 ubuntu charon: 06[CFG] received proposals: IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/HMAC_MD5_96/HMAC_SHA1_96/AES_XCBC_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024, IKE:AES_GCM_16_128/AES_GCM_16_192/AES_GCM_16_256/CHACHA20_POLY1305_256/AES_GCM_12_128/AES_GCM_12_192/AES_GCM_12_256/AES_GCM_8_128/AES_GCM_8_192/AES_GCM_8_256/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Jul 16 00:03:43 ubuntu charon: 06[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:03:43 ubuntu charon: 06[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:03:43 ubuntu charon: 06[IKE] remote host is behind NAT
+Jul 16 00:03:43 ubuntu charon: 06[IKE] DH group ECP_256 inacceptable, requesting MODP_1024
+Jul 16 00:03:43 ubuntu charon: 06[ENC] generating IKE_SA_INIT response 0 [ N(INVAL_KE) ]
+Jul 16 00:03:43 ubuntu charon: 06[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[56730] (38 bytes)
+Jul 16 00:03:43 ubuntu charon: 06[MGR] checkin and destroy IKE_SA (unnamed)[3]
+Jul 16 00:03:43 ubuntu charon: 06[IKE] IKE_SA (unnamed)[3] state change: CONNECTING => DESTROYING
+Jul 16 00:03:43 ubuntu charon: 06[MGR] check-in and destroy of IKE_SA successful
+Jul 16 00:03:43 ubuntu charon: 10[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[56730]
+Jul 16 00:03:43 ubuntu charon: 09[NET] received packet: from 192.168.1.119[56730] to 192.168.1.211[500]
+Jul 16 00:03:43 ubuntu charon: 09[NET] waiting for data on sockets
+Jul 16 00:03:43 ubuntu charon: 05[MGR] checkout IKE_SA by message
+Jul 16 00:03:43 ubuntu charon: 05[MGR] created IKE_SA (unnamed)[4]
+Jul 16 00:03:43 ubuntu charon: 05[NET] received packet: from 192.168.1.119[56730] to 192.168.1.211[500] (810 bytes)
+Jul 16 00:03:43 ubuntu charon: 05[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Jul 16 00:03:43 ubuntu charon: 05[CFG] looking for an ike config for 192.168.1.211...192.168.1.119
+Jul 16 00:03:43 ubuntu charon: 05[CFG]   candidate: %any...%any, prio 28
+Jul 16 00:03:43 ubuntu charon: 05[CFG] found matching ike config: %any...%any with prio 28
+Jul 16 00:03:43 ubuntu charon: 05[IKE] 192.168.1.119 is initiating an IKE_SA
+Jul 16 00:03:43 ubuntu charon: 05[IKE] IKE_SA (unnamed)[4] state change: CREATED => CONNECTING
+Jul 16 00:03:43 ubuntu charon: 05[CFG] selecting proposal:
+Jul 16 00:03:43 ubuntu charon: 05[CFG]   proposal matches
+Jul 16 00:03:43 ubuntu charon: 05[CFG] received proposals: IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/HMAC_MD5_96/HMAC_SHA1_96/AES_XCBC_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024, IKE:AES_GCM_16_128/AES_GCM_16_192/AES_GCM_16_256/CHACHA20_POLY1305_256/AES_GCM_12_128/AES_GCM_12_192/AES_GCM_12_256/AES_GCM_8_128/AES_GCM_8_192/AES_GCM_8_256/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Jul 16 00:03:43 ubuntu charon: 05[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:03:43 ubuntu charon: 05[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:03:43 ubuntu charon: 05[IKE] remote host is behind NAT
+Jul 16 00:03:43 ubuntu charon: 05[IKE] sending cert request for "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:03:43 ubuntu charon: 05[IKE] sending cert request for "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:03:43 ubuntu charon: 05[ENC] generating IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) CERTREQ N(HASH_ALG) N(MULT_AUTH) ]
+Jul 16 00:03:43 ubuntu charon: 05[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[56730] (373 bytes)
+Jul 16 00:03:43 ubuntu charon: 10[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[56730]
+Jul 16 00:03:43 ubuntu charon: 05[MGR] checkin IKE_SA (unnamed)[4]
+Jul 16 00:03:43 ubuntu charon: 05[MGR] check-in of IKE_SA successful.
+Jul 16 00:03:44 ubuntu charon: 09[NET] received packet: from 192.168.1.119[50374] to 192.168.1.211[4500]
+Jul 16 00:03:44 ubuntu charon: 09[NET] waiting for data on sockets
+Jul 16 00:03:44 ubuntu charon: 03[MGR] checkout IKE_SA by message
+Jul 16 00:03:44 ubuntu charon: 03[MGR] IKE_SA (unnamed)[4] successfully checked out
+Jul 16 00:03:44 ubuntu charon: 03[NET] received packet: from 192.168.1.119[50374] to 192.168.1.211[4500] (5084 bytes)
+Jul 16 00:03:44 ubuntu charon: 03[ENC] parsed IKE_AUTH request 1 [ IDi CERT N(INIT_CONTACT) CERTREQ AUTH CPRQ(ADDR ADDR6 DNS DNS6) N(ESP_TFC_PAD_N) SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a1:72:5f:26:1b:28:98:43:95:5d:07:37:d5:85:96:9d:4b:d2:c3:45
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a2:af:24:0a:da:e8:67:79:c8:a8:50:b3:c7:46:ee:d9:f7:1b:16:78
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c0:7a:98:68:8d:89:fb:ab:05:64:0c:11:7d:aa:7d:65:b8:ca:cc:4e
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid f7:18:ea:38:39:89:f9:a6:4e:c9:3a:f0:e3:ed:0d:e8:f7:ef:33:61
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid e0:8c:9b:db:25:49:b3:f1:7c:86:d6:b2:42:87:0b:d0:6b:a0:d9:e4
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid bd:be:a7:1b:ab:71:57:f9:e4:75:d9:54:d2:b7:27:80:1a:82:26:82
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 87:db:d4:5f:b0:92:8d:4e:1d:f8:15:67:e7:f2:ab:af:d6:2b:67:75
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 3c:b4:1a:84:2e:f5:5c:f2:1a:3d:a5:4a:c8:d1:be:39:08:76:37:bc
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 8b:db:d7:cc:a0:68:53:42:16:f4:c1:2b:25:44:fc:02:9c:a5:8b:47
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 8d:f0:0a:ad:7c:3f:4c:f3:42:75:e2:ec:19:bd:f3:28:e2:24:69:22
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 6a:eb:05:3a:66:ad:15:e0:99:8c:3d:65:a9:fd:1e:45:1e:b2:1e:d2
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b0:a1:22:d9:47:c9:fe:15:01:5b:db:a6:f2:30:96:26:ad:eb:b2:57
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b0:19:89:e7:ef:fb:4a:af:cb:14:8f:58:46:39:76:22:41:50:e1:ba
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 6d:aa:9b:09:87:c4:d0:d4:22:ed:40:07:37:4d:19:f1:91:ff:de:d3
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 92:ae:ef:0e:89:02:ee:6d:79:68:d1:a1:0e:75:60:01:fa:e4:eb:fc
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 90:7e:69:b9:9e:69:2a:3c:4a:96:de:b5:78:1f:02:ab:b4:88:d3:89
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 3e:18:e5:44:f6:bd:4d:77:50:28:c9:40:3e:5c:74:f5:4c:d9:60:29
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 73:97:82:ea:b4:04:16:6e:25:d4:82:3c:37:db:f8:a8:12:fb:cf:26
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c5:30:21:e4:c8:4b:d1:a9:e9:de:e8:40:ba:6a:16:9f:77:92:8f:91
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 13:8f:7b:5d:6e:da:54:ee:84:4c:7c:78:d4:7e:3f:d0:2a:60:d5:ff
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 17:4a:b8:2b:5f:fb:05:67:75:27:ad:49:5a:4a:5d:c4:22:cc:ea:4e
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 2a:7f:77:5e:36:3d:4a:f5:d1:cc:c6:ce:28:96:61:13:ea:2c:80:dc
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b1:81:08:1a:19:a4:c0:94:1f:fa:e8:95:28:c1:24:c9:9b:34:ac:c7
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 5e:8c:53:18:22:60:1d:56:71:d6:6a:a0:cc:64:a0:60:07:43:d5:a8
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 23:4b:71:25:56:13:e1:30:dd:e3:42:69:c9:cc:30:d4:6f:08:41:e0
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 83:31:7e:62:85:42:53:d6:d7:78:31:90:ec:91:90:56:e9:91:b9:e3
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 69:3c:0d:54:1a:48:e9:db:81:a1:44:b0:c7:36:0f:ed:bd:3e:47:37
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 4f:c7:18:9d:a5:be:c3:a2:a5:ba:f0:20:81:ff:4f:05:ed:87:43:8a
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 8c:cf:8c:87:8a:0e:9f:4a:c1:2e:eb:ad:58:d3:cb:1a:6a:66:78:6f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 9c:a9:8d:00:af:74:0d:dd:81:80:d2:13:45:a5:8b:8f:2e:94:38:d6
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 07:23:2d:45:65:87:b9:d7:b1:d9:7d:d1:c5:fb:65:c5:89:bf:92:96
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a5:06:8a:78:cf:84:bd:74:32:dd:58:f9:65:eb:3a:55:e7:c7:80:dc
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 62:94:19:ea:47:3f:f2:97:75:8d:d5:b3:20:61:04:34:ff:76:3e:1d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 3a:28:44:64:9f:20:e8:b1:05:bf:e9:d7:f5:66:33:61:51:ae:eb:51
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ea:67:0c:27:c1:60:9d:4b:0c:93:a2:ab:6f:e2:c4:67:15:6b:dc:70
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 87:e8:5b:63:53:c6:23:a3:12:8c:b0:ff:bb:f5:51:fe:59:80:0e:22
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 42:32:b6:16:fa:04:fd:fe:5d:4b:7a:c3:fd:f7:4c:40:1d:5a:43:af
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 52:2c:46:fc:ee:2e:a4:be:b5:f1:01:a3:9d:d2:16:ba:d8:85:8e:b5
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid bc:f0:90:87:79:da:24:86:1d:2b:7c:49:a1:36:bd:06:ef:cd:ff:bf
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ab:30:d3:af:4b:d8:f1:6b:58:69:ee:45:69:29:da:84:b8:73:94:88
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 7c:d3:95:1f:f4:48:1b:32:cf:6b:e3:55:43:03:6d:0b:45:7d:72:26
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 7d:de:cf:64:e0:48:b7:5a:65:b2:8e:2f:1e:4c:f1:a8:88:d4:0c:f4
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ed:0d:c8:d6:2c:d3:13:29:d8:82:fe:2d:c3:fc:c5:10:d3:4d:bb:14
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c2:4e:45:22:d1:c3:2f:86:80:f7:4d:38:48:4b:74:e5:71:cd:17:cf
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ee:dd:ed:4d:f3:b4:38:16:cf:d7:05:73:66:9c:24:2e:91:e8:33:1d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 33:de:35:ca:82:a6:36:15:29:44:cd:f1:c7:8a:05:5a:cc:9c:1c:cd
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid af:44:04:c2:41:7e:48:83:db:4e:39:02:ec:ec:84:7a:e6:ce:c9:a4
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid d5:2e:13:c1:ab:e3:49:da:e8:b4:95:94:ef:7c:38:43:60:64:66:bd
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid dd:00:92:e0:16:8e:ba:57:c2:67:d6:7d:0a:0a:4e:57:b6:cb:c6:c8
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b7:1a:8b:40:df:93:d0:5c:e0:98:03:08:91:59:6d:61:e8:15:f6:fe
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c4:30:28:c5:d3:e3:08:0c:10:44:8b:2c:77:ba:24:53:97:60:bb:f9
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid fe:72:c8:eb:bf:0c:2f:bb:0e:26:13:93:93:3c:2c:a9:8d:dc:24:94
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 63:45:e6:5f:05:b9:53:9e:b2:4e:03:b1:40:bb:b9:a7:50:6c:24:13
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid d9:f7:49:68:9f:e9:32:4b:5c:15:ab:e0:85:ce:b9:6e:07:67:b1:8f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid cf:58:aa:90:8d:58:39:76:1b:cf:4e:da:03:bf:81:8e:d1:d7:f8:9b
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 23:4b:71:25:56:13:e1:30:dd:e3:42:69:c9:cc:30:d4:6f:08:41:e0
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 22:60:a7:83:31:ee:a4:c8:11:65:c3:b9:da:51:85:74:42:39:06:c5
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 5b:bf:1f:74:4a:e0:51:bd:61:7b:20:0d:bb:74:dc:26:8b:d1:3a:02
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid e9:e1:5a:17:af:6e:47:e0:98:ac:18:47:a5:d1:1d:c3:e5:2c:8f:ef
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 87:e3:bf:32:24:27:c1:40:5d:27:36:c3:81:e0:1d:1a:71:d4:a0:39
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 05:1c:6d:0c:7c:a9:b0:d9:b9:e5:0a:5b:c8:f9:f5:e3:83:48:eb:78
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 6e:58:4e:33:75:bd:57:f6:d5:42:1b:16:01:c2:d8:c0:f5:3a:9f:6e
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a8:e3:02:96:70:a6:8b:57:eb:ec:ef:cc:29:4e:91:74:9a:d4:92:38
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c6:4f:a2:3d:06:63:84:09:9c:ce:62:e4:04:ac:8d:5c:b5:e9:b6:1b
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 95:a3:72:ff:cd:41:d7:e9:fd:dd:3f:39:ac:27:0b:24:78:1e:d6:54
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ab:76:88:f4:e5:e1:38:c9:e9:50:17:cd:cd:b3:18:17:b3:3e:8c:f5
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 69:c4:27:db:59:69:68:18:47:e2:52:17:0a:e0:e5:7f:ab:9d:ef:0f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c8:18:8f:7a:06:a9:9b:f5:79:dd:9f:88:96:af:d1:d9:1f:19:bc:2a
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 3d:9f:4e:e4:17:1d:e9:cc:8c:cb:6b:ee:84:03:c2:cd:d7:bc:0b:9f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 36:ff:93:41:e9:13:08:24:2d:f0:17:1c:98:7a:e6:29:d5:5d:d3:41
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid bd:ff:8d:1d:59:4d:83:2b:a7:da:e3:87:6e:63:68:1c:13:de:a6:c0
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c4:52:72:20:a9:58:c0:6e:9d:4b:f2:0b:21:12:3c:eb:3a:0b:6b:6f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid f7:93:19:ef:df:c1:f5:20:fb:ac:85:55:2c:f2:d2:8f:5a:b9:ca:0b
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 48:e6:68:f9:2b:d2:b2:95:d7:47:d8:23:20:10:4f:33:98:90:9f:d4
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 62:af:b7:5c:2a:a7:0d:ad:0d:3d:8d:cf:fb:10:9e:65:c6:16:c3:0b
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 04:c3:a9:d0:11:cb:20:f7:c9:48:59:8c:ed:21:a9:f2:e8:9b:cf:11
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 6c:ca:bd:7d:b4:7e:94:a5:75:99:01:b6:a7:df:d4:5d:1c:09:1c:cc
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 21:0f:2c:89:f7:c4:cd:5d:1b:82:5e:38:d6:c6:59:3b:a6:93:75:ae
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 68:33:0e:61:35:85:21:59:29:83:a3:c8:d2:d2:e1:40:6e:7a:b3:c1
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid d7:c1:47:91:66:51:be:b9:52:ca:11:c9:90:3d:81:50:55:0f:b0:97
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b5:99:33:43:ac:a2:17:c5:08:ba:88:8c:a6:92:7e:26:b3:0f:87:a9
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 6a:25:23:9d:62:75:cd:52:21:69:5c:31:e9:89:c4:d5:38:b8:c4:ea
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ba:42:b0:81:88:53:88:1d:86:63:bd:4c:c0:5e:08:fe:ea:6e:bb:77
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 7d:43:0e:0f:82:c9:6f:77:42:6b:67:8e:82:c4:cd:8b:52:e5:a1:ef
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 71:38:36:f2:02:31:53:47:2b:6e:ba:65:46:a9:10:15:58:20:05:09
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 69:2f:44:0a:4e:9e:fc:f1:cb:fd:d9:73:5b:9d:3d:31:5b:ca:b6:c2
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b3:03:7e:ae:36:bc:b0:79:d1:dc:94:26:b6:11:be:21:b2:69:86:94
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 86:26:cb:1b:c5:54:b3:9f:bd:6b:ed:63:7f:b9:89:a9:80:f1:f4:8a
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 90:e2:41:c2:11:41:8b:95:b1:a9:e0:9c:37:24:7e:84:9f:e4:be:a1
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 67:77:d1:fd:61:a0:44:3e:29:8a:35:e5:db:f1:6d:8d:06:0f:d6:0d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 35:92:76:19:47:e2:90:7b:7a:c8:80:f4:29:bf:2b:e6:6c:81:51:1a
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c4:9c:12:7e:4b:e9:e5:5e:f4:64:77:26:2c:b6:d9:c9:34:2b:7c:38
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c5:c1:0d:9a:9c:7b:0d:09:99:3d:dd:ac:38:78:72:45:f7:e7:ca:91
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 7d:9a:a9:f1:bf:20:29:ab:39:21:62:80:6d:2e:d5:be:12:83:02:e8
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 99:9b:76:54:0b:4a:9c:7a:35:ca:8f:0f:2e:aa:74:7a:0f:ae:c5:6e
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ff:9d:7f:8f:b2:95:ec:ab:f5:23:db:9b:e9:01:b5:98:f1:56:33:12
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid e1:a0:5a:95:34:75:78:a7:ff:4d:cf:32:52:5d:f2:f8:2c:1a:e1:15
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 3b:37:c0:c5:47:3d:fc:5b:9a:0d:01:5b:12:3b:53:cc:ad:b7:54:66
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ee:e5:9f:1e:2a:a5:44:c3:cb:25:43:a6:9a:5b:d4:6a:25:bc:bb:8e
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c8:95:13:68:01:97:28:0a:2c:55:c3:fc:d3:90:f5:3a:05:3b:c9:fb
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 69:9f:1b:7a:e9:b8:da:18:49:6c:60:8b:ce:4f:4e:aa:f9:f0:b7:aa
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 48:2b:59:17:75:e2:61:7b:ef:c7:20:d3:7a:9c:ec:be:36:9e:84:e3
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ef:66:52:d4:62:80:e8:ca:8e:37:df:49:1e:b1:c9:bc:fd:0a:1c:25
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 97:c6:06:4d:83:c8:35:ac:68:43:ad:77:f5:f8:0e:a8:10:1a:1f:32
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 4a:81:0c:de:f0:c0:90:0f:19:06:42:31:35:a2:a2:8d:d3:44:fd:08
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b3:86:36:7d:bc:e5:f8:4e:e2:8c:15:37:81:b2:1d:f5:3d:2c:15:cd
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b0:81:9d:a5:df:24:16:ef:0d:7d:fe:7f:e9:2b:40:d7:ef:f5:44:8f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 55:92:1a:5b:2e:62:b0:e0:7b:8b:a9:ae:9f:fc:a0:f6:e6:56:26:3c
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 36:cc:c7:d8:28:e2:0a:ea:4e:80:70:dc:7f:77:11:93:3f:5e:bf:a7
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 14:8d:b3:54:ed:9b:2f:13:08:7c:c3:8b:4b:c1:5b:96:8a:c5:53:78
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid bb:2d:75:ce:17:2a:cc:df:05:d9:a8:6d:27:82:98:88:99:86:c8:91
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 3e:51:59:8b:a7:6f:54:5c:77:24:c5:66:eb:aa:fb:3e:2b:f3:ac:4f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 4b:69:79:4c:0b:e5:eb:3a:57:04:7a:68:a8:70:be:ec:ca:0c:76:36
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 7b:6d:b8:b0:b5:e5:85:0d:10:61:51:f0:3d:b0:f4:ff:40:8d:9e:a4
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a5:9d:bf:90:15:d9:f1:f5:a8:d8:c0:1d:14:e6:f1:d8:c4:fe:57:17
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid bb:c2:3e:29:0b:b3:28:77:1d:ad:3e:a2:4d:bd:f4:23:bd:06:b0:3d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 4c:75:d4:85:80:62:aa:a9:44:9c:66:15:1e:6c:58:13:05:3a:9c:72
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid f0:63:ba:7c:9a:16:74:4a:9c:db:54:ec:23:cd:67:29:8e:7c:49:4d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 20:b7:57:88:92:e7:a8:d6:71:d4:3b:ad:b3:cb:3c:54:34:5d:05:e2
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a8:3a:f8:16:c7:de:22:91:63:66:87:f5:a5:eb:34:3a:a6:b5:fc:53
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 53:32:d1:b3:cf:7f:fa:e0:f1:a0:5d:85:4e:92:d2:9e:45:1d:b4:4f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid ed:66:31:35:d3:1b:d4:ec:a6:14:c4:29:e3:19:06:9f:94:c1:26:50
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid a8:57:65:d6:e8:32:c8:c5:19:63:73:5a:9a:17:74:3a:81:df:ee:2e
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 9f:1d:85:2f:55:e5:60:c8:30:ad:bc:38:7f:e0:f5:94:bf:55:8d:87
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 79:23:d5:8d:0f:e0:3c:e6:ab:ad:ae:27:1a:6d:94:f4:14:d1:a8:73
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 8d:e1:3e:c8:1f:dc:ee:49:0d:b4:b4:26:04:71:e6:a6:a4:5b:50:21
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 28:56:84:3a:b6:d5:4a:8b:a3:bb:ae:9f:8a:77:73:74:5e:a5:5c:a8
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 84:26:e7:2d:4e:c5:2d:07:8b:d9:95:6e:28:f6:b2:fd:9f:c2:7f:1d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid e9:f1:a5:63:62:fb:f3:d3:51:12:11:b1:ae:9c:65:03:94:9e:c5:22
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 28:a4:ba:ee:61:3e:0a:b8:15:83:95:65:4e:4f:cc:13:c1:70:e3:e3
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c4:5c:9c:e6:c6:90:1d:48:b6:d3:50:ac:11:7d:74:1f:b6:02:08:14
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 99:80:bf:7c:f4:50:8b:a2:d0:4c:e3:a1:86:e4:f3:82:71:1e:0c:c7
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 61:fe:bf:7c:ed:f9:e8:6f:34:5a:d8:a8:a1:d3:9e:68:6c:25:94:72
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 75:b1:bc:dd:db:be:95:b8:7a:80:9c:b6:99:a1:44:d2:1b:74:eb:3d
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid f0:17:62:13:55:3d:b3:ff:0a:00:6b:fb:50:84:97:f3:ed:62:d0:1a
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 4f:9c:7d:21:79:9c:ad:0e:d8:b9:0c:57:9f:1a:02:99:e7:90:f3:87
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid bc:e4:b7:23:12:55:98:e5:63:41:19:1c:50:e4:b6:47:c2:76:05:d7
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 11:e4:91:d1:c9:e4:c0:eb:9a:ce:cf:73:54:5d:e1:f1:a8:30:3e:c3
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid b7:2f:85:98:e1:bd:70:7f:83:83:64:9c:24:34:d7:f7:6d:93:68:5c
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 67:ec:9f:90:2d:cd:64:ae:fe:7e:bc:cd:f8:8c:51:28:f1:93:2c:12
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 5e:4f:53:86:85:dd:4f:9e:ca:5f:dc:0d:45:6f:7d:51:b1:dc:9b:7b
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid e6:ff:c3:94:e8:38:59:7f:51:d4:80:42:19:76:27:cf:db:94:8e:c6
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid f7:f3:01:94:50:ba:3e:69:ec:9a:50:f5:02:d1:38:45:cc:93:13:72
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 92:4b:70:ca:fe:4a:f4:45:ff:43:e5:54:df:56:00:f5:da:7a:6e:34
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 36:12:c2:39:c5:22:b9:1e:20:d4:8e:08:3c:be:69:e1:1d:a8:27:e5
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 65:76:a0:be:70:42:6d:f1:17:f5:ed:9c:e4:6a:50:93:29:74:76:c3
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid c2:06:fb:d5:3b:ba:0c:ee:f2:d2:d2:45:3d:07:52:26:3a:9f:e7:5f
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 06:21:18:f5:72:6a:90:42:63:48:b1:5c:0d:d8:89:97:23:31:b8:f2
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 30:a4:e6:4f:de:76:8a:fc:ed:5a:90:84:28:30:46:79:2c:29:15:70
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 72:dc:1d:46:2d:0d:40:6a:3d:c1:be:c9:a7:b4:67:31:14:37:62:00
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid f8:f6:fa:6b:26:1b:cc:64:62:12:46:30:d1:c5:99:15:cd:01:1f:cb
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received cert request for unknown ca with keyid 07:10:33:07:0f:4f:5b:8d:56:6a:9f:00:d6:c5:b1:0a:01:ed:48:79
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received 155 cert requests for an unknown ca
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received end entity cert "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:03:44 ubuntu charon: 03[CFG] looking for peer configs matching 192.168.1.211[%any]...192.168.1.119[C=NL, O=Example Company, CN=192.168.1.211]
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   candidate "IPSec-IKEv2", match: 1/1/28 (me/other/ike)
+Jul 16 00:03:44 ubuntu charon: 03[CFG] selected peer config 'IPSec-IKEv2'
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   using certificate "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   certificate "C=NL, O=Example Company, CN=192.168.1.211" key: 2048 bit RSA
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   using trusted ca certificate "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:03:44 ubuntu charon: 03[CFG] checking certificate status of "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:03:44 ubuntu charon: 03[CFG] ocsp check skipped, no ocsp found
+Jul 16 00:03:44 ubuntu charon: 03[CFG] certificate status is not available
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   certificate "C=NL, O=Example Company, CN=strongSwan Root CA" key: 4096 bit RSA
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   reached self-signed root ca with a path length of 0
+Jul 16 00:03:44 ubuntu charon: 03[IKE] signature validation failed, looking for another key
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   using certificate "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:03:44 ubuntu charon: 03[CFG]   certificate "C=NL, O=Example Company, CN=192.168.1.211" key: 2048 bit RSA
+Jul 16 00:03:44 ubuntu charon: 03[CFG] no issuer certificate found for "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:03:44 ubuntu charon: 03[IKE] processing INTERNAL_IP4_ADDRESS attribute
+Jul 16 00:03:44 ubuntu charon: 03[IKE] processing INTERNAL_IP6_ADDRESS attribute
+Jul 16 00:03:44 ubuntu charon: 03[IKE] processing INTERNAL_IP4_DNS attribute
+Jul 16 00:03:44 ubuntu charon: 03[IKE] processing INTERNAL_IP6_DNS attribute
+Jul 16 00:03:44 ubuntu charon: 03[IKE] received ESP_TFC_PADDING_NOT_SUPPORTED, not using ESPv3 TFC padding
+Jul 16 00:03:44 ubuntu charon: 03[IKE] peer supports MOBIKE
+Jul 16 00:03:44 ubuntu charon: 03[ENC] generating IKE_AUTH response 1 [ N(AUTH_FAILED) ]
+Jul 16 00:03:44 ubuntu charon: 03[NET] sending packet: from 192.168.1.211[4500] to 192.168.1.119[50374] (76 bytes)
+Jul 16 00:03:44 ubuntu charon: 10[NET] sending packet: from 192.168.1.211[4500] to 192.168.1.119[50374]
+Jul 16 00:03:44 ubuntu charon: 03[MGR] checkin and destroy IKE_SA IPSec-IKEv2[4]
+Jul 16 00:03:44 ubuntu charon: 03[IKE] IKE_SA IPSec-IKEv2[4] state change: CONNECTING => DESTROYING
+Jul 16 00:03:44 ubuntu charon: 03[MGR] check-in and destroy of IKE_SA successful
+Jul 16 00:04:04 ubuntu systemd[1]: Started Daily apt activities.
+Jul 16 00:04:04 ubuntu systemd[1]: apt-daily.timer: Adding 6h 54min 46.912580s random time.
+Jul 16 00:04:04 ubuntu systemd[1]: apt-daily.timer: Adding 3h 53.674778s random time.
+Jul 16 00:04:13 ubuntu charon: 02[MGR] checkout IKE_SA
+Jul 16 00:05:51 ubuntu charon: 09[NET] received packet: from 192.168.1.119[36089] to 192.168.1.211[500]
+Jul 16 00:05:51 ubuntu charon: 09[NET] waiting for data on sockets
+Jul 16 00:05:51 ubuntu charon: 13[MGR] checkout IKE_SA by message
+Jul 16 00:05:51 ubuntu charon: 13[MGR] created IKE_SA (unnamed)[5]
+Jul 16 00:05:51 ubuntu charon: 13[NET] received packet: from 192.168.1.119[36089] to 192.168.1.211[500] (746 bytes)
+Jul 16 00:05:51 ubuntu charon: 13[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Jul 16 00:05:51 ubuntu charon: 13[CFG] looking for an ike config for 192.168.1.211...192.168.1.119
+Jul 16 00:05:51 ubuntu charon: 13[CFG]   candidate: %any...%any, prio 28
+Jul 16 00:05:51 ubuntu charon: 13[CFG] found matching ike config: %any...%any with prio 28
+Jul 16 00:05:51 ubuntu charon: 13[IKE] 192.168.1.119 is initiating an IKE_SA
+Jul 16 00:05:51 ubuntu charon: 13[IKE] IKE_SA (unnamed)[5] state change: CREATED => CONNECTING
+Jul 16 00:05:51 ubuntu charon: 13[CFG] selecting proposal:
+Jul 16 00:05:51 ubuntu charon: 13[CFG]   proposal matches
+Jul 16 00:05:51 ubuntu charon: 13[CFG] received proposals: IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/HMAC_MD5_96/HMAC_SHA1_96/AES_XCBC_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024, IKE:AES_GCM_16_128/AES_GCM_16_192/AES_GCM_16_256/CHACHA20_POLY1305_256/AES_GCM_12_128/AES_GCM_12_192/AES_GCM_12_256/AES_GCM_8_128/AES_GCM_8_192/AES_GCM_8_256/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Jul 16 00:05:51 ubuntu charon: 13[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:05:51 ubuntu charon: 13[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:05:51 ubuntu charon: 13[IKE] remote host is behind NAT
+Jul 16 00:05:51 ubuntu charon: 13[IKE] DH group ECP_256 inacceptable, requesting MODP_1024
+Jul 16 00:05:51 ubuntu charon: 13[ENC] generating IKE_SA_INIT response 0 [ N(INVAL_KE) ]
+Jul 16 00:05:51 ubuntu charon: 13[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[36089] (38 bytes)
+Jul 16 00:05:51 ubuntu charon: 13[MGR] checkin and destroy IKE_SA (unnamed)[5]
+Jul 16 00:05:51 ubuntu charon: 13[IKE] IKE_SA (unnamed)[5] state change: CONNECTING => DESTROYING
+Jul 16 00:05:51 ubuntu charon: 13[MGR] check-in and destroy of IKE_SA successful
+Jul 16 00:05:51 ubuntu charon: 10[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[36089]
+Jul 16 00:05:51 ubuntu charon: 09[NET] received packet: from 192.168.1.119[36089] to 192.168.1.211[500]
+Jul 16 00:05:51 ubuntu charon: 09[NET] waiting for data on sockets
+Jul 16 00:05:51 ubuntu charon: 14[MGR] checkout IKE_SA by message
+Jul 16 00:05:51 ubuntu charon: 14[MGR] created IKE_SA (unnamed)[6]
+Jul 16 00:05:51 ubuntu charon: 14[NET] received packet: from 192.168.1.119[36089] to 192.168.1.211[500] (810 bytes)
+Jul 16 00:05:51 ubuntu charon: 14[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Jul 16 00:05:51 ubuntu charon: 14[CFG] looking for an ike config for 192.168.1.211...192.168.1.119
+Jul 16 00:05:51 ubuntu charon: 14[CFG]   candidate: %any...%any, prio 28
+Jul 16 00:05:51 ubuntu charon: 14[CFG] found matching ike config: %any...%any with prio 28
+Jul 16 00:05:51 ubuntu charon: 14[IKE] 192.168.1.119 is initiating an IKE_SA
+Jul 16 00:05:51 ubuntu charon: 14[IKE] IKE_SA (unnamed)[6] state change: CREATED => CONNECTING
+Jul 16 00:05:51 ubuntu charon: 14[CFG] selecting proposal:
+Jul 16 00:05:51 ubuntu charon: 14[CFG]   proposal matches
+Jul 16 00:05:51 ubuntu charon: 14[CFG] received proposals: IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/HMAC_MD5_96/HMAC_SHA1_96/AES_XCBC_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024, IKE:AES_GCM_16_128/AES_GCM_16_192/AES_GCM_16_256/CHACHA20_POLY1305_256/AES_GCM_12_128/AES_GCM_12_192/AES_GCM_12_256/AES_GCM_8_128/AES_GCM_8_192/AES_GCM_8_256/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_AES128_XCBC/PRF_HMAC_MD5/PRF_HMAC_SHA1/ECP_256/ECP_384/ECP_521/ECP_256_BP/ECP_384_BP/ECP_512_BP/(31)/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Jul 16 00:05:51 ubuntu charon: 14[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:05:51 ubuntu charon: 14[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Jul 16 00:05:51 ubuntu charon: 14[IKE] remote host is behind NAT
+Jul 16 00:05:51 ubuntu charon: 14[IKE] sending cert request for "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:05:51 ubuntu charon: 14[IKE] sending cert request for "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:05:51 ubuntu charon: 14[ENC] generating IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) CERTREQ N(HASH_ALG) N(MULT_AUTH) ]
+Jul 16 00:05:51 ubuntu charon: 14[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[36089] (373 bytes)
+Jul 16 00:05:51 ubuntu charon: 10[NET] sending packet: from 192.168.1.211[500] to 192.168.1.119[36089]
+Jul 16 00:05:51 ubuntu charon: 14[MGR] checkin IKE_SA (unnamed)[6]
+Jul 16 00:05:51 ubuntu charon: 14[MGR] check-in of IKE_SA successful.
+Jul 16 00:05:51 ubuntu charon: 09[NET] received packet: from 192.168.1.119[44432] to 192.168.1.211[4500]
+Jul 16 00:05:51 ubuntu charon: 09[NET] waiting for data on sockets
+Jul 16 00:05:51 ubuntu charon: 15[MGR] checkout IKE_SA by message
+Jul 16 00:05:51 ubuntu charon: 15[MGR] IKE_SA (unnamed)[6] successfully checked out
+Jul 16 00:05:51 ubuntu charon: 15[NET] received packet: from 192.168.1.119[44432] to 192.168.1.211[4500] (5020 bytes)
+Jul 16 00:05:51 ubuntu charon: 15[ENC] parsed IKE_AUTH request 1 [ IDi CERT N(INIT_CONTACT) CERTREQ AUTH CPRQ(ADDR ADDR6 DNS DNS6) N(ESP_TFC_PAD_N) SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a1:72:5f:26:1b:28:98:43:95:5d:07:37:d5:85:96:9d:4b:d2:c3:45
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a2:af:24:0a:da:e8:67:79:c8:a8:50:b3:c7:46:ee:d9:f7:1b:16:78
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c0:7a:98:68:8d:89:fb:ab:05:64:0c:11:7d:aa:7d:65:b8:ca:cc:4e
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid f7:18:ea:38:39:89:f9:a6:4e:c9:3a:f0:e3:ed:0d:e8:f7:ef:33:61
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid e0:8c:9b:db:25:49:b3:f1:7c:86:d6:b2:42:87:0b:d0:6b:a0:d9:e4
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid bd:be:a7:1b:ab:71:57:f9:e4:75:d9:54:d2:b7:27:80:1a:82:26:82
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 87:db:d4:5f:b0:92:8d:4e:1d:f8:15:67:e7:f2:ab:af:d6:2b:67:75
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 3c:b4:1a:84:2e:f5:5c:f2:1a:3d:a5:4a:c8:d1:be:39:08:76:37:bc
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 8b:db:d7:cc:a0:68:53:42:16:f4:c1:2b:25:44:fc:02:9c:a5:8b:47
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 8d:f0:0a:ad:7c:3f:4c:f3:42:75:e2:ec:19:bd:f3:28:e2:24:69:22
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 6a:eb:05:3a:66:ad:15:e0:99:8c:3d:65:a9:fd:1e:45:1e:b2:1e:d2
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b0:a1:22:d9:47:c9:fe:15:01:5b:db:a6:f2:30:96:26:ad:eb:b2:57
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b0:19:89:e7:ef:fb:4a:af:cb:14:8f:58:46:39:76:22:41:50:e1:ba
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 6d:aa:9b:09:87:c4:d0:d4:22:ed:40:07:37:4d:19:f1:91:ff:de:d3
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 92:ae:ef:0e:89:02:ee:6d:79:68:d1:a1:0e:75:60:01:fa:e4:eb:fc
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 90:7e:69:b9:9e:69:2a:3c:4a:96:de:b5:78:1f:02:ab:b4:88:d3:89
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 3e:18:e5:44:f6:bd:4d:77:50:28:c9:40:3e:5c:74:f5:4c:d9:60:29
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 73:97:82:ea:b4:04:16:6e:25:d4:82:3c:37:db:f8:a8:12:fb:cf:26
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c5:30:21:e4:c8:4b:d1:a9:e9:de:e8:40:ba:6a:16:9f:77:92:8f:91
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 13:8f:7b:5d:6e:da:54:ee:84:4c:7c:78:d4:7e:3f:d0:2a:60:d5:ff
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 17:4a:b8:2b:5f:fb:05:67:75:27:ad:49:5a:4a:5d:c4:22:cc:ea:4e
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 2a:7f:77:5e:36:3d:4a:f5:d1:cc:c6:ce:28:96:61:13:ea:2c:80:dc
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b1:81:08:1a:19:a4:c0:94:1f:fa:e8:95:28:c1:24:c9:9b:34:ac:c7
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 5e:8c:53:18:22:60:1d:56:71:d6:6a:a0:cc:64:a0:60:07:43:d5:a8
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 23:4b:71:25:56:13:e1:30:dd:e3:42:69:c9:cc:30:d4:6f:08:41:e0
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 83:31:7e:62:85:42:53:d6:d7:78:31:90:ec:91:90:56:e9:91:b9:e3
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 69:3c:0d:54:1a:48:e9:db:81:a1:44:b0:c7:36:0f:ed:bd:3e:47:37
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 4f:c7:18:9d:a5:be:c3:a2:a5:ba:f0:20:81:ff:4f:05:ed:87:43:8a
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 8c:cf:8c:87:8a:0e:9f:4a:c1:2e:eb:ad:58:d3:cb:1a:6a:66:78:6f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 9c:a9:8d:00:af:74:0d:dd:81:80:d2:13:45:a5:8b:8f:2e:94:38:d6
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 07:23:2d:45:65:87:b9:d7:b1:d9:7d:d1:c5:fb:65:c5:89:bf:92:96
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a5:06:8a:78:cf:84:bd:74:32:dd:58:f9:65:eb:3a:55:e7:c7:80:dc
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 62:94:19:ea:47:3f:f2:97:75:8d:d5:b3:20:61:04:34:ff:76:3e:1d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 3a:28:44:64:9f:20:e8:b1:05:bf:e9:d7:f5:66:33:61:51:ae:eb:51
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ea:67:0c:27:c1:60:9d:4b:0c:93:a2:ab:6f:e2:c4:67:15:6b:dc:70
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 87:e8:5b:63:53:c6:23:a3:12:8c:b0:ff:bb:f5:51:fe:59:80:0e:22
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 42:32:b6:16:fa:04:fd:fe:5d:4b:7a:c3:fd:f7:4c:40:1d:5a:43:af
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 52:2c:46:fc:ee:2e:a4:be:b5:f1:01:a3:9d:d2:16:ba:d8:85:8e:b5
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid bc:f0:90:87:79:da:24:86:1d:2b:7c:49:a1:36:bd:06:ef:cd:ff:bf
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ab:30:d3:af:4b:d8:f1:6b:58:69:ee:45:69:29:da:84:b8:73:94:88
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 7c:d3:95:1f:f4:48:1b:32:cf:6b:e3:55:43:03:6d:0b:45:7d:72:26
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 7d:de:cf:64:e0:48:b7:5a:65:b2:8e:2f:1e:4c:f1:a8:88:d4:0c:f4
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ed:0d:c8:d6:2c:d3:13:29:d8:82:fe:2d:c3:fc:c5:10:d3:4d:bb:14
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c2:4e:45:22:d1:c3:2f:86:80:f7:4d:38:48:4b:74:e5:71:cd:17:cf
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ee:dd:ed:4d:f3:b4:38:16:cf:d7:05:73:66:9c:24:2e:91:e8:33:1d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 33:de:35:ca:82:a6:36:15:29:44:cd:f1:c7:8a:05:5a:cc:9c:1c:cd
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid af:44:04:c2:41:7e:48:83:db:4e:39:02:ec:ec:84:7a:e6:ce:c9:a4
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid d5:2e:13:c1:ab:e3:49:da:e8:b4:95:94:ef:7c:38:43:60:64:66:bd
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid dd:00:92:e0:16:8e:ba:57:c2:67:d6:7d:0a:0a:4e:57:b6:cb:c6:c8
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b7:1a:8b:40:df:93:d0:5c:e0:98:03:08:91:59:6d:61:e8:15:f6:fe
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c4:30:28:c5:d3:e3:08:0c:10:44:8b:2c:77:ba:24:53:97:60:bb:f9
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid fe:72:c8:eb:bf:0c:2f:bb:0e:26:13:93:93:3c:2c:a9:8d:dc:24:94
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 63:45:e6:5f:05:b9:53:9e:b2:4e:03:b1:40:bb:b9:a7:50:6c:24:13
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid d9:f7:49:68:9f:e9:32:4b:5c:15:ab:e0:85:ce:b9:6e:07:67:b1:8f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid cf:58:aa:90:8d:58:39:76:1b:cf:4e:da:03:bf:81:8e:d1:d7:f8:9b
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 23:4b:71:25:56:13:e1:30:dd:e3:42:69:c9:cc:30:d4:6f:08:41:e0
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 22:60:a7:83:31:ee:a4:c8:11:65:c3:b9:da:51:85:74:42:39:06:c5
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 5b:bf:1f:74:4a:e0:51:bd:61:7b:20:0d:bb:74:dc:26:8b:d1:3a:02
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid e9:e1:5a:17:af:6e:47:e0:98:ac:18:47:a5:d1:1d:c3:e5:2c:8f:ef
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 87:e3:bf:32:24:27:c1:40:5d:27:36:c3:81:e0:1d:1a:71:d4:a0:39
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 05:1c:6d:0c:7c:a9:b0:d9:b9:e5:0a:5b:c8:f9:f5:e3:83:48:eb:78
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 6e:58:4e:33:75:bd:57:f6:d5:42:1b:16:01:c2:d8:c0:f5:3a:9f:6e
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a8:e3:02:96:70:a6:8b:57:eb:ec:ef:cc:29:4e:91:74:9a:d4:92:38
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c6:4f:a2:3d:06:63:84:09:9c:ce:62:e4:04:ac:8d:5c:b5:e9:b6:1b
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 95:a3:72:ff:cd:41:d7:e9:fd:dd:3f:39:ac:27:0b:24:78:1e:d6:54
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ab:76:88:f4:e5:e1:38:c9:e9:50:17:cd:cd:b3:18:17:b3:3e:8c:f5
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 69:c4:27:db:59:69:68:18:47:e2:52:17:0a:e0:e5:7f:ab:9d:ef:0f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c8:18:8f:7a:06:a9:9b:f5:79:dd:9f:88:96:af:d1:d9:1f:19:bc:2a
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 3d:9f:4e:e4:17:1d:e9:cc:8c:cb:6b:ee:84:03:c2:cd:d7:bc:0b:9f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 36:ff:93:41:e9:13:08:24:2d:f0:17:1c:98:7a:e6:29:d5:5d:d3:41
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid bd:ff:8d:1d:59:4d:83:2b:a7:da:e3:87:6e:63:68:1c:13:de:a6:c0
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c4:52:72:20:a9:58:c0:6e:9d:4b:f2:0b:21:12:3c:eb:3a:0b:6b:6f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid f7:93:19:ef:df:c1:f5:20:fb:ac:85:55:2c:f2:d2:8f:5a:b9:ca:0b
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 48:e6:68:f9:2b:d2:b2:95:d7:47:d8:23:20:10:4f:33:98:90:9f:d4
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 62:af:b7:5c:2a:a7:0d:ad:0d:3d:8d:cf:fb:10:9e:65:c6:16:c3:0b
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 04:c3:a9:d0:11:cb:20:f7:c9:48:59:8c:ed:21:a9:f2:e8:9b:cf:11
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 6c:ca:bd:7d:b4:7e:94:a5:75:99:01:b6:a7:df:d4:5d:1c:09:1c:cc
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 21:0f:2c:89:f7:c4:cd:5d:1b:82:5e:38:d6:c6:59:3b:a6:93:75:ae
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 68:33:0e:61:35:85:21:59:29:83:a3:c8:d2:d2:e1:40:6e:7a:b3:c1
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid d7:c1:47:91:66:51:be:b9:52:ca:11:c9:90:3d:81:50:55:0f:b0:97
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b5:99:33:43:ac:a2:17:c5:08:ba:88:8c:a6:92:7e:26:b3:0f:87:a9
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 6a:25:23:9d:62:75:cd:52:21:69:5c:31:e9:89:c4:d5:38:b8:c4:ea
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ba:42:b0:81:88:53:88:1d:86:63:bd:4c:c0:5e:08:fe:ea:6e:bb:77
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 7d:43:0e:0f:82:c9:6f:77:42:6b:67:8e:82:c4:cd:8b:52:e5:a1:ef
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 71:38:36:f2:02:31:53:47:2b:6e:ba:65:46:a9:10:15:58:20:05:09
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 69:2f:44:0a:4e:9e:fc:f1:cb:fd:d9:73:5b:9d:3d:31:5b:ca:b6:c2
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b3:03:7e:ae:36:bc:b0:79:d1:dc:94:26:b6:11:be:21:b2:69:86:94
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 86:26:cb:1b:c5:54:b3:9f:bd:6b:ed:63:7f:b9:89:a9:80:f1:f4:8a
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 90:e2:41:c2:11:41:8b:95:b1:a9:e0:9c:37:24:7e:84:9f:e4:be:a1
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 67:77:d1:fd:61:a0:44:3e:29:8a:35:e5:db:f1:6d:8d:06:0f:d6:0d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 35:92:76:19:47:e2:90:7b:7a:c8:80:f4:29:bf:2b:e6:6c:81:51:1a
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c4:9c:12:7e:4b:e9:e5:5e:f4:64:77:26:2c:b6:d9:c9:34:2b:7c:38
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c5:c1:0d:9a:9c:7b:0d:09:99:3d:dd:ac:38:78:72:45:f7:e7:ca:91
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 7d:9a:a9:f1:bf:20:29:ab:39:21:62:80:6d:2e:d5:be:12:83:02:e8
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 99:9b:76:54:0b:4a:9c:7a:35:ca:8f:0f:2e:aa:74:7a:0f:ae:c5:6e
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ff:9d:7f:8f:b2:95:ec:ab:f5:23:db:9b:e9:01:b5:98:f1:56:33:12
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid e1:a0:5a:95:34:75:78:a7:ff:4d:cf:32:52:5d:f2:f8:2c:1a:e1:15
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 3b:37:c0:c5:47:3d:fc:5b:9a:0d:01:5b:12:3b:53:cc:ad:b7:54:66
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ee:e5:9f:1e:2a:a5:44:c3:cb:25:43:a6:9a:5b:d4:6a:25:bc:bb:8e
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c8:95:13:68:01:97:28:0a:2c:55:c3:fc:d3:90:f5:3a:05:3b:c9:fb
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 69:9f:1b:7a:e9:b8:da:18:49:6c:60:8b:ce:4f:4e:aa:f9:f0:b7:aa
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 48:2b:59:17:75:e2:61:7b:ef:c7:20:d3:7a:9c:ec:be:36:9e:84:e3
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ef:66:52:d4:62:80:e8:ca:8e:37:df:49:1e:b1:c9:bc:fd:0a:1c:25
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 97:c6:06:4d:83:c8:35:ac:68:43:ad:77:f5:f8:0e:a8:10:1a:1f:32
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 4a:81:0c:de:f0:c0:90:0f:19:06:42:31:35:a2:a2:8d:d3:44:fd:08
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b3:86:36:7d:bc:e5:f8:4e:e2:8c:15:37:81:b2:1d:f5:3d:2c:15:cd
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b0:81:9d:a5:df:24:16:ef:0d:7d:fe:7f:e9:2b:40:d7:ef:f5:44:8f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 55:92:1a:5b:2e:62:b0:e0:7b:8b:a9:ae:9f:fc:a0:f6:e6:56:26:3c
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 36:cc:c7:d8:28:e2:0a:ea:4e:80:70:dc:7f:77:11:93:3f:5e:bf:a7
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 14:8d:b3:54:ed:9b:2f:13:08:7c:c3:8b:4b:c1:5b:96:8a:c5:53:78
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid bb:2d:75:ce:17:2a:cc:df:05:d9:a8:6d:27:82:98:88:99:86:c8:91
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 3e:51:59:8b:a7:6f:54:5c:77:24:c5:66:eb:aa:fb:3e:2b:f3:ac:4f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 4b:69:79:4c:0b:e5:eb:3a:57:04:7a:68:a8:70:be:ec:ca:0c:76:36
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 7b:6d:b8:b0:b5:e5:85:0d:10:61:51:f0:3d:b0:f4:ff:40:8d:9e:a4
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a5:9d:bf:90:15:d9:f1:f5:a8:d8:c0:1d:14:e6:f1:d8:c4:fe:57:17
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid bb:c2:3e:29:0b:b3:28:77:1d:ad:3e:a2:4d:bd:f4:23:bd:06:b0:3d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 4c:75:d4:85:80:62:aa:a9:44:9c:66:15:1e:6c:58:13:05:3a:9c:72
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid f0:63:ba:7c:9a:16:74:4a:9c:db:54:ec:23:cd:67:29:8e:7c:49:4d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 20:b7:57:88:92:e7:a8:d6:71:d4:3b:ad:b3:cb:3c:54:34:5d:05:e2
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a8:3a:f8:16:c7:de:22:91:63:66:87:f5:a5:eb:34:3a:a6:b5:fc:53
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 53:32:d1:b3:cf:7f:fa:e0:f1:a0:5d:85:4e:92:d2:9e:45:1d:b4:4f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid ed:66:31:35:d3:1b:d4:ec:a6:14:c4:29:e3:19:06:9f:94:c1:26:50
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid a8:57:65:d6:e8:32:c8:c5:19:63:73:5a:9a:17:74:3a:81:df:ee:2e
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 9f:1d:85:2f:55:e5:60:c8:30:ad:bc:38:7f:e0:f5:94:bf:55:8d:87
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 79:23:d5:8d:0f:e0:3c:e6:ab:ad:ae:27:1a:6d:94:f4:14:d1:a8:73
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 8d:e1:3e:c8:1f:dc:ee:49:0d:b4:b4:26:04:71:e6:a6:a4:5b:50:21
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 28:56:84:3a:b6:d5:4a:8b:a3:bb:ae:9f:8a:77:73:74:5e:a5:5c:a8
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 84:26:e7:2d:4e:c5:2d:07:8b:d9:95:6e:28:f6:b2:fd:9f:c2:7f:1d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid e9:f1:a5:63:62:fb:f3:d3:51:12:11:b1:ae:9c:65:03:94:9e:c5:22
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 28:a4:ba:ee:61:3e:0a:b8:15:83:95:65:4e:4f:cc:13:c1:70:e3:e3
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c4:5c:9c:e6:c6:90:1d:48:b6:d3:50:ac:11:7d:74:1f:b6:02:08:14
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 99:80:bf:7c:f4:50:8b:a2:d0:4c:e3:a1:86:e4:f3:82:71:1e:0c:c7
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 61:fe:bf:7c:ed:f9:e8:6f:34:5a:d8:a8:a1:d3:9e:68:6c:25:94:72
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 75:b1:bc:dd:db:be:95:b8:7a:80:9c:b6:99:a1:44:d2:1b:74:eb:3d
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid f0:17:62:13:55:3d:b3:ff:0a:00:6b:fb:50:84:97:f3:ed:62:d0:1a
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 4f:9c:7d:21:79:9c:ad:0e:d8:b9:0c:57:9f:1a:02:99:e7:90:f3:87
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid bc:e4:b7:23:12:55:98:e5:63:41:19:1c:50:e4:b6:47:c2:76:05:d7
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 11:e4:91:d1:c9:e4:c0:eb:9a:ce:cf:73:54:5d:e1:f1:a8:30:3e:c3
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid b7:2f:85:98:e1:bd:70:7f:83:83:64:9c:24:34:d7:f7:6d:93:68:5c
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 67:ec:9f:90:2d:cd:64:ae:fe:7e:bc:cd:f8:8c:51:28:f1:93:2c:12
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 5e:4f:53:86:85:dd:4f:9e:ca:5f:dc:0d:45:6f:7d:51:b1:dc:9b:7b
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid e6:ff:c3:94:e8:38:59:7f:51:d4:80:42:19:76:27:cf:db:94:8e:c6
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid f7:f3:01:94:50:ba:3e:69:ec:9a:50:f5:02:d1:38:45:cc:93:13:72
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 92:4b:70:ca:fe:4a:f4:45:ff:43:e5:54:df:56:00:f5:da:7a:6e:34
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 36:12:c2:39:c5:22:b9:1e:20:d4:8e:08:3c:be:69:e1:1d:a8:27:e5
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 65:76:a0:be:70:42:6d:f1:17:f5:ed:9c:e4:6a:50:93:29:74:76:c3
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid c2:06:fb:d5:3b:ba:0c:ee:f2:d2:d2:45:3d:07:52:26:3a:9f:e7:5f
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 06:21:18:f5:72:6a:90:42:63:48:b1:5c:0d:d8:89:97:23:31:b8:f2
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 30:a4:e6:4f:de:76:8a:fc:ed:5a:90:84:28:30:46:79:2c:29:15:70
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 72:dc:1d:46:2d:0d:40:6a:3d:c1:be:c9:a7:b4:67:31:14:37:62:00
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid f8:f6:fa:6b:26:1b:cc:64:62:12:46:30:d1:c5:99:15:cd:01:1f:cb
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received cert request for unknown ca with keyid 07:10:33:07:0f:4f:5b:8d:56:6a:9f:00:d6:c5:b1:0a:01:ed:48:79
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received 155 cert requests for an unknown ca
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received end entity cert "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:05:51 ubuntu charon: 15[CFG] looking for peer configs matching 192.168.1.211[%any]...192.168.1.119[192.168.1.211]
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   candidate "IPSec-IKEv2", match: 1/1/28 (me/other/ike)
+Jul 16 00:05:51 ubuntu charon: 15[CFG] selected peer config 'IPSec-IKEv2'
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   using certificate "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   certificate "C=NL, O=Example Company, CN=192.168.1.211" key: 2048 bit RSA
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   using trusted ca certificate "C=NL, O=Example Company, CN=strongSwan Root CA"
+Jul 16 00:05:51 ubuntu charon: 15[CFG] checking certificate status of "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:05:51 ubuntu charon: 15[CFG] ocsp check skipped, no ocsp found
+Jul 16 00:05:51 ubuntu charon: 15[CFG] certificate status is not available
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   certificate "C=NL, O=Example Company, CN=strongSwan Root CA" key: 4096 bit RSA
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   reached self-signed root ca with a path length of 0
+Jul 16 00:05:51 ubuntu charon: 15[IKE] signature validation failed, looking for another key
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   using certificate "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:05:51 ubuntu charon: 15[CFG]   certificate "C=NL, O=Example Company, CN=192.168.1.211" key: 2048 bit RSA
+Jul 16 00:05:51 ubuntu charon: 15[CFG] no issuer certificate found for "C=NL, O=Example Company, CN=192.168.1.211"
+Jul 16 00:05:51 ubuntu charon: 15[IKE] processing INTERNAL_IP4_ADDRESS attribute
+Jul 16 00:05:51 ubuntu charon: 15[IKE] processing INTERNAL_IP6_ADDRESS attribute
+Jul 16 00:05:51 ubuntu charon: 15[IKE] processing INTERNAL_IP4_DNS attribute
+Jul 16 00:05:51 ubuntu charon: 15[IKE] processing INTERNAL_IP6_DNS attribute
+Jul 16 00:05:51 ubuntu charon: 15[IKE] received ESP_TFC_PADDING_NOT_SUPPORTED, not using ESPv3 TFC padding
+Jul 16 00:05:51 ubuntu charon: 15[IKE] peer supports MOBIKE
+Jul 16 00:05:51 ubuntu charon: 15[ENC] generating IKE_AUTH response 1 [ N(AUTH_FAILED) ]
+Jul 16 00:05:51 ubuntu charon: 15[NET] sending packet: from 192.168.1.211[4500] to 192.168.1.119[44432] (76 bytes)
+Jul 16 00:05:51 ubuntu charon: 10[NET] sending packet: from 192.168.1.211[4500] to 192.168.1.119[44432]
+Jul 16 00:05:51 ubuntu charon: 15[MGR] checkin and destroy IKE_SA IPSec-IKEv2[6]
+Jul 16 00:05:51 ubuntu charon: 15[IKE] IKE_SA IPSec-IKEv2[6] state change: CONNECTING => DESTROYING
+Jul 16 00:05:51 ubuntu charon: 15[MGR] check-in and destroy of IKE_SA successful
+Jul 16 00:06:15 ubuntu systemd[1]: Started Session 14 of user strong.

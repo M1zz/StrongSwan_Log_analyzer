@@ -1,0 +1,29 @@
+Phase;;IP;;Time;;Category;;Message;;Status
+IKE_INIT;;192.168.1.119;;Jul/16/16:35:16;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/16:35:16;;Certification;;'C=NL,O=ExampleCompany,CN=192.168.1.211';;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/16:35:16;;Lifetime;;10328;;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/16:35:16;;SPI;;('c5eb5886_in', 'ca3d658d_out');;Successful
+IKE_SA;;192.168.1.119;;Jul/16/16:35:16;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.119;;Jul/16/17:21:25;;Validation;;Invalid;;Deleted
+IKE_INIT;;192.168.1.119;;Jul/16/17:28:27;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/17:28:27;;Certification;;'C=NL,O=ExampleCompany,CN=192.168.1.211';;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/17:28:27;;Lifetime;;10427;;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/17:28:27;;SPI;;('c0232be1_in', 'd5d47aec_out');;Successful
+IKE_SA;;192.168.1.119;;Jul/16/17:28:27;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.119;;Jul/16/18:10:56;;Validation;;Invalid;;Deleted
+IKE_INIT;;192.168.1.119;;Jul/16/18:10:57;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/18:10:57;;Certification;;'C=NL,O=ExampleCompany,CN=192.168.1.211';;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/18:10:57;;Lifetime;;10519;;Successful
+IKE_AUTH;;192.168.1.119;;Jul/16/18:10:57;;SPI;;('c9281ccb_in', 'ff63c23d_out');;Successful
+IKE_SA;;192.168.1.119;;Jul/16/18:10:57;;Validation;;Valid;;Successful
+IKE_INIT;;192.168.1.212;;Jul/21/02:48:46;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.212;;Jul/21/02:48:46;;Certification;;'C=NL,O=ExampleCompany,CN=192.168.1.211';;Successful
+IKE_AUTH;;192.168.1.212;;Jul/21/02:48:46;;Lifetime;;10592;;Successful
+IKE_AUTH;;192.168.1.212;;Jul/21/02:48:46;;SPI;;('c50e67dc_in', 'd1999506_out');;Successful
+IKE_SA;;192.168.1.212;;Jul/21/02:48:46;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.212;;Jul/21/03:01:55;;Validation;;Invalid;;Deleted
+IKE_INIT;;192.168.1.212;;Jul/21/03:02:01;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.212;;Jul/21/03:02:01;;Certification;;'C=NL,O=ExampleCompany,CN=192.168.1.211';;Successful
+IKE_AUTH;;192.168.1.212;;Jul/21/03:02:01;;Lifetime;;10541;;Successful
+IKE_AUTH;;192.168.1.212;;Jul/21/03:02:01;;SPI;;('5cf45b9f_in', '348687be_out');;Successful
+IKE_SA;;192.168.1.212;;Jul/21/03:02:01;;Validation;;Valid;;Successful
