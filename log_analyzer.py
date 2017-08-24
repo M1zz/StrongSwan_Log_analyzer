@@ -1,6 +1,7 @@
 # Set the Import file
 from datetime import datetime
 import time as tm
+import os
 
 # global valiable
 walker = 0
@@ -10,6 +11,11 @@ Time = ""
 Category = ""
 Message = ""
 Status = "Fail"
+update = True
+fp = ''
+
+path  = "/var/log/"
+file_stat = os.stat(path+'syslog').st_ino
 
 log_temp = []
 log_list = []
@@ -23,6 +29,18 @@ keyChange = False
 File_INIT = True
 
 squence = True
+
+"""
+File update checker
+"""
+def file_update_checker():
+    global file_stat
+    if file_stat == os.stat(path+'syslog').st_ino:
+        return False
+    else:
+        file_stat = os.stat(path+'syslog').st_ino
+        print("file is updated!",file_stat,os.stat(path+'syslog').st_ino)
+        return True
 
 """
 Valid checker is time and turn ckecker
@@ -42,15 +60,65 @@ def valid_checker(datetime_object):
         squence = False
         return walker
 
+
+"""
+Save the point and read data
+"""
+def read_update():
+    global fp
+    if fp == '':
+        print('file pointer is null')
+        return read_data()
+    else:
+        return read_old()        
+
+
+def read_old():
+    log_list = []
+
+    for line in fp:
+        temp_log = []
+        # Remove space
+        line_data = line.strip().split(' ')
+
+        # Time converter
+        if(line_data[0] is not 'null' and line_data[1] is not 'null' and line_data[2] is not 'null'):
+
+            time = line_data[0]+' '+line_data[1]+' '+line_data[2]
+            datetime_object = datetime.strptime('2017 '+time, '%Y %b %d %H:%M:%S')
+            # Check the Vaild
+            if (count == 0):
+                time = valid_checker(datetime_object)
+                count += 1
+            walker = tm.mktime(datetime_object.timetuple())
+        temp_log.append(time)
+
+        # Merge Time
+        try:
+            host = line_data[4]
+            temp_log.append(host)
+
+            category = line_data[5]
+            temp_log.append(category)
+
+            message = line_data[6:]
+            temp_log.append(message)
+
+            log_list.append(temp_log)
+        except:
+            pass
+
+    return log_list
+
 """
 Read syslog and return data, form of list
 """
 def read_data():
     global walker
     log_list = []
-   
+
     # Open file
-    with open('./log/syslog') as fp:
+    with open(path+'/syslog') as fp:
         count = 0
         for line in fp:
             temp_log = []
@@ -83,6 +151,7 @@ def read_data():
                 log_list.append(temp_log)
             except:
                 pass
+    #print (log_list)
     return log_list
 
 
@@ -110,7 +179,7 @@ def write_file(log_storage):
     #if  
     filename = str(walker)[:-2]+".csv"
     #f = open(filename, 'w')
-    print("opeing")
+    print("opening")
     try: 
         f = open(filename, 'r')
     except IOError:
@@ -175,7 +244,7 @@ def analyzer(data):
                 # print "======================="
                 IP = str(line[3][0])
                 keyChange = True
-                print "IP Changed!",IP
+                #print "IP Changed!",IP
                 
             #else:
                 #log_list.append(IP)
@@ -238,8 +307,7 @@ def analyzer(data):
                 Status = "Successful"
                 log_temp.append(Status)
                 
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
+                if (Phase is not "" and IP is not "" and Time is not "" and Category is not "" and Message is not ""):
                     log_storage.append(log_temp)
                     Status = "fail"
                     log_temp = []
@@ -265,8 +333,7 @@ def analyzer(data):
 
                 Status = "Successful"
                 log_temp.append(Status)
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
+                if (Phase is not "" and IP is not "" and Time is not "" and Category is not "" and Message is not ""):
                     log_storage.append(log_temp)
                     Status = "fail"
                     log_temp = []
@@ -288,8 +355,7 @@ def analyzer(data):
                 Status = "Successful"
                 log_temp.append(Status)
                 
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
+                if (Phase is not "" and IP is not "" and Time is not "" and Category is not "" and Message is not ""):
                     
                     log_storage.append(log_temp)
                     Status = "fail"
@@ -309,8 +375,7 @@ def analyzer(data):
                 Status = "Successful"
                 log_temp.append(Status)
                 
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
+                if (Phase is not "" and IP is not "" and Time is not "" and Category is not "" and Message is not ""):
                     
                     log_storage.append(log_temp)
                     Status = "fail"
@@ -349,9 +414,7 @@ def analyzer(data):
                 Status = "Deleted"
                 log_temp.append(Status)
                 
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
-                    
+                if (Phase is not "" and IP is not "" and Time is not "" and Category is not "" and Message is not ""):
                     log_storage.append(log_temp)
                     Status = "fail"
                     log_temp = []
@@ -364,7 +427,7 @@ def analyzer(data):
     #if (IKE_AUTH_FLAG == False):
         #print "[IKE_AUTH]Result : ",IKE_AUTH_FLAG
         #print "[IKE_SA]Reuslt : INVALID"
-    #print log_storage 
+    print log_storage 
     return log_storage
 
 
@@ -376,18 +439,23 @@ def main():
     
     global walker
     global squence
+    global update 
+
     while(True):
-        # Read the data
-        data = read_data()
+        # File update check
+        if update: 
+            # Read the data
+            data = read_update()
 
-        # Get client's list
-        client_list = getClient_data(data)
+            # Get client's list
+            client_list = getClient_data(data)
 
-        log_result = analyzer(data)
-        #print("log_result : ",log_result)
-        if (squence):
-            write_file(log_result)
-        #print ("walker : ", walker)
+            log_result = analyzer(data)
+            #print("log_result : ",log_result)
+            if (squence):
+                write_file(log_result)
+            #print ("walker : ", walker)
 
+        update = file_update_checker() 
 if __name__ == "__main__":
     main()
