@@ -1,7 +1,8 @@
 # Set the Import file
 from datetime import datetime
-import time as tm
+import time
 import os
+import socket
 
 # global valiable
 walker = 0
@@ -14,7 +15,7 @@ Status = "Fail"
 update = True
 fp = ''
 
-path  = "/home/hyunholee/NSR/log/"
+path  = "/var/log/"
 file_stat = os.stat(path+'syslog').st_ino
 
 log_temp = []
@@ -28,84 +29,16 @@ IKE_SA = False
 keyChange = False
 File_INIT = True
 
+IKE_INIT_FLAG = False
+IKE_AUTH_FLAG = False
+IKE_SA = False
+keyChange = False
+
+hostname = socket.gethostname()
+
 squence = True
 
-"""
-File update checker
-"""
-def file_update_checker():
-    global file_stat
-    if file_stat == os.stat(path+'syslog').st_ino:
-        return False
-    else:
-        file_stat = os.stat(path+'syslog').st_ino
-        print("file is updated!",file_stat,os.stat(path+'syslog').st_ino)
-        return True
-
-"""
-Valid checker is time and turn ckecker
-"""
-def valid_checker(datetime_object):
-    time = tm.mktime(datetime_object.timetuple())
-    global walker
-    global squence
-    # Later
-    if time - walker >= 0:
-        print("Time is Ok!","Time : ",time,"Walker : ",walker)
-        squence = True
-        return time
-    # Wrong
-    else:
-        print ("Time Reverse Error!","Time : ",time,"Walker : ",walker)
-        squence = False
-        return walker
-
-"""
-Read syslog and return data, form of list
-"""
-def read_data():
-    global walker
-    global fp
-    log_list = []
-     
-    if fp == '':
-        print('file pointer is null')
-    # Open file
-    with open(path+'/syslog') as fp:
-        count = 0
-        for line in fp:
-            temp_log = []
-            # Remove space
-            line_data = line.strip().split(' ')
-            
-            # Time converter
-            if(line_data[0] is not 'null' and line_data[1] is not 'null' and line_data[2] is not 'null'):
-                
-                time = line_data[0]+' '+line_data[1]+' '+line_data[2]
-                datetime_object = datetime.strptime('2017 '+time, '%Y %b %d %H:%M:%S')
-                # Check the Vaild
-                if (count == 0):
-                    time = valid_checker(datetime_object)
-                    count += 1
-                walker = tm.mktime(datetime_object.timetuple())
-            temp_log.append(time)
-
-            # Merge Time
-            try:
-                host = line_data[4]
-                temp_log.append(host)
-            
-                category = line_data[5]
-                temp_log.append(category)
-            
-                message = line_data[6:]
-                temp_log.append(message)
-
-                log_list.append(temp_log)
-            except:
-                pass
-    return log_list
-
+log_temp = []
 
 # Get the Client List
 def getClient_data(data):
@@ -133,282 +66,325 @@ def write_file(log_storage):
     #f = open(filename, 'w')
     print("opening")
     try: 
-        f = open(filename, 'r')
+        f = open('./result/'+filename, 'r')
     except IOError:
-        f = open(filename, 'w')
+        f = open('./result/'+filename, 'w')
         header = "Phase;;IP;;Time;;Category;;Message;;Status\n"
         f.write(header)
         f.close()
-    f = open(filename, 'a')
+    f = open('./result/'+filename, 'a')
     print("start file write:",filename)
-
+    count = 0
+    length = len(log_storage)
     for item in log_storage:
-        count = 0
-        for word in item:
-            length = len(item)
-            count += 1 
-            #print(str(word))
-            f.write(str(word))
-            if (count != length):
-                f.write(";;")
-        #print ("line : ",item)
-        f.write("\n")
+        #print(str(word))
+        f.write(str(item))
+        if (count != length-1):
+            f.write(";;")
+        count += 1
+    f.write("\n")
     print("File Write Done!","filename : ",filename)
     f.close()
 
 
-def analyzer(data):
+"""
+Check null and return False
+"""
+def null_checker(Phase, IP, Time, Category, Message, Status):
+    if (Phase is '' or  IP is '' or 
+        Time is '' or Category is '' or
+        Message is '' or  Status is ''):
+        return True
+    return False
+
+
+def item_init():
+    global Phase
+    global IP
+    global Time
+    global Category
+    global Message 
+    global Status
+    
+    Phase     = "" 
+    IP        = "" 
+    Time      = "" 
+    Category  = "" 
+    Message   = "" 
+    Status    = ""
+
+"""
+Analyze and make it Phase;;IP;;Time;;Category;;Message;;Status
+"""
+def log_analyzer(line):
     global walker
     
-    global PHASE
+    global Phase
     global IP
     global Time
     global Category
     global Message
     global Status
-    # Init the variable
-    #global IKE_INIT_FLAG
-    #global IKE_AUTH_FLAG
-    #global IKE_SA
-    #global keyChange
 
-    #global log_temp
-    #global log_list
     global log_storage
 
     # Init the variable
-    IKE_INIT_FLAG = False
-    IKE_AUTH_FLAG = False
-    IKE_SA = False
-    keyChange = False
+    global IKE_INIT_FLAG
+    global IKE_AUTH_FLAG
+    global IKE_SA
+    global keyChange
 
-    log_temp = []
+    global log_temp
+
     log_list = []
     #log_storage  = []
 
-    for line in data:        
-        try:
-            # Get the time
-            Time = line[0].replace(" ","/")
+    try:
+        # Get the time
+        Time = line[0].replace(" ","/")
             
-            # All log need IP and check keyChange
-            if (line[3][2] == "initiating" and line[3][0] != IP and keyChange == False):
-                IP = str(line[3][0])
-                keyChange = True
+        # All log need IP and check keyChange
+        if (line[3][2] == "initiating" and line[3][0] != IP and keyChange == False):
+            IP = str(line[3][0])
+            keyChange = True
+            #print("keyChange = True")
                 
-            # Get the whole Sentence 
-            cmpSentence = str(line[3][0]) +" "+ str(line[3][1]) +" "+ str(line[3][2])
-            result = bool(line[3][3])
-
-            # Check IKE_INIT and trigger
-            if (cmpSentence == "parsed IKE_AUTH request" and result == True):
-                IKE_INIT_FLAG = True
-                Phase = "IKE_INIT"
-                #print("IKE_INIT_FLAG : ",IKE_INIT_FLAG)
-            
-            # Get the keyWord IKE_AUTH (keyWord : authentication)
-            keyWord = line[3][0]
-            keyWord_two = str(line[3][0]) + " " + str(line[3][1])
-
-            #print ("keyWord_two",keyWord_two,keyWord) 
-            # Get result of authentication
-            if (keyWord == "authentication"):
-                auth_result = line[3][8]
-            
-            # For the IKE_INIT AND IKE_AUTH
-            sentence_length = len(line[3])
-            if (keyWord == "authentication" and auth_result == "successful" and sentence_length == 9):
-                #print("$%^$%^",keyWord,auth_result,sentence_length)
-                # Add elements
-                log_temp.append(Phase)
-                log_temp.append(IP)
-                log_temp.append(Time)
-                Category = "Encryption"
-                log_temp.append(Category)
-                
-                Message = str(line[3][7])
-                log_temp.append(Message)
-                
-                Status = "Successful"
-                log_temp.append(Status)
-                
-
-                # Status fail case 
-                if (Phase is not "" and IP is not "" and Time is not "" and Category is not "" and Message is not ""):
-                    log_storage.append(log_temp)
-                    Status = "fail"
-                    log_temp = []
-                # Phase IKE_AUTH
-                Phase = "IKE_AUTH"
-                log_temp.append(Phase)
-                log_temp.append(IP)
-                log_temp.append(Time)
-                
-                Category = "Certification"
-                log_temp.append(Category)
-
-                certification = str(str(line[3][2])+str(line[3][3])+str(line[3][4])+str(line[3][5]))
-                Message = certification
-                log_temp.append(Message)
-
-                Status = "Successful"
-                log_temp.append(Status)
-                
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
-                    log_storage.append(log_temp)
-                    Status = "fail"
-                    log_temp = []
-                
-                keyWord = ""
-                auth_result = ""
-                IKE_AUTH_FLAG = True
-                IKE_SA = True
-            
-            if (keyWord == "maximum" and IKE_AUTH_FLAG == True):
-                #print "[IKE_AUTH]IKE Lifetime :",line[3][3]
-                
-                log_temp.append(Phase)
-                log_temp.append(IP)
-                log_temp.append(Time)
-                
-                Category = "Lifetime"
-                log_temp.append(Category)
-
-                lifetime = str(line[3][3])[:-1]
-                Message = lifetime
-                log_temp.append(Message)
-
-                Status = "Successful"
-                log_temp.append(Status)
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
-                    log_storage.append(log_temp)
-                    Status = "fail"
-                    log_temp = []
-            
-            if (keyWord == "CHILD_SA" and IKE_AUTH_FLAG == True): 
-                #print "[IKE_AUTH]SPI : ",line[3][5]+"n",line[3][6]+"ut"
-                spi = line[3][5]+"n",line[3][6]+"ut" 
-                
-                log_temp.append(Phase)
-                log_temp.append(IP)
-                log_temp.append(Time)
-                
-                Category = "SPI"
-                log_temp.append(Category)
-
-                Message = str(spi)
-                log_temp.append(Message)
-
-                Status = "Successful"
-                log_temp.append(Status)
-                
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
-                    
-                    log_storage.append(log_temp)
-                    Status = "fail"
-                    log_temp = []
-                
-                Phase = "IKE_SA"
-                log_temp.append(Phase)
-                log_temp.append(IP)
-                log_temp.append(Time)
-                
-                Category = "Validation"
-                log_temp.append(Category)
-
-                Message = "Valid"
-                log_temp.append(Message)
-
-                Status = "Successful"
-                log_temp.append(Status)
-                
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
-                    
-                    log_storage.append(log_temp)
-                    Status = "fail"
-                    log_temp = []
-
-
-                # print "[IKE_AUTH]Result : ",IKE_AUTH_FLAG
-                # print "[IKE_SA]Reuslt : VALID"
-                
-                Status ="Successful"
-                if(len(log_list) == 6):
-                    log_list.insert(0,IP)
-                #print(len(log_list))
-                #log_storage.append(log_list)
-                log_temp = log_list
-                log_list = []
-                # print "======================="
-    
-            if (keyWord_two == "deleting IKE_SA" and IKE_SA == True):
-                # print "<< [IKE_SA]Result : DELETED >>"
-                keyChange = False
-                IKE_SA = False
-                log_temp = log_temp[:-1]
-                
-                Phase = "IKE_SA"
-                log_temp.append(Phase)
-                log_temp.append(IP)
-                log_temp.append(Time)
-                
-                Category = "Validation"
-                log_temp.append(Category)
-
-                Message = "Invalid"
-                log_temp.append(Message)
-
-                Status = "Deleted"
-                log_temp.append(Status)
-                
-                if (Phase is not "" and IP is not "" and Time is not "" and 
-        Category is not "" and Message is not ""):
-                    
-                    log_storage.append(log_temp)
-                    Status = "fail"
-                    log_temp = []
-            
-        except:
-            pass
+        # Get the whole Sentence 
+        cmpSentence = str(line[3][0]) +" "+\
+                      str(line[3][1]) +" "+\
+                      str(line[3][2])
         
-    #if (IKE_INIT_FLAG == False):
-        #print "[IKE_INIT]Result : ",IKE_INIT_FLAG
-    #if (IKE_AUTH_FLAG == False):
-        #print "[IKE_AUTH]Result : ",IKE_AUTH_FLAG
-        #print "[IKE_SA]Reuslt : INVALID"
-    #print log_storage 
-    return log_storage
+        result = line[3][3]
 
+        # Check IKE_INIT and trigger
+        if (cmpSentence == "parsed IKE_AUTH request" and result == '1'):
+            IKE_INIT_FLAG = True
+            Phase = "IKE_INIT"
+           
+        # Get the keyWord IKE_AUTH (keyWord : authentication)
+        keyWord = line[3][0]
+        keyWord_two = str(line[3][0]) + " " + str(line[3][1])
 
-"""
-The main process
-"""
+        #print ("keyWord_two",keyWord_two,keyWord) 
+        # Get result of authentication
+        if (keyWord == "authentication"):
+            auth_result = line[3][8]
 
-def main():
+            
+        # For the IKE_INIT AND IKE_AUTH
+        sentence_length = len(line[3])
+        if (keyWord == "authentication" and auth_result == "successful" and sentence_length == 9):
+            # Phase IKE_INIT
+            Category = "Encryption"
+            Message = str(line[3][7])
+            Status = "Successful"
+            
+            # Status fail case 
+            if (null_checker(Phase, IP, Time, Category, Message, Status)):
+                print("checker : ",Phase, IP, Time, Category, Message, Status)
+                Status = "fail"
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                item_init()
+            else:
+                form_maker(Phase,IP,Time,Category,Message,Status)
+
+            # Phase IKE_AUTH
+            Phase = "IKE_AUTH"
+            Category = "Certification"
+            certification = str(str(line[3][2])+\
+                                str(line[3][3])+\
+                                str(line[3][4])+\
+                                str(line[3][5]))
+            Message = certification
+            Status = "Successful"
+
+            # Fail case
+            if (null_checker(Phase, IP, Time, Category, Message, Status)):
+                log_storage.append(log_temp)
+                Status = "fail"
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                item_init()
+            else:
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                
+            keyWord = ""
+            auth_result = ""
+            IKE_AUTH_FLAG = True
+            IKE_SA = True
+            
+        if (keyWord == "maximum" and IKE_AUTH_FLAG == True):
+            #print "[IKE_AUTH]IKE Lifetime :",line[3][3]
+                
+            Category = "Lifetime"
+            lifetime = str(line[3][3])[:-1]
+            Message = lifetime
+            Status = "Successful"
+                
+            if (null_checker(Phase, IP, Time, Category, Message, Status)):
+                Status = "fail"
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                item_init(Phase,IP,Time,Category,Message,Status)
+            else:
+                form_maker(Phase,IP,Time,Category,Message,Status)
+        if (keyWord == "CHILD_SA" and IKE_AUTH_FLAG == True): 
+            
+            spi = line[3][5]+"n",line[3][6]+"ut" 
+            Category = "SPI"
+            Message = str(spi)
+            Status = "Successful"
+               
+            if (null_checker(Phase, IP, Time, Category, Message, Status)):
+                Status = "fail"
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                item_init()
+            else:
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                    
+            Phase = "IKE_SA"
+            Category = "Validation"
+            Message = "Valid"
+            Status = "Successful"
+                
+            if (null_checker(Phase, IP, Time, Category, Message, Status)):
+                Status = "fail"
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                item_init()
+            else:
+                form_maker(Phase,IP,Time,Category,Message,Status)                  
+
+            Status ="Successful"
     
+        if (keyWord_two == "deleting IKE_SA" and IKE_SA == True):
+            # print "<< [IKE_SA]Result : DELETED >>"
+            keyChange = False
+            IKE_SA = False
+            log_temp = log_temp[:-1]
+                
+            Phase = "IKE_SA"
+            Category = "Validation"
+            Message = "Invalid"
+            Status = "Deleted"
+            if (null_checker(Phase, IP, Time, Category, Message, Status)):
+                Status = "fail"
+                form_maker(Phase,IP,Time,Category,Message,Status)
+                item_init()
+            else:
+                form_maker(Phase,IP,Time,Category,Message,Status)
+
+    except:
+        pass
+
+
+
+
+"""
+
+"""
+def form_maker(Phase, IP, Time, Category, Message,Status):
+    
+    write_list = []
+    write_list.append(Phase)
+    write_list.append(IP)
+    write_list.append(Time)
+    write_list.append(Category)
+    write_list.append(Message)
+    write_list.append(Status)
+
+    write_file(write_list)
+  
+
+"""
+Follow the syslog and analyze it
+"""
+def follow(file_data):
+    file_data.seek(0,2)
+    while True:
+        line = file_data.readline()
+        if not line:
+            time.sleep(0.1)
+            continue
+        yield line
+
+
+"""
+Get a line from syslog throw meaningless log
+Make a log to form as list
+"""
+def preprocess_line(line):
+    global hostname
+
+    temp_log = []
+
+    # Remove space
+    line_data = line.strip().split(hostname)
+ 
+    # Time creater
+    if(line_data[0] is not 'null'):
+        time = []
+        date = line_data[0].split(' ')
+
+        for item in date:
+            if (item is not ''):
+                time.append(item)
+
+        time = time[0] + ' ' + time[1] + ' ' + time[2]
+        datetime_object = datetime.strptime('2017 '+time, '%Y %b %d %H:%M:%S')
+    
+        temp_log.append(str(datetime_object))   
+ 
+    # Content classifier
+    if(line_data[1] is not ''):
+        
+        content = str(line_data[1]).split(' ')
+        process = content[1]
+        
+        temp_log.append(process)
+        if process == "charon:" or process == "charon-custom:":
+            category = content[2]
+            temp_log.append(category)
+
+            message = content[3:]
+            temp_log.append(message)
+        # Do not Analyze kernel log
+        else:
+            #print("process : ",process)
+            return ''
+    return temp_log
+           
+
+"""
+Read syslog file to analyze because 
+all the log from strong swan stored 
+to syslog
+"""
+def read_file():
+    file_data = open("/var/log/syslog","r")
+    
+    return file_data
+
+
+"""
+The main function of analyzer
+"""
+def main():
+
+    print("Start to Analyze log from Strong Swan!")
     global walker
-    global squence
-    global update 
 
-    while(True):
-        # File update check
-        if update: 
-            # Read the data
-            data = read_data()
+    walker = int(time.time())
 
-            # Get client's list
-            client_list = getClient_data(data)
+    # Read the log and file pointer
+    file_data = read_file()
 
-            log_result = analyzer(data)
-            #print("log_result : ",log_result)
-            if (squence):
-                write_file(log_result)
-            #print ("walker : ", walker)
+    # Follow the syslog
+    loglines = follow(file_data)
+    for line in loglines:
+        # Check only StrongSwan's log
+        processed_line = preprocess_line(line)
+        # Analyze data
+        log_analyzer(processed_line)
 
-        update = file_update_checker() 
+    print("Analyzing is over")
+
 if __name__ == "__main__":
     main()

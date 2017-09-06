@@ -1,0 +1,25 @@
+Phase;;IP;;Time;;Category;;Message;;Status
+IKE_INIT;;192.168.1.212;;2017-09-06/11:16:28;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:16:28;;Certification;;'C=NL,O=ExampleCompany,CN=john@example.org';;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:16:28;;Lifetime;;10478;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:16:28;;SPI;;('c6e62f14_in', '5eb45324_out');;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:16:28;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:18:06;;Validation;;Invalid;;Deleted
+IKE_INIT;;192.168.1.212;;2017-09-06/11:18:30;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:18:30;;Certification;;'C=NL,O=ExampleCompany,CN=john@example.org';;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:18:30;;Lifetime;;10339;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:18:30;;SPI;;('cecd292c_in', '95160e0a_out');;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:18:30;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:18:50;;Validation;;Invalid;;Deleted
+IKE_INIT;;192.168.1.212;;2017-09-06/11:18:57;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:18:57;;Certification;;'C=NL,O=ExampleCompany,CN=john@example.org';;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:18:57;;Lifetime;;10589;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:18:57;;SPI;;('c0249b8c_in', 'bfdc1598_out');;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:18:57;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:19:07;;Validation;;Invalid;;Deleted
+IKE_INIT;;192.168.1.212;;2017-09-06/11:19:30;;Encryption;;RSA_EMSA_PKCS1_SHA256;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:19:30;;Certification;;'C=NL,O=ExampleCompany,CN=john@example.org';;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:19:30;;Lifetime;;10430;;Successful
+IKE_AUTH;;192.168.1.212;;2017-09-06/11:19:30;;SPI;;('ca7bc4a1_in', 'f6815b0a_out');;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:19:30;;Validation;;Valid;;Successful
+IKE_SA;;192.168.1.212;;2017-09-06/11:19:39;;Validation;;Invalid;;Deleted
