@@ -1,0 +1,7 @@
+import os
+
+clear = lambda: os.system('clear')
+
+print("?")
+
+clear()

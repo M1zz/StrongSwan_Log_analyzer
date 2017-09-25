@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import os
 import socket
+clear = lambda: os.system('clear')
 
 # global valiable
 walker = 0
@@ -29,7 +30,7 @@ IKE_SA = False
 saChange = False
 File_INIT = True
 valid_dic = {}
-
+client_dic = {}
 hostname = socket.gethostname()
 
 squence = True
@@ -56,7 +57,7 @@ def write_file(log_storage):
     #print("start file write:",filename)
     count = 0
     length = len(log_storage)
-    print ("line :",log_storage)
+    #print ("line :",log_storage)
     for item in log_storage:
         #print(str(word))
         f.write(str(item))
@@ -143,6 +144,7 @@ def log_analyzer(line):
     global IKE_SA
     global saChange
     global valid_dic
+    global client_dic
 
     global log_temp
 
@@ -280,6 +282,17 @@ def log_analyzer(line):
     
             phase_checker()    
             
+
+            #### for the monitoring
+            temp_client = []
+            temp_client.append(spi)
+            temp_client.append(IP)
+            temp_client.append(Time)
+            temp_client.append(Message)
+            #print (temp_client)
+            client_dic[IP] = temp_client
+            print_list()
+
         if (keyWord_two == "deleted SAD"):
             spi = line[3][5]
 
@@ -307,13 +320,20 @@ def log_analyzer(line):
             Status = "Deleted"
             #print("KEY : ",IKE_SA)
             phase_checker()
-
-
+            #print(client_dic,IP)
+            del client_dic[IP]
+            print_list()
     except:
         pass
 
 
-
+def print_list():
+    global clear
+    global client_dic
+    clear()
+    print("Spi\tIP\tConnectedTime\tCertValidation")
+    for item in client_dic:
+        print (client_dic[item])
 
 
 def form_maker(Phase, IP, Time, Category, Message,Status):
@@ -409,9 +429,10 @@ def main():
     """
     The main function of analyzer
     """
-
+    
     print("Start to Analyze log from Strong Swan!")
     global walker
+    global clear    
 
     walker = int(time.time())
 
@@ -426,6 +447,8 @@ def main():
         # Analyze data
         #print("read : ",processed_line)
         log_analyzer(processed_line)
+ 
+        
 
     print("Analyzing is over")
 

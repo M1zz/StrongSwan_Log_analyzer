@@ -14,7 +14,11 @@ Status = "Fail"
 update = True
 fp = ''
 
-path  = "/home/hyunholee/NSR/log/"
+
+config = configparser.ConfigParser()
+config.read('system.ini')
+
+path = str(config.get("section",'home_path'))
 file_stat = os.stat(path+'syslog').st_ino
 
 log_temp = []

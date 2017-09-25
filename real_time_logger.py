@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import os
 import socket
+import configparser
 
 # global valiable
 walker = 0
@@ -15,8 +16,11 @@ Status = "Fail"
 update = True
 fp = ''
 
-path  = "/var/log/"
-file_stat = os.stat(path+'syslog').st_ino
+config = configparser.ConfigParser()
+config.read('system.ini')
+
+log_path = config.get("section",'log_path')
+result_path = config.get("section",'result_path')
 
 log_temp = []
 log_list = []
@@ -31,7 +35,6 @@ File_INIT = True
 valid_dic = {}
 
 hostname = socket.gethostname()
-
 squence = True
 
 log_temp = []
@@ -42,29 +45,31 @@ def write_file(log_storage):
         The Identifier is [;;]
     """
 
+    if not os.path.exists(result_path):
+            os.makedirs(result_path)
+
     global walker
     filename = str(walker)[:-2]+".csv"
 
     try: 
-        f = open('./result/'+filename, 'r')
+        f = open(result_path+filename, 'r')
     except IOError:
-        f = open('./result/'+filename, 'w')
+        f = open(result_path+filename, 'w')
         header = "Phase;;IP;;Time;;Category;;Message;;Status\n"
         f.write(header)
         f.close()
-    f = open('./result/'+filename, 'a')
-    #print("start file write:",filename)
+    f = open(result_path+filename, 'a')
+
     count = 0
     length = len(log_storage)
     print ("line :",log_storage)
+
     for item in log_storage:
-        #print(str(word))
         f.write(str(item))
         if (count != length-1):
             f.write(";;")
         count += 1
     f.write("\n")
-    #print("File Write Done!","filename : ",filename)
     f.close()
 
 
@@ -126,8 +131,6 @@ def log_analyzer(line):
     Analyze and make it Phase;;IP;;Time;;Category;;Message;;Status
     """
 
-    global walker
-    
     global Phase
     global IP
     global Time
@@ -374,7 +377,6 @@ def preprocess_line(line):
         temp_log.append(str(datetime_object))   
  
     # Content classifier
-    #print("line : ",line_data,len(line_data))
     if(line_data[1] is not None):
         
         content = str(line_data[1]).split(' ')
@@ -401,7 +403,7 @@ def read_file():
     to syslog
     """
 
-    file_data = open("/var/log/syslog","r")
+    file_data = open(log_path+"syslog","r")
     
     return file_data
 
@@ -410,11 +412,10 @@ def main():
     The main function of analyzer
     """
 
-    print("Start to Analyze log from Strong Swan!")
     global walker
 
     walker = int(time.time())
-
+    print("Start to Analyze log from Strong Swan!")
     # Read the log and file pointer
     file_data = read_file()
 
