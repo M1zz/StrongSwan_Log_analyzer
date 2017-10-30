@@ -1,0 +1,1043 @@
+Sep  6 15:08:00 ubuntu rsyslogd: [origin software="rsyslogd" swVersion="8.16.0" x-pid="547" x-info="http://www.rsyslog.com"] start
+Sep  6 15:08:00 ubuntu rsyslogd-2222: command 'KLogPermitNonKernelFacility' is currently not permitted - did you already set it via a RainerScript command (v6+ config)? [v8.16.0 try http://www.rsyslog.com/e/2222 ]
+Sep  6 15:08:00 ubuntu rsyslogd: rsyslogd's groupid changed to 108
+Sep  6 15:08:00 ubuntu rsyslogd: rsyslogd's userid changed to 104
+Sep  6 15:08:00 ubuntu rsyslogd-2039: Could not open output pipe '/dev/xconsole':: No such file or directory [v8.16.0 try http://www.rsyslog.com/e/2039 ]
+Sep  6 15:08:00 ubuntu rsyslogd-2007: action 'action 10' suspended, next retry is Wed Sep  6 15:08:30 2017 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Initializing cgroup subsys cpuset
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Initializing cgroup subsys cpu
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Initializing cgroup subsys cpuacct
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Linux version 4.4.0-93-generic (buildd@lgw01-03) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017 (Ubuntu 4.4.0-93.116-generic 4.4.79)
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Command line: BOOT_IMAGE=/vmlinuz-4.4.0-93-generic root=/dev/mapper/stonrgSwan--vg-root ro quiet splash vt.handoff=7
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] KERNEL supported cpus:
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   Intel GenuineIntel
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   AMD AuthenticAMD
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   Centaur CentaurHauls
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/fpu: Using 'eager' FPU context switches.
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] e820: BIOS-provided physical RAM map:
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003ffdffff] usable
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x000000003ffe0000-0x000000003fffffff] reserved
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] NX (Execute Disable) protection: active
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] SMBIOS 2.8 present.
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS Ubuntu-1.8.2-1ubuntu1 04/01/2014
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Hypervisor detected: KVM
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] e820: last_pfn = 0x3ffe0 max_arch_pfn = 0x400000000
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] MTRR default type: write-back
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] MTRR fixed ranges enabled:
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   00000-9FFFF write-back
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   A0000-BFFFF uncachable
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   C0000-FFFFF write-protect
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] MTRR variable ranges enabled:
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   0 base 0080000000 mask FF80000000 uncachable
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   1 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   2 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   3 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   4 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   5 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   6 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   7 disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- WT  
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] found SMP MP-table at [mem 0x000f6610-0x000f661f] mapped at [ffff8800000f6610]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Scanning 1 areas for low memory corruption
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BRK [0x0220d000, 0x0220dfff] PGTABLE
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BRK [0x0220e000, 0x0220efff] PGTABLE
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BRK [0x0220f000, 0x0220ffff] PGTABLE
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] BRK [0x02210000, 0x02210fff] PGTABLE
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] RAMDISK: [mem 0x33c98000-0x35e43fff]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: Early table checksum verification disabled
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: RSDP 0x00000000000F6430 000014 (v00 BOCHS )
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: RSDT 0x000000003FFE1681 000030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: FACP 0x000000003FFE0C14 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: DSDT 0x000000003FFE0040 000BD4 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: FACS 0x000000003FFE0000 000040
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: SSDT 0x000000003FFE0C88 000981 (v01 BOCHS  BXPCSSDT 00000001 BXPC 00000001)
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: APIC 0x000000003FFE1609 000078 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] ACPI: Local APIC address 0xfee00000
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] No NUMA configuration found
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000003ffdffff]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] NODE_DATA(0) allocated [mem 0x3ffdb000-0x3ffdffff]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] kvm-clock: cpu 0, msr 0:3ffd3001, primary cpu clock
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] kvm-clock: using sched offset of 611169184858 cycles
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Zone ranges:
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   DMA32    [mem 0x0000000001000000-0x000000003ffdffff]
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   Normal   empty
+Sep  6 15:08:00 ubuntu kernel: [    0.000000]   Device   empty
+Sep  6 15:08:00 ubuntu kernel: [    0.000000] Movable zone start for each node
+Sep  6 15:08:01 ubuntu loadkeys[216]: Loading /etc/console-setup/cached.kmap.gz
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Flush Journal to Persistent Storage...
+Sep  6 15:08:01 ubuntu systemd[1]: Started Flush Journal to Persistent Storage.
+Sep  6 15:08:01 ubuntu systemd[1]: Started udev Coldplug all Devices.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Show Plymouth Boot Screen...
+Sep  6 15:08:01 ubuntu systemd[1]: Started Show Plymouth Boot Screen.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Paths.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+Sep  6 15:08:01 ubuntu systemd[1]: Received SIGRTMIN+20 from PID 316 (plymouthd).
+Sep  6 15:08:01 ubuntu systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Sep  6 15:08:01 ubuntu systemd[1]: Found device RTL-8100/8101L/8139 PCI Fast Ethernet Adapter (QEMU Virtual Machine).
+Sep  6 15:08:01 ubuntu haveged[286]: haveged: ver: 1.9.1; arch: x86; vend: GenuineIntel; build: (gcc 5.2.1 ITV); collect: 128K
+Sep  6 15:08:01 ubuntu haveged[286]: haveged: cpu: (L4 VC); data: 32K (L2 L4 V); inst: 32K (L2 L4 V); idx: 19/40; sz: 31614/64718
+Sep  6 15:08:01 ubuntu haveged[286]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 7.99484
+Sep  6 15:08:01 ubuntu haveged[286]: haveged: fills: 0, generated: 0
+Sep  6 15:08:01 ubuntu systemd[1]: Found device QEMU_HARDDISK 1.
+Sep  6 15:08:01 ubuntu systemd[1]: Found device /dev/mapper/stonrgSwan--vg-swap_1.
+Sep  6 15:08:01 ubuntu systemd[1]: Activating swap /dev/mapper/stonrgSwan--vg-swap_1...
+Sep  6 15:08:01 ubuntu systemd[1]: Activated swap /dev/mapper/stonrgSwan--vg-swap_1.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Swap.
+Sep  6 15:08:01 ubuntu lvm[230]:   2 logical volume(s) in volume group "stonrgSwan-vg" monitored
+Sep  6 15:08:01 ubuntu systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Local File Systems (Pre).
+Sep  6 15:08:01 ubuntu systemd[1]: Starting File System Check on /dev/disk/by-uuid/72cdecf3-694e-4210-8915-47bf69e62496...
+Sep  6 15:08:01 ubuntu systemd[1]: Started File System Check Daemon to report status.
+Sep  6 15:08:01 ubuntu systemd-fsck[414]: /dev/sda1: clean, 300/124928 files, 71844/498688 blocks
+Sep  6 15:08:01 ubuntu systemd[1]: Started File System Check on /dev/disk/by-uuid/72cdecf3-694e-4210-8915-47bf69e62496.
+Sep  6 15:08:01 ubuntu systemd[1]: Mounting /boot...
+Sep  6 15:08:01 ubuntu systemd[1]: Mounted /boot.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Local File Systems.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Create Volatile Files and Directories...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting LSB: AppArmor initialization...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Set console font and keymap...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Sep  6 15:08:01 ubuntu systemd-tmpfiles[427]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Create Volatile Files and Directories.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Sep  6 15:08:01 ubuntu apparmor[428]:  * Starting AppArmor profiles
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Network Time Synchronization...
+Sep  6 15:08:01 ubuntu systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Network Time Synchronization.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target System Time Synchronized.
+Sep  6 15:08:01 ubuntu apparmor[428]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+Sep  6 15:08:01 ubuntu apparmor[428]:    ...done.
+Sep  6 15:08:01 ubuntu systemd[1]: Started LSB: AppArmor initialization.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Raise network interfaces...
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target System Initialization.
+Sep  6 15:08:01 ubuntu systemd[1]: Listening on D-Bus System Message Bus Socket.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Daily Cleanup of Temporary Directories.
+Sep  6 15:08:01 ubuntu systemd[1]: Listening on UUID daemon activation socket.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Sockets.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Basic System.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Regular background program processing daemon.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting LSB: daemon to balance interrupts for SMP systems...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Permit User Sessions...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting System Logging Service...
+Sep  6 15:08:01 ubuntu cron[544]: (CRON) INFO (pidfile fd = 3)
+Sep  6 15:08:01 ubuntu cron[544]: (CRON) INFO (Running @reboot jobs)
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Login Service...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Accounts Service...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting LSB: Record successful boot for GRUB...
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Early memory node ranges
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   node   0: [mem 0x0000000000100000-0x000000003ffdffff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000003ffdffff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] On node 0 totalpages: 262014
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   DMA zone: 64 pages used for memmap
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   DMA zone: 21 pages reserved
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   DMA32 zone: 4032 pages used for memmap
+Sep  6 15:08:01 ubuntu kernel: [    0.000000]   DMA32 zone: 258016 pages, LIFO batch:31
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: PM-Timer IO Port: 0x608
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: Local APIC address 0xfee00000
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: IRQ0 used by override.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: IRQ5 used by override.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: IRQ9 used by override.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: IRQ10 used by override.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] ACPI: IRQ11 used by override.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Using ACPI (MADT) for SMP configuration information
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] e820: [mem 0x40000000-0xfeffbfff] available for PCI devices
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Booting paravirtualized kernel on KVM
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] setup_percpu: NR_CPUS:512 nr_cpumask_bits:512 nr_cpu_ids:1 nr_node_ids:1
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] PERCPU: Embedded 34 pages/cpu @ffff88003fc00000 s98328 r8192 d32744 u2097152
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] pcpu-alloc: s98328 r8192 d32744 u2097152 alloc=1*2097152
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] pcpu-alloc: [0] 0 
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] KVM setup async PF for cpu 0
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] kvm-stealtime: cpu 0, msr 3fc0d9c0
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 257897
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Policy zone: DMA32
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Kernel command line: BOOT_IMAGE=/vmlinuz-4.4.0-93-generic root=/dev/mapper/stonrgSwan--vg-root ro quiet splash vt.handoff=7
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Memory: 978160K/1048056K available (8479K kernel code, 1294K rwdata, 3984K rodata, 1492K init, 1316K bss, 69896K reserved, 0K cma-reserved)
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Hierarchical RCU implementation.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=1.
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] NR_IRQS:33024 nr_irqs:256 16
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] vt handoff: transparent VT on vt#7
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] Console: colour VGA+ 80x25
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] console [tty0] enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.000000] tsc: Detected 3392.294 MHz processor
+Sep  6 15:08:01 ubuntu kernel: [    0.011029] Calibrating delay loop (skipped) preset value.. 6784.58 BogoMIPS (lpj=13569176)
+Sep  6 15:08:01 ubuntu kernel: [    0.011031] pid_max: default: 32768 minimum: 301
+Sep  6 15:08:01 ubuntu kernel: [    0.011034] ACPI: Core revision 20150930
+Sep  6 15:08:01 ubuntu kernel: [    0.011765] ACPI: 2 ACPI AML tables successfully acquired and loaded
+Sep  6 15:08:01 ubuntu kernel: [    0.011781] Security Framework initialized
+Sep  6 15:08:01 ubuntu kernel: [    0.011782] Yama: becoming mindful.
+Sep  6 15:08:01 ubuntu kernel: [    0.011796] AppArmor: AppArmor initialized
+Sep  6 15:08:01 ubuntu kernel: [    0.011854] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.012219] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.012397] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.012399] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.012562] Initializing cgroup subsys io
+Sep  6 15:08:01 ubuntu kernel: [    0.012564] Initializing cgroup subsys memory
+Sep  6 15:08:01 ubuntu kernel: [    0.012572] Initializing cgroup subsys devices
+Sep  6 15:08:01 ubuntu kernel: [    0.012574] Initializing cgroup subsys freezer
+Sep  6 15:08:01 ubuntu kernel: [    0.012576] Initializing cgroup subsys net_cls
+Sep  6 15:08:01 ubuntu kernel: [    0.012577] Initializing cgroup subsys perf_event
+Sep  6 15:08:01 ubuntu kernel: [    0.012578] Initializing cgroup subsys net_prio
+Sep  6 15:08:01 ubuntu kernel: [    0.012588] Initializing cgroup subsys hugetlb
+Sep  6 15:08:01 ubuntu kernel: [    0.012589] Initializing cgroup subsys pids
+Sep  6 15:08:01 ubuntu kernel: [    0.012898] mce: CPU supports 10 MCE banks
+Sep  6 15:08:01 ubuntu kernel: [    0.012933] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Sep  6 15:08:01 ubuntu kernel: [    0.012934] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Sep  6 15:08:01 ubuntu kernel: [    0.030311] Freeing SMP alternatives memory: 32K (ffffffff820ba000 - ffffffff820c2000)
+Sep  6 15:08:01 ubuntu kernel: [    0.035078] ftrace: allocating 32136 entries in 126 pages
+Sep  6 15:08:01 ubuntu kernel: [    0.062678] smpboot: APIC(0) Converting physical 0 to logical package 0
+Sep  6 15:08:01 ubuntu kernel: [    0.062681] smpboot: Max logical packages: 1
+Sep  6 15:08:01 ubuntu kernel: [    0.062806] x2apic enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.062974] Switched APIC routing to physical x2apic.
+Sep  6 15:08:01 ubuntu kernel: [    0.063642] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Sep  6 15:08:01 ubuntu kernel: [    0.063666] TSC deadline timer enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.063669] smpboot: CPU0: Intel Xeon E3-12xx v2 (Ivy Bridge) (family: 0x6, model: 0x3a, stepping: 0x9)
+Sep  6 15:08:01 ubuntu kernel: [    0.063681] Performance Events: unsupported p6 CPU model 58 no PMU driver, software events only.
+Sep  6 15:08:01 ubuntu kernel: [    0.064235] x86: Booted up 1 node, 1 CPUs
+Sep  6 15:08:01 ubuntu kernel: [    0.064236] smpboot: Total of 1 processors activated (6784.58 BogoMIPS)
+Sep  6 15:08:01 ubuntu kernel: [    0.064442] devtmpfs: initialized
+Sep  6 15:08:01 ubuntu kernel: [    0.065810] evm: security.selinux
+Sep  6 15:08:01 ubuntu kernel: [    0.065811] evm: security.SMACK64
+Sep  6 15:08:01 ubuntu kernel: [    0.065812] evm: security.SMACK64EXEC
+Sep  6 15:08:01 ubuntu kernel: [    0.065812] evm: security.SMACK64TRANSMUTE
+Sep  6 15:08:01 ubuntu kernel: [    0.065813] evm: security.SMACK64MMAP
+Sep  6 15:08:01 ubuntu kernel: [    0.065813] evm: security.ima
+Sep  6 15:08:01 ubuntu kernel: [    0.065814] evm: security.capability
+Sep  6 15:08:01 ubuntu kernel: [    0.065897] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Sep  6 15:08:01 ubuntu kernel: [    0.065903] futex hash table entries: 256 (order: 2, 16384 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.065956] pinctrl core: initialized pinctrl subsystem
+Sep  6 15:08:01 ubuntu kernel: [    0.066071] RTC time:  6:07:59, date: 09/06/17
+Sep  6 15:08:01 ubuntu kernel: [    0.066145] NET: Registered protocol family 16
+Sep  6 15:08:01 ubuntu kernel: [    0.066252] cpuidle: using governor ladder
+Sep  6 15:08:01 ubuntu kernel: [    0.066254] cpuidle: using governor menu
+Sep  6 15:08:01 ubuntu kernel: [    0.066255] PCCT header not found.
+Sep  6 15:08:01 ubuntu kernel: [    0.066305] ACPI: bus type PCI registered
+Sep  6 15:08:01 ubuntu kernel: [    0.066307] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Sep  6 15:08:01 ubuntu kernel: [    0.066386] PCI: Using configuration type 1 for base access
+Sep  6 15:08:01 ubuntu kernel: [    0.067234] ACPI: Added _OSI(Module Device)
+Sep  6 15:08:01 ubuntu kernel: [    0.067235] ACPI: Added _OSI(Processor Device)
+Sep  6 15:08:01 ubuntu kernel: [    0.067236] ACPI: Added _OSI(3.0 _SCP Extensions)
+Sep  6 15:08:01 ubuntu kernel: [    0.067236] ACPI: Added _OSI(Processor Aggregator Device)
+Sep  6 15:08:01 ubuntu kernel: [    0.067879] ACPI: Interpreter enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.067886] ACPI: (supports S0 S5)
+Sep  6 15:08:01 ubuntu kernel: [    0.067887] ACPI: Using IOAPIC for interrupt routing
+Sep  6 15:08:01 ubuntu kernel: [    0.067894] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Sep  6 15:08:01 ubuntu kernel: [    0.069395] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Sep  6 15:08:01 ubuntu kernel: [    0.069398] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+Sep  6 15:08:01 ubuntu kernel: [    0.069401] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+Sep  6 15:08:01 ubuntu kernel: [    0.069405] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Sep  6 15:08:01 ubuntu kernel: [    0.069578] acpiphp: Slot [2] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069594] acpiphp: Slot [3] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069616] acpiphp: Slot [5] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069631] acpiphp: Slot [6] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069644] acpiphp: Slot [7] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069657] acpiphp: Slot [8] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069669] acpiphp: Slot [9] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069681] acpiphp: Slot [10] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069694] acpiphp: Slot [11] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069706] acpiphp: Slot [12] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069721] acpiphp: Slot [13] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069734] acpiphp: Slot [14] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069746] acpiphp: Slot [15] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069759] acpiphp: Slot [16] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069771] acpiphp: Slot [17] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069783] acpiphp: Slot [18] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069795] acpiphp: Slot [19] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069816] acpiphp: Slot [20] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069841] acpiphp: Slot [21] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069865] acpiphp: Slot [22] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069882] acpiphp: Slot [23] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069895] acpiphp: Slot [24] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069907] acpiphp: Slot [25] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069924] acpiphp: Slot [26] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069936] acpiphp: Slot [27] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069949] acpiphp: Slot [28] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069961] acpiphp: Slot [29] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069974] acpiphp: Slot [30] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069986] acpiphp: Slot [31] registered
+Sep  6 15:08:01 ubuntu kernel: [    0.069995] PCI host bridge to bus 0000:00
+Sep  6 15:08:01 ubuntu kernel: [    0.069997] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Sep  6 15:08:01 ubuntu kernel: [    0.069998] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Sep  6 15:08:01 ubuntu kernel: [    0.069999] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Sep  6 15:08:01 ubuntu kernel: [    0.070000] pci_bus 0000:00: root bus resource [mem 0x40000000-0xfebfffff window]
+Sep  6 15:08:01 ubuntu kernel: [    0.070001] pci_bus 0000:00: root bus resource [bus 00-ff]
+Sep  6 15:08:01 ubuntu kernel: [    0.070027] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Sep  6 15:08:01 ubuntu kernel: [    0.070313] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Sep  6 15:08:01 ubuntu kernel: [    0.070688] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+Sep  6 15:08:01 ubuntu kernel: [    0.073436] pci 0000:00:01.1: reg 0x20: [io  0xc180-0xc18f]
+Sep  6 15:08:01 ubuntu kernel: [    0.074578] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Sep  6 15:08:01 ubuntu kernel: [    0.074579] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Sep  6 15:08:01 ubuntu kernel: [    0.074580] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Sep  6 15:08:01 ubuntu kernel: [    0.074581] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Sep  6 15:08:01 ubuntu kernel: [    0.074750] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+Sep  6 15:08:01 ubuntu kernel: [    0.075053] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+Sep  6 15:08:01 ubuntu kernel: [    0.075067] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+Sep  6 15:08:01 ubuntu kernel: [    0.075223] pci 0000:00:02.0: [10ec:8139] type 00 class 0x020000
+Sep  6 15:08:01 ubuntu kernel: [    0.076182] pci 0000:00:02.0: reg 0x10: [io  0xc000-0xc0ff]
+Sep  6 15:08:01 ubuntu kernel: [    0.077091] pci 0000:00:02.0: reg 0x14: [mem 0xfebc0000-0xfebc00ff]
+Sep  6 15:08:01 ubuntu kernel: [    0.083535] pci 0000:00:02.0: reg 0x30: [mem 0xfeb80000-0xfebbffff pref]
+Sep  6 15:08:01 ubuntu kernel: [    0.083706] pci 0000:00:03.0: [1af4:1002] type 00 class 0x00ff00
+Sep  6 15:08:01 ubuntu kernel: [    0.084338] pci 0000:00:03.0: reg 0x10: [io  0xc100-0xc11f]
+Sep  6 15:08:01 ubuntu kernel: [    0.087992] pci 0000:00:04.0: [8086:2934] type 00 class 0x0c0300
+Sep  6 15:08:01 ubuntu kernel: [    0.090766] pci 0000:00:04.0: reg 0x20: [io  0xc120-0xc13f]
+Sep  6 15:08:01 ubuntu kernel: [    0.092050] pci 0000:00:04.1: [8086:2935] type 00 class 0x0c0300
+Sep  6 15:08:01 ubuntu kernel: [    0.096242] pci 0000:00:04.1: reg 0x20: [io  0xc140-0xc15f]
+Sep  6 15:08:01 ubuntu kernel: [    0.097455] pci 0000:00:04.2: [8086:2936] type 00 class 0x0c0300
+Sep  6 15:08:01 ubuntu kernel: [    0.100396] pci 0000:00:04.2: reg 0x20: [io  0xc160-0xc17f]
+Sep  6 15:08:01 ubuntu kernel: [    0.101586] pci 0000:00:04.7: [8086:293a] type 00 class 0x0c0320
+Sep  6 15:08:01 ubuntu kernel: [    0.102143] pci 0000:00:04.7: reg 0x10: [mem 0xfebc1000-0xfebc1fff]
+Sep  6 15:08:01 ubuntu kernel: [    0.106900] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+Sep  6 15:08:01 ubuntu kernel: [    0.106966] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+Sep  6 15:08:01 ubuntu kernel: [    0.107023] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+Sep  6 15:08:01 ubuntu kernel: [    0.107078] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+Sep  6 15:08:01 ubuntu kernel: [    0.107107] ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+Sep  6 15:08:01 ubuntu kernel: [    0.107307] ACPI: Enabled 16 GPEs in block 00 to 0F
+Sep  6 15:08:01 ubuntu kernel: [    0.107417] vgaarb: loaded
+Sep  6 15:08:01 ubuntu kernel: [    0.107595] SCSI subsystem initialized
+Sep  6 15:08:01 ubuntu kernel: [    0.107656] libata version 3.00 loaded.
+Sep  6 15:08:01 ubuntu kernel: [    0.107672] ACPI: bus type USB registered
+Sep  6 15:08:01 ubuntu kernel: [    0.107682] usbcore: registered new interface driver usbfs
+Sep  6 15:08:01 ubuntu kernel: [    0.107690] usbcore: registered new interface driver hub
+Sep  6 15:08:01 ubuntu kernel: [    0.107700] usbcore: registered new device driver usb
+Sep  6 15:08:01 ubuntu kernel: [    0.107802] PCI: Using ACPI for IRQ routing
+Sep  6 15:08:01 ubuntu kernel: [    0.107804] PCI: pci_cache_line_size set to 64 bytes
+Sep  6 15:08:01 ubuntu kernel: [    0.107942] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Sep  6 15:08:01 ubuntu kernel: [    0.107945] e820: reserve RAM buffer [mem 0x3ffe0000-0x3fffffff]
+Sep  6 15:08:01 ubuntu kernel: [    0.108058] NetLabel: Initializing
+Sep  6 15:08:01 ubuntu kernel: [    0.108059] NetLabel:  domain hash size = 128
+Sep  6 15:08:01 ubuntu kernel: [    0.108060] NetLabel:  protocols = UNLABELED CIPSOv4
+Sep  6 15:08:01 ubuntu kernel: [    0.108078] NetLabel:  unlabeled traffic allowed by default
+Sep  6 15:08:01 ubuntu kernel: [    0.108140] amd_nb: Cannot enumerate AMD northbridges
+Sep  6 15:08:01 ubuntu kernel: [    0.108155] clocksource: Switched to clocksource kvm-clock
+Sep  6 15:08:01 ubuntu kernel: [    0.112946] AppArmor: AppArmor Filesystem Enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.113002] pnp: PnP ACPI init
+Sep  6 15:08:01 ubuntu kernel: [    0.113050] pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+Sep  6 15:08:01 ubuntu kernel: [    0.113078] pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+Sep  6 15:08:01 ubuntu kernel: [    0.113102] pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+Sep  6 15:08:01 ubuntu kernel: [    0.113119] pnp 00:03: [dma 2]
+Sep  6 15:08:01 ubuntu kernel: [    0.113128] pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+Sep  6 15:08:01 ubuntu kernel: [    0.113190] pnp 00:04: Plug and Play ACPI device, IDs PNP0501 (active)
+Sep  6 15:08:01 ubuntu kernel: [    0.113336] pnp: PnP ACPI: found 5 devices
+Sep  6 15:08:01 ubuntu kernel: [    0.119112] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Sep  6 15:08:01 ubuntu kernel: [    0.119136] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Sep  6 15:08:01 ubuntu kernel: [    0.119137] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Sep  6 15:08:01 ubuntu kernel: [    0.119138] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Sep  6 15:08:01 ubuntu kernel: [    0.119140] pci_bus 0000:00: resource 7 [mem 0x40000000-0xfebfffff window]
+Sep  6 15:08:01 ubuntu kernel: [    0.119198] NET: Registered protocol family 2
+Sep  6 15:08:01 ubuntu kernel: [    0.119427] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.119540] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.119677] TCP: Hash tables configured (established 8192 bind 8192)
+Sep  6 15:08:01 ubuntu kernel: [    0.119861] UDP hash table entries: 512 (order: 2, 16384 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.119869] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.119913] NET: Registered protocol family 1
+Sep  6 15:08:01 ubuntu kernel: [    0.119922] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Sep  6 15:08:01 ubuntu kernel: [    0.119936] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Sep  6 15:08:01 ubuntu kernel: [    0.119950] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Sep  6 15:08:01 ubuntu kernel: [    0.132898] ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+Sep  6 15:08:01 ubuntu kernel: [    0.161355] ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+Sep  6 15:08:01 ubuntu kernel: [    0.187687] ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 10
+Sep  6 15:08:01 ubuntu kernel: [    0.212836] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 11
+Sep  6 15:08:01 ubuntu kernel: [    0.225511] PCI: CLS 0 bytes, default 64
+Sep  6 15:08:01 ubuntu kernel: [    0.225571] Unpacking initramfs...
+Sep  6 15:08:01 ubuntu kernel: [    0.604145] Freeing initrd memory: 34480K (ffff880033c98000 - ffff880035e44000)
+Sep  6 15:08:01 ubuntu kernel: [    0.604368] Scanning for low memory corruption every 60 seconds
+Sep  6 15:08:01 ubuntu kernel: [    0.604583] audit: initializing netlink subsys (disabled)
+Sep  6 15:08:01 ubuntu kernel: [    0.604602] audit: type=2000 audit(1504678080.224:1): initialized
+Sep  6 15:08:01 ubuntu kernel: [    0.604801] Initialise system trusted keyring
+Sep  6 15:08:01 ubuntu kernel: [    0.604882] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+Sep  6 15:08:01 ubuntu kernel: [    0.605791] zbud: loaded
+Sep  6 15:08:01 ubuntu kernel: [    0.605939] VFS: Disk quotas dquot_6.6.0
+Sep  6 15:08:01 ubuntu kernel: [    0.605962] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Sep  6 15:08:01 ubuntu kernel: [    0.606149] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Sep  6 15:08:01 ubuntu kernel: [    0.606303] fuse init (API version 7.23)
+Sep  6 15:08:01 ubuntu kernel: [    0.606415] Key type big_key registered
+Sep  6 15:08:01 ubuntu kernel: [    0.606428] Allocating IMA MOK and blacklist keyrings.
+Sep  6 15:08:01 ubuntu kernel: [    0.606685] Key type asymmetric registered
+Sep  6 15:08:01 ubuntu kernel: [    0.606687] Asymmetric key parser 'x509' registered
+Sep  6 15:08:01 ubuntu kernel: [    0.606714] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+Sep  6 15:08:01 ubuntu kernel: [    0.606736] io scheduler noop registered
+Sep  6 15:08:01 ubuntu kernel: [    0.606738] io scheduler deadline registered (default)
+Sep  6 15:08:01 ubuntu kernel: [    0.606761] io scheduler cfq registered
+Sep  6 15:08:01 ubuntu kernel: [    0.606823] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+Sep  6 15:08:01 ubuntu kernel: [    0.606827] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+Sep  6 15:08:01 ubuntu kernel: [    0.606847] intel_idle: does not run on family 6 model 58
+Sep  6 15:08:01 ubuntu kernel: [    0.606889] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Sep  6 15:08:01 ubuntu kernel: [    0.606892] ACPI: Power Button [PWRF]
+Sep  6 15:08:01 ubuntu kernel: [    0.606991] GHES: HEST is not enabled!
+Sep  6 15:08:01 ubuntu kernel: [    0.619106] virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+Sep  6 15:08:01 ubuntu kernel: [    0.619546] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.641814] 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Sep  6 15:08:01 ubuntu kernel: [    0.642674] Linux agpgart interface v0.103
+Sep  6 15:08:01 ubuntu kernel: [    0.643575] loop: module loaded
+Sep  6 15:08:01 ubuntu kernel: [    0.643660] ata_piix 0000:00:01.1: version 2.13
+Sep  6 15:08:01 ubuntu kernel: [    0.644117] scsi host0: ata_piix
+Sep  6 15:08:01 ubuntu kernel: [    0.644172] scsi host1: ata_piix
+Sep  6 15:08:01 ubuntu kernel: [    0.644196] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc180 irq 14
+Sep  6 15:08:01 ubuntu kernel: [    0.644197] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc188 irq 15
+Sep  6 15:08:01 ubuntu kernel: [    0.644255] libphy: Fixed MDIO Bus: probed
+Sep  6 15:08:01 ubuntu kernel: [    0.644258] tun: Universal TUN/TAP device driver, 1.6
+Sep  6 15:08:01 ubuntu kernel: [    0.644259] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+Sep  6 15:08:01 ubuntu kernel: [    0.644458] PPP generic driver version 2.4.2
+Sep  6 15:08:01 ubuntu kernel: [    0.644491] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Sep  6 15:08:01 ubuntu kernel: [    0.644494] ehci-pci: EHCI PCI platform driver
+Sep  6 15:08:01 ubuntu kernel: [    0.656993] ehci-pci 0000:00:04.7: EHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.657000] ehci-pci 0000:00:04.7: new USB bus registered, assigned bus number 1
+Sep  6 15:08:01 ubuntu kernel: [    0.657092] ehci-pci 0000:00:04.7: irq 11, io mem 0xfebc1000
+Sep  6 15:08:01 ubuntu kernel: [    0.668180] ehci-pci 0000:00:04.7: USB 2.0 started, EHCI 1.00
+Sep  6 15:08:01 ubuntu kernel: [    0.668210] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Sep  6 15:08:01 ubuntu kernel: [    0.668212] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Sep  6 15:08:01 ubuntu kernel: [    0.668213] usb usb1: Product: EHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.668214] usb usb1: Manufacturer: Linux 4.4.0-93-generic ehci_hcd
+Sep  6 15:08:01 ubuntu kernel: [    0.668215] usb usb1: SerialNumber: 0000:00:04.7
+Sep  6 15:08:01 ubuntu kernel: [    0.668286] hub 1-0:1.0: USB hub found
+Sep  6 15:08:01 ubuntu kernel: [    0.668290] hub 1-0:1.0: 6 ports detected
+Sep  6 15:08:01 ubuntu kernel: [    0.668415] ehci-platform: EHCI generic platform driver
+Sep  6 15:08:01 ubuntu kernel: [    0.668422] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Sep  6 15:08:01 ubuntu kernel: [    0.668425] ohci-pci: OHCI PCI platform driver
+Sep  6 15:08:01 ubuntu kernel: [    0.668432] ohci-platform: OHCI generic platform driver
+Sep  6 15:08:01 ubuntu kernel: [    0.668437] uhci_hcd: USB Universal Host Controller Interface driver
+Sep  6 15:08:01 ubuntu kernel: [    0.680759] uhci_hcd 0000:00:04.0: UHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.680763] uhci_hcd 0000:00:04.0: new USB bus registered, assigned bus number 2
+Sep  6 15:08:01 ubuntu kernel: [    0.680775] uhci_hcd 0000:00:04.0: detected 2 ports
+Sep  6 15:08:01 ubuntu kernel: [    0.680810] uhci_hcd 0000:00:04.0: irq 11, io base 0x0000c120
+Sep  6 15:08:01 ubuntu kernel: [    0.680855] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+Sep  6 15:08:01 ubuntu kernel: [    0.680856] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Sep  6 15:08:01 ubuntu kernel: [    0.680857] usb usb2: Product: UHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.680858] usb usb2: Manufacturer: Linux 4.4.0-93-generic uhci_hcd
+Sep  6 15:08:01 ubuntu kernel: [    0.680859] usb usb2: SerialNumber: 0000:00:04.0
+Sep  6 15:08:01 ubuntu kernel: [    0.680913] hub 2-0:1.0: USB hub found
+Sep  6 15:08:01 ubuntu kernel: [    0.680917] hub 2-0:1.0: 2 ports detected
+Sep  6 15:08:01 ubuntu kernel: [    0.693268] uhci_hcd 0000:00:04.1: UHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.693272] uhci_hcd 0000:00:04.1: new USB bus registered, assigned bus number 3
+Sep  6 15:08:01 ubuntu kernel: [    0.693284] uhci_hcd 0000:00:04.1: detected 2 ports
+Sep  6 15:08:01 ubuntu kernel: [    0.693341] uhci_hcd 0000:00:04.1: irq 10, io base 0x0000c140
+Sep  6 15:08:01 ubuntu kernel: [    0.693385] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
+Sep  6 15:08:01 ubuntu kernel: [    0.693386] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Sep  6 15:08:01 ubuntu kernel: [    0.693387] usb usb3: Product: UHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.693388] usb usb3: Manufacturer: Linux 4.4.0-93-generic uhci_hcd
+Sep  6 15:08:01 ubuntu kernel: [    0.693389] usb usb3: SerialNumber: 0000:00:04.1
+Sep  6 15:08:01 ubuntu kernel: [    0.693444] hub 3-0:1.0: USB hub found
+Sep  6 15:08:01 ubuntu kernel: [    0.693448] hub 3-0:1.0: 2 ports detected
+Sep  6 15:08:01 ubuntu kernel: [    0.705835] uhci_hcd 0000:00:04.2: UHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.705841] uhci_hcd 0000:00:04.2: new USB bus registered, assigned bus number 4
+Sep  6 15:08:01 ubuntu kernel: [    0.705853] uhci_hcd 0000:00:04.2: detected 2 ports
+Sep  6 15:08:01 ubuntu kernel: [    0.705887] uhci_hcd 0000:00:04.2: irq 10, io base 0x0000c160
+Sep  6 15:08:01 ubuntu kernel: [    0.705927] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+Sep  6 15:08:01 ubuntu kernel: [    0.705929] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Sep  6 15:08:01 ubuntu kernel: [    0.705930] usb usb4: Product: UHCI Host Controller
+Sep  6 15:08:01 ubuntu kernel: [    0.705930] usb usb4: Manufacturer: Linux 4.4.0-93-generic uhci_hcd
+Sep  6 15:08:01 ubuntu kernel: [    0.705931] usb usb4: SerialNumber: 0000:00:04.2
+Sep  6 15:08:01 ubuntu kernel: [    0.705987] hub 4-0:1.0: USB hub found
+Sep  6 15:08:01 ubuntu kernel: [    0.705991] hub 4-0:1.0: 2 ports detected
+Sep  6 15:08:01 ubuntu kernel: [    0.706087] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Sep  6 15:08:01 ubuntu kernel: [    0.706625] serio: i8042 KBD port at 0x60,0x64 irq 1
+Sep  6 15:08:01 ubuntu kernel: [    0.706629] serio: i8042 AUX port at 0x60,0x64 irq 12
+Sep  6 15:08:01 ubuntu kernel: [    0.706698] mousedev: PS/2 mouse device common for all mice
+Sep  6 15:08:01 ubuntu kernel: [    0.706882] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+Sep  6 15:08:01 ubuntu kernel: [    0.707097] rtc_cmos 00:00: RTC can wake from S4
+Sep  6 15:08:01 ubuntu kernel: [    0.707271] rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+Sep  6 15:08:01 ubuntu kernel: [    0.707328] rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+Sep  6 15:08:01 ubuntu kernel: [    0.707335] i2c /dev entries driver
+Sep  6 15:08:01 ubuntu kernel: [    0.707366] device-mapper: uevent: version 1.0.3
+Sep  6 15:08:01 ubuntu kernel: [    0.707402] device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+Sep  6 15:08:01 ubuntu kernel: [    0.707411] ledtrig-cpu: registered to indicate activity on CPUs
+Sep  6 15:08:01 ubuntu kernel: [    0.707587] NET: Registered protocol family 10
+Sep  6 15:08:01 ubuntu kernel: [    0.707696] NET: Registered protocol family 17
+Sep  6 15:08:01 ubuntu kernel: [    0.707702] Key type dns_resolver registered
+Sep  6 15:08:01 ubuntu kernel: [    0.707783] microcode: CPU0 sig=0x306a9, pf=0x1, revision=0x1
+Sep  6 15:08:01 ubuntu kernel: [    0.707801] microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+Sep  6 15:08:01 ubuntu kernel: [    0.707878] registered taskstats version 1
+Sep  6 15:08:01 ubuntu kernel: [    0.707891] Loading compiled-in X.509 certificates
+Sep  6 15:08:01 ubuntu kernel: [    0.708446] Loaded X.509 cert 'Build time autogenerated kernel key: a6f98c496ad22cf23b77f8fe21ff88c41791cbd4'
+Sep  6 15:08:01 ubuntu kernel: [    0.708459] zswap: loaded using pool lzo/zbud
+Sep  6 15:08:01 ubuntu kernel: [    0.709460] Key type trusted registered
+Sep  6 15:08:01 ubuntu kernel: [    0.711102] Key type encrypted registered
+Sep  6 15:08:01 ubuntu kernel: [    0.711107] AppArmor: AppArmor sha1 policy hashing enabled
+Sep  6 15:08:01 ubuntu kernel: [    0.711109] ima: No TPM chip found, activating TPM-bypass!
+Sep  6 15:08:01 ubuntu kernel: [    0.711122] evm: HMAC attrs: 0x1
+Sep  6 15:08:01 ubuntu kernel: [    0.711257]   Magic number: 1:168:114
+Sep  6 15:08:01 ubuntu kernel: [    0.711335] rtc_cmos 00:00: setting system clock to 2017-09-06 06:07:59 UTC (1504678079)
+Sep  6 15:08:01 ubuntu kernel: [    0.711375] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+Sep  6 15:08:01 ubuntu kernel: [    0.711376] EDD information not available.
+Sep  6 15:08:01 ubuntu kernel: [    0.711401] PM: Hibernation image not present or could not be loaded.
+Sep  6 15:08:01 ubuntu kernel: [    0.800749] ata1.01: NODEV after polling detection
+Sep  6 15:08:01 ubuntu kernel: [    0.801136] ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+Sep  6 15:08:01 ubuntu kernel: [    0.801139] ata1.00: 16777216 sectors, multi 16: LBA48 
+Sep  6 15:08:01 ubuntu kernel: [    0.801725] ata1.00: configured for MWDMA2
+Sep  6 15:08:01 ubuntu kernel: [    0.801846] scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+Sep  6 15:08:01 ubuntu kernel: [    0.802072] sd 0:0:0:0: [sda] 16777216 512-byte logical blocks: (8.59 GB/8.00 GiB)
+Sep  6 15:08:01 ubuntu kernel: [    0.802131] sd 0:0:0:0: [sda] Write Protect is off
+Sep  6 15:08:01 ubuntu kernel: [    0.802134] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Sep  6 15:08:01 ubuntu kernel: [    0.802154] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Sep  6 15:08:01 ubuntu kernel: [    0.802571] sd 0:0:0:0: Attached scsi generic sg0 type 0
+Sep  6 15:08:01 ubuntu kernel: [    0.803289]  sda: sda1 sda2 < sda5 >
+Sep  6 15:08:01 ubuntu kernel: [    0.803585] sd 0:0:0:0: [sda] Attached SCSI disk
+Sep  6 15:08:01 ubuntu kernel: [    0.809856] Freeing unused kernel memory: 1492K (ffffffff81f45000 - ffffffff820ba000)
+Sep  6 15:08:01 ubuntu kernel: [    0.809859] Write protecting the kernel read-only data: 14336k
+Sep  6 15:08:01 ubuntu kernel: [    0.810341] Freeing unused kernel memory: 1748K (ffff88000184b000 - ffff880001a00000)
+Sep  6 15:08:01 ubuntu kernel: [    0.810719] Freeing unused kernel memory: 112K (ffff880001de4000 - ffff880001e00000)
+Sep  6 15:08:01 ubuntu kernel: [    0.823346] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823402] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823509] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823583] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823649] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823719] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823784] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823848] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823913] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.823984] random: udevadm: uninitialized urandom read (16 bytes read, 8 bits of entropy available)
+Sep  6 15:08:01 ubuntu kernel: [    0.871370] 8139cp: 8139cp: 10/100 PCI Ethernet driver v1.3 (Mar 22, 2004)
+Sep  6 15:08:01 ubuntu kernel: [    0.888637] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+Sep  6 15:08:01 ubuntu kernel: [    0.888887] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+Sep  6 15:08:01 ubuntu kernel: [    0.908637] FDC 0 is a S82078B
+Sep  6 15:08:01 ubuntu kernel: [    0.959295] 8139cp 0000:00:02.0 eth0: RTL-8139C+ at 0xffffc900001e0000, 52:54:00:fe:b3:70, IRQ 10
+Sep  6 15:08:01 ubuntu kernel: [    0.961305] 8139too: 8139too Fast Ethernet driver 0.9.28
+Sep  6 15:08:01 ubuntu kernel: [    0.962541] 8139cp 0000:00:02.0 ens2: renamed from eth0
+Sep  6 15:08:01 ubuntu kernel: [    1.245243] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+Sep  6 15:08:01 ubuntu kernel: [    1.524985] EXT4-fs (dm-0): re-mounted. Opts: errors=remount-ro
+Sep  6 15:08:01 ubuntu kernel: [    1.604204] tsc: Refined TSC clocksource calibration: 3392.367 MHz
+Sep  6 15:08:01 ubuntu kernel: [    1.604206] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x30e62437349, max_idle_ns: 440795306782 ns
+Sep  6 15:08:01 ubuntu kernel: [    1.740932] piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+Sep  6 15:08:01 ubuntu kernel: [    1.899903] AVX version of gcm_enc/dec engaged.
+Sep  6 15:08:01 ubuntu kernel: [    1.899904] AES CTR mode by8 optimization enabled
+Sep  6 15:08:01 ubuntu kernel: [    1.939437] ppdev: user-space parallel port driver
+Sep  6 15:08:01 ubuntu kernel: [    1.981408] Adding 1048572k swap on /dev/mapper/stonrgSwan--vg-swap_1.  Priority:-1 extents:1 across:1048572k FS
+Sep  6 15:08:01 ubuntu kernel: [    1.994281] intel_rapl: no valid rapl domains found in package 0
+Sep  6 15:08:01 ubuntu kernel: [    2.036773] EXT4-fs (sda1): mounting ext2 file system using the ext4 subsystem
+Sep  6 15:08:01 ubuntu kernel: [    2.045086] EXT4-fs (sda1): mounted filesystem without journal. Opts: (null)
+Sep  6 15:08:01 ubuntu kernel: [    2.158149] audit: type=1400 audit(1504678080.944:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=532 comm="apparmor_parser"
+Sep  6 15:08:01 ubuntu kernel: [    2.158155] audit: type=1400 audit(1504678080.944:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=532 comm="apparmor_parser"
+Sep  6 15:08:01 ubuntu kernel: [    2.158158] audit: type=1400 audit(1504678080.944:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=532 comm="apparmor_parser"
+Sep  6 15:08:01 ubuntu kernel: [    2.158161] audit: type=1400 audit(1504678080.944:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=532 comm="apparmor_parser"
+Sep  6 15:08:01 ubuntu kernel: [    2.160530] audit: type=1400 audit(1504678080.948:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/haveged" pid=533 comm="apparmor_parser"
+Sep  6 15:08:01 ubuntu kernel: [    2.164841] audit: type=1400 audit(1504678080.952:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=535 comm="apparmor_parser"
+Sep  6 15:08:01 ubuntu systemd[1]: Started D-Bus System Message Bus.
+Sep  6 15:08:01 ubuntu dbus[572]: [system] AppArmor D-Bus mediation is enabled
+Sep  6 15:08:01 ubuntu systemd[1]: Started ifup for ens2.
+Sep  6 15:08:01 ubuntu systemd[1]: Started System Logging Service.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Set console font and keymap.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Permit User Sessions.
+Sep  6 15:08:01 ubuntu dhclient[590]: Internet Systems Consortium DHCP Client 4.3.3
+Sep  6 15:08:01 ubuntu irqbalance[545]:  * Starting SMP IRQ Balancer: irqbalance
+Sep  6 15:08:01 ubuntu sh[582]: Internet Systems Consortium DHCP Client 4.3.3
+Sep  6 15:08:01 ubuntu dhclient[590]: Copyright 2004-2015 Internet Systems Consortium.
+Sep  6 15:08:01 ubuntu sh[582]: Copyright 2004-2015 Internet Systems Consortium.
+Sep  6 15:08:01 ubuntu dhclient[590]: All rights reserved.
+Sep  6 15:08:01 ubuntu sh[582]: All rights reserved.
+Sep  6 15:08:01 ubuntu dhclient[590]: For info, please visit https://www.isc.org/software/dhcp/
+Sep  6 15:08:01 ubuntu sh[582]: For info, please visit https://www.isc.org/software/dhcp/
+Sep  6 15:08:01 ubuntu dhclient[590]: 
+Sep  6 15:08:01 ubuntu accounts-daemon[562]: started daemon version 0.6.40
+Sep  6 15:08:01 ubuntu /usr/sbin/irqbalance: Balancing is ineffective on systems with a single cpu.  Shutting down
+Sep  6 15:08:01 ubuntu irqbalance[545]:    ...done.
+Sep  6 15:08:01 ubuntu systemd[1]: Started LSB: daemon to balance interrupts for SMP systems.
+Sep  6 15:08:01 ubuntu dhclient[590]: Listening on LPF/ens2/52:54:00:fe:b3:70
+Sep  6 15:08:01 ubuntu kernel: [    2.270400] 8139cp 0000:00:02.0 ens2: link up, 100Mbps, full-duplex, lpa 0x05E1
+Sep  6 15:08:01 ubuntu sh[582]: Listening on LPF/ens2/52:54:00:fe:b3:70
+Sep  6 15:08:01 ubuntu dhclient[590]: Sending on   LPF/ens2/52:54:00:fe:b3:70
+Sep  6 15:08:01 ubuntu sh[582]: Sending on   LPF/ens2/52:54:00:fe:b3:70
+Sep  6 15:08:01 ubuntu dhclient[590]: Sending on   Socket/fallback
+Sep  6 15:08:01 ubuntu sh[582]: Sending on   Socket/fallback
+Sep  6 15:08:01 ubuntu dhclient[590]: DHCPDISCOVER on ens2 to 255.255.255.255 port 67 interval 3 (xid=0x59a82e46)
+Sep  6 15:08:01 ubuntu sh[582]: DHCPDISCOVER on ens2 to 255.255.255.255 port 67 interval 3 (xid=0x59a82e46)
+Sep  6 15:08:01 ubuntu dhclient[590]: DHCPREQUEST of 192.168.122.247 on ens2 to 255.255.255.255 port 67 (xid=0x462ea859)
+Sep  6 15:08:01 ubuntu sh[582]: DHCPREQUEST of 192.168.122.247 on ens2 to 255.255.255.255 port 67 (xid=0x462ea859)
+Sep  6 15:08:01 ubuntu dhclient[590]: DHCPOFFER of 192.168.122.247 from 192.168.122.1
+Sep  6 15:08:01 ubuntu sh[582]: DHCPOFFER of 192.168.122.247 from 192.168.122.1
+Sep  6 15:08:01 ubuntu dhclient[590]: DHCPACK of 192.168.122.247 from 192.168.122.1
+Sep  6 15:08:01 ubuntu sh[582]: DHCPACK of 192.168.122.247 from 192.168.122.1
+Sep  6 15:08:01 ubuntu systemd[1]: Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+Sep  6 15:08:01 ubuntu systemd[1]: Started LSB: Record successful boot for GRUB.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Accounts Service.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Login Service.
+Sep  6 15:08:01 ubuntu systemd[1]: Created slice system-getty.slice.
+Sep  6 15:08:01 ubuntu ifup[636]: /sbin/ifup: waiting for lock on /run/network/ifstate.ens2
+Sep  6 15:08:01 ubuntu dhclient[590]: bound to 192.168.122.247 -- renewal in 1465 seconds.
+Sep  6 15:08:01 ubuntu sh[582]: bound to 192.168.122.247 -- renewal in 1465 seconds.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Raise network interfaces.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Network.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting OpenBSD Secure Shell server...
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Network is Online.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting /etc/rc.local Compatibility...
+Sep  6 15:08:01 ubuntu systemd[1]: Started Daily apt download activities.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Daily apt upgrade and clean activities.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Timers.
+Sep  6 15:08:01 ubuntu kernel: [    2.395101] ip_tables: (C) 2000-2006 Netfilter Core Team
+Sep  6 15:08:01 ubuntu kernel: [    2.401122] nf_conntrack version 0.5.0 (7937 buckets, 31748 max)
+Sep  6 15:08:01 ubuntu systemd[1]: Started OpenBSD Secure Shell server.
+Sep  6 15:08:01 ubuntu systemd[1]: Started /etc/rc.local Compatibility.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Terminate Plymouth Boot Screen...
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Hold until boot process finishes up...
+Sep  6 15:08:01 ubuntu systemd[1]: Received SIGRTMIN+21 from PID 316 (plymouthd).
+Sep  6 15:08:01 ubuntu systemd[1]: Started Hold until boot process finishes up.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Terminate Plymouth Boot Screen.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Set console scheme...
+Sep  6 15:08:01 ubuntu systemd[1]: Started Getty on tty1.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Getty on ttyS0.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Login Prompts.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Multi-User System.
+Sep  6 15:08:01 ubuntu systemd[1]: Reached target Graphical Interface.
+Sep  6 15:08:01 ubuntu systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Sep  6 15:08:01 ubuntu systemd[1]: Started Set console scheme.
+Sep  6 15:08:01 ubuntu systemd[1]: Started Update UTMP about System Runlevel Changes.
+Sep  6 15:08:01 ubuntu systemd[1]: Startup finished in 1.268s (kernel) + 1.168s (userspace) = 2.436s.
+Sep  6 15:08:06 ubuntu kernel: [    7.502909] random: nonblocking pool is initialized
+Sep  6 15:08:10 ubuntu systemd[1]: Created slice User Slice of dnlab.
+Sep  6 15:08:10 ubuntu systemd[1]: Started Session 1 of user dnlab.
+Sep  6 15:08:10 ubuntu systemd[1]: Starting User Manager for UID 1000...
+Sep  6 15:08:10 ubuntu systemd[764]: Reached target Sockets.
+Sep  6 15:08:10 ubuntu systemd[764]: Reached target Paths.
+Sep  6 15:08:10 ubuntu systemd[764]: Reached target Timers.
+Sep  6 15:08:10 ubuntu systemd[764]: Reached target Basic System.
+Sep  6 15:08:10 ubuntu systemd[764]: Reached target Default.
+Sep  6 15:08:10 ubuntu systemd[764]: Startup finished in 17ms.
+Sep  6 15:08:10 ubuntu systemd[1]: Started User Manager for UID 1000.
+Sep  6 15:08:32 ubuntu systemd[764]: Time has been changed
+Sep  6 15:08:32 ubuntu systemd[1]: Time has been changed
+Sep  6 15:08:32 ubuntu systemd-timesyncd[480]: Synchronized to time server 91.189.91.157:123 (ntp.ubuntu.com).
+Sep  6 15:08:43 ubuntu kernel: [   44.058106] NET: Registered protocol family 15
+Sep  6 15:08:43 ubuntu kernel: [   44.085040] Initializing XFRM netlink socket
+Sep  6 15:08:43 ubuntu charon: 00[DMN] Starting IKE charon daemon (ubuntu 5.6.0, Linux 4.4.0-93-generic, x86_64)
+Sep  6 15:08:43 ubuntu charon: 00[KNL] known interfaces and IP addresses:
+Sep  6 15:08:43 ubuntu charon: 00[KNL]   lo
+Sep  6 15:08:43 ubuntu charon: 00[KNL]     127.0.0.1
+Sep  6 15:08:43 ubuntu charon: 00[KNL]     ::1
+Sep  6 15:08:43 ubuntu charon: 00[KNL]   ens2
+Sep  6 15:08:43 ubuntu charon: 00[KNL]     192.168.122.247
+Sep  6 15:08:43 ubuntu charon: 00[KNL]     fe80::5054:ff:fefe:b370
+Sep  6 15:08:43 ubuntu charon: 00[CFG] loading ca certificates from '/etc/ipsec.d/cacerts'
+Sep  6 15:08:43 ubuntu charon: 00[CFG]   loaded ca certificate "C=NL, O=Example Company, CN=ubuntu Root CA" from '/etc/ipsec.d/cacerts/ubuntuCert.der'
+Sep  6 15:08:43 ubuntu charon: 00[CFG]   loaded ca certificate "C=NL, O=Example Company, CN=ubuntu Root CA" from '/etc/ipsec.d/cacerts/ubuntuCert.pem'
+Sep  6 15:08:43 ubuntu charon: 00[CFG] loading aa certificates from '/etc/ipsec.d/aacerts'
+Sep  6 15:08:43 ubuntu charon: 00[CFG] loading ocsp signer certificates from '/etc/ipsec.d/ocspcerts'
+Sep  6 15:08:43 ubuntu charon: 00[CFG] loading attribute certificates from '/etc/ipsec.d/acerts'
+Sep  6 15:08:43 ubuntu charon: 00[CFG] loading crls from '/etc/ipsec.d/crls'
+Sep  6 15:08:43 ubuntu charon: 00[CFG] loading secrets from '/etc/ipsec.secrets'
+Sep  6 15:08:43 ubuntu charon: 00[CFG]   loaded RSA private key from '/etc/ipsec.d/private/vpnHostKey.der'
+Sep  6 15:08:43 ubuntu charon: 00[LIB] loaded plugins: charon aes des rc2 sha2 sha1 md5 random nonce x509 revocation constraints pubkey pkcs1 pkcs7 pkcs8 pkcs12 pgp dnskey sshkey pem fips-prf gmp curve25519 xcbc cmac hmac attr kernel-netlink resolve socket-default stroke vici updown xauth-generic
+Sep  6 15:08:43 ubuntu charon: 00[JOB] spawning 16 worker threads
+Sep  6 15:08:43 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:43 ubuntu charon: 05[CFG] received stroke: add connection 'IPSec-IKEv2'
+Sep  6 15:08:43 ubuntu charon: 05[CFG] conn IPSec-IKEv2
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   left=%any
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   leftsubnet=0.0.0.0/0
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   leftauth=pubkey
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   leftid=192.168.122.247
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   leftcert=vpnHostCert.der
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   right=%any
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   rightsourceip=10.42.42.0/24,2002:25f7:7489:3::/112
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   rightdns=8.8.8.8,2001:4860:4860::8888
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   rightauth=pubkey
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   ike=aes128-sha1-modp1024,aes128-sha1-modp1536,aes128-sha1-modp2048,aes128-sha256-ecp256,aes128-sha256-modp1024,aes128-sha256-modp1536,aes128-sha256-modp2048,aes256-aes128-sha256-sha1-modp2048-modp4096-modp1024,aes256-sha1-modp1024,aes256-sha256-modp1024,aes256-sha256-modp1536,aes256-sha256-modp2048,aes256-sha256-modp4096,aes256-sha384-ecp384,aes256-sha384-modp1024,aes256-sha384-modp1536,aes256-sha384-modp2048,aes256-sha384-modp4096,aes256gcm16-aes256gcm12-aes128gcm16-aes128gcm12-sha256-sha1-modp2048-modp4096-modp1024,3des-sha1-modp1024!
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   esp=aes128-aes256-sha1-sha256-modp2048-modp4096-modp1024,aes128-sha1,aes128-sha1-modp1024,aes128-sha1-modp1536,aes128-sha1-modp2048,aes128-sha256,aes128-sha256-ecp256,aes128-sha256-modp1024,aes128-sha256-modp1536,aes128-sha256-modp2048,aes128gcm12-aes128gcm16-aes256gcm12-aes256gcm16-modp2048-modp4096-modp1024,aes128gcm16,aes128gcm16-ecp256,aes256-sha1,aes256-sha256,aes256-sha256-modp1024,aes256-sha256-modp1536,aes256-sha256-modp2048,aes256-sha256-modp4096,aes256-sha384,aes256-sha384-ecp384,aes256-sha384-modp1024,aes256-sha384-modp1536,aes256-sha384-modp2048,aes256-sha384-modp4096,aes256gcm16,aes256gcm16-ecp384,3des-sha1!
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   dpddelay=300
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   dpdtimeout=150
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   dpdaction=1
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   sha256_96=no
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   mediation=no
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   keyexchange=ikev2
+Sep  6 15:08:43 ubuntu charon: 05[CFG] adding virtual IP address pool 10.42.42.0/24
+Sep  6 15:08:43 ubuntu charon: 05[CFG] adding virtual IP address pool 2002:25f7:7489:3::/112
+Sep  6 15:08:43 ubuntu charon: 05[CFG]   loaded certificate "C=NL, O=Example Company, CN=vpn.example.org" from 'vpnHostCert.der'
+Sep  6 15:08:43 ubuntu charon: 05[CFG] added configuration 'IPSec-IKEv2'
+Sep  6 15:08:52 ubuntu charon: 03[NET] received packet: from 192.168.122.235[500] to 192.168.122.247[500]
+Sep  6 15:08:52 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:52 ubuntu charon: 07[MGR] checkout IKEv2 SA by message with SPIs 3aff21651d33bb71_i 0000000000000000_r
+Sep  6 15:08:52 ubuntu charon: 07[MGR] created IKE_SA (unnamed)[1]
+Sep  6 15:08:52 ubuntu charon: 07[NET] received packet: from 192.168.122.235[500] to 192.168.122.247[500] (454 bytes)
+Sep  6 15:08:52 ubuntu charon: 07[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Sep  6 15:08:52 ubuntu charon: 07[CFG] looking for an ike config for 192.168.122.247...192.168.122.235
+Sep  6 15:08:52 ubuntu charon: 07[CFG]   candidate: %any...%any, prio 28
+Sep  6 15:08:52 ubuntu charon: 07[CFG] found matching ike config: %any...%any with prio 28
+Sep  6 15:08:52 ubuntu charon: 07[IKE] 192.168.122.235 is initiating an IKE_SA
+Sep  6 15:08:52 ubuntu charon: 07[IKE] IKE_SA (unnamed)[1] state change: CREATED => CONNECTING
+Sep  6 15:08:52 ubuntu charon: 07[CFG] selecting proposal:
+Sep  6 15:08:52 ubuntu charon: 07[CFG]   no acceptable PSEUDO_RANDOM_FUNCTION found
+Sep  6 15:08:52 ubuntu charon: 07[CFG] selecting proposal:
+Sep  6 15:08:52 ubuntu charon: 07[CFG]   proposal matches
+Sep  6 15:08:52 ubuntu charon: 07[CFG] received proposals: IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/CURVE_25519, IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/AES_XCBC_96/AES_CMAC_96/HMAC_SHA1_96/HMAC_MD5_96/PRF_AES128_XCBC/PRF_AES128_CMAC/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_HMAC_SHA1/PRF_HMAC_MD5/CURVE_25519/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Sep  6 15:08:52 ubuntu charon: 07[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:52 ubuntu charon: 07[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:52 ubuntu charon: 07[CFG] received supported signature hash algorithms: sha1 sha256 sha384 sha512 identity
+Sep  6 15:08:52 ubuntu charon: 07[IKE] DH group CURVE_25519 inacceptable, requesting MODP_1024
+Sep  6 15:08:52 ubuntu charon: 07[ENC] generating IKE_SA_INIT response 0 [ N(INVAL_KE) ]
+Sep  6 15:08:52 ubuntu charon: 07[NET] sending packet: from 192.168.122.247[500] to 192.168.122.235[500] (38 bytes)
+Sep  6 15:08:52 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[500] to 192.168.122.235[500]
+Sep  6 15:08:52 ubuntu charon: 07[MGR] checkin and destroy IKE_SA (unnamed)[1]
+Sep  6 15:08:52 ubuntu charon: 07[IKE] IKE_SA (unnamed)[1] state change: CONNECTING => DESTROYING
+Sep  6 15:08:52 ubuntu charon: 07[MGR] checkin and destroy of IKE_SA successful
+Sep  6 15:08:52 ubuntu charon: 03[NET] received packet: from 192.168.122.235[500] to 192.168.122.247[500]
+Sep  6 15:08:52 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:52 ubuntu charon: 08[MGR] checkout IKEv2 SA by message with SPIs 3aff21651d33bb71_i 0000000000000000_r
+Sep  6 15:08:52 ubuntu charon: 08[MGR] created IKE_SA (unnamed)[2]
+Sep  6 15:08:52 ubuntu charon: 08[NET] received packet: from 192.168.122.235[500] to 192.168.122.247[500] (550 bytes)
+Sep  6 15:08:52 ubuntu charon: 08[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Sep  6 15:08:52 ubuntu charon: 08[CFG] looking for an ike config for 192.168.122.247...192.168.122.235
+Sep  6 15:08:52 ubuntu charon: 08[CFG]   candidate: %any...%any, prio 28
+Sep  6 15:08:52 ubuntu charon: 08[CFG] found matching ike config: %any...%any with prio 28
+Sep  6 15:08:52 ubuntu charon: 08[IKE] 192.168.122.235 is initiating an IKE_SA
+Sep  6 15:08:52 ubuntu charon: 08[IKE] IKE_SA (unnamed)[2] state change: CREATED => CONNECTING
+Sep  6 15:08:52 ubuntu charon: 08[CFG] selecting proposal:
+Sep  6 15:08:52 ubuntu charon: 08[CFG]   no acceptable PSEUDO_RANDOM_FUNCTION found
+Sep  6 15:08:52 ubuntu charon: 08[CFG] selecting proposal:
+Sep  6 15:08:52 ubuntu charon: 08[CFG]   proposal matches
+Sep  6 15:08:52 ubuntu charon: 08[CFG] received proposals: IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/CURVE_25519, IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/AES_XCBC_96/AES_CMAC_96/HMAC_SHA1_96/HMAC_MD5_96/PRF_AES128_XCBC/PRF_AES128_CMAC/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_HMAC_SHA1/PRF_HMAC_MD5/CURVE_25519/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Sep  6 15:08:52 ubuntu charon: 08[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:52 ubuntu charon: 08[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:52 ubuntu charon: 08[CFG] received supported signature hash algorithms: sha1 sha256 sha384 sha512 identity
+Sep  6 15:08:52 ubuntu charon: 08[CFG] sending supported signature hash algorithms: sha1 sha256 sha384 sha512 identity
+Sep  6 15:08:52 ubuntu charon: 08[IKE] sending cert request for "C=NL, O=Example Company, CN=ubuntu Root CA"
+Sep  6 15:08:52 ubuntu charon: 08[ENC] generating IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) CERTREQ N(FRAG_SUP) N(HASH_ALG) N(MULT_AUTH) ]
+Sep  6 15:08:52 ubuntu charon: 08[NET] sending packet: from 192.168.122.247[500] to 192.168.122.235[500] (363 bytes)
+Sep  6 15:08:52 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[500] to 192.168.122.235[500]
+Sep  6 15:08:52 ubuntu charon: 08[MGR] checkin IKE_SA (unnamed)[2]
+Sep  6 15:08:52 ubuntu charon: 08[MGR] checkin of IKE_SA successful
+Sep  6 15:08:52 ubuntu charon: 03[NET] received packet: from 192.168.122.235[4500] to 192.168.122.247[4500]
+Sep  6 15:08:52 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:52 ubuntu charon: 09[MGR] checkout IKEv2 SA by message with SPIs 3aff21651d33bb71_i 21db62588b7588f2_r
+Sep  6 15:08:52 ubuntu charon: 09[MGR] IKE_SA (unnamed)[2] successfully checked out
+Sep  6 15:08:52 ubuntu charon: 09[NET] received packet: from 192.168.122.235[4500] to 192.168.122.247[4500] (1248 bytes)
+Sep  6 15:08:52 ubuntu charon: 09[ENC] parsed IKE_AUTH request 1 [ EF(1/2) ]
+Sep  6 15:08:52 ubuntu charon: 09[ENC] received fragment #1 of 2, waiting for complete IKE message
+Sep  6 15:08:52 ubuntu charon: 09[MGR] checkin IKE_SA (unnamed)[2]
+Sep  6 15:08:52 ubuntu charon: 09[MGR] checkin of IKE_SA successful
+Sep  6 15:08:52 ubuntu charon: 03[NET] received packet: from 192.168.122.235[4500] to 192.168.122.247[4500]
+Sep  6 15:08:52 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:52 ubuntu charon: 10[MGR] checkout IKEv2 SA by message with SPIs 3aff21651d33bb71_i 21db62588b7588f2_r
+Sep  6 15:08:52 ubuntu charon: 10[MGR] IKE_SA (unnamed)[2] successfully checked out
+Sep  6 15:08:52 ubuntu charon: 10[NET] received packet: from 192.168.122.235[4500] to 192.168.122.247[4500] (640 bytes)
+Sep  6 15:08:52 ubuntu charon: 10[ENC] parsed IKE_AUTH request 1 [ EF(2/2) ]
+Sep  6 15:08:52 ubuntu charon: 10[ENC] received fragment #2 of 2, reassembling fragmented IKE message
+Sep  6 15:08:52 ubuntu charon: 10[ENC] parsed IKE_AUTH request 1 [ IDi CERT N(INIT_CONTACT) CERTREQ IDr AUTH CPRQ(ADDR DNS) SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Sep  6 15:08:52 ubuntu charon: 10[IKE] received cert request for "C=NL, O=Example Company, CN=ubuntu Root CA"
+Sep  6 15:08:52 ubuntu charon: 10[IKE] received end entity cert "C=NL, O=Example Company, CN=john@example.org"
+Sep  6 15:08:52 ubuntu charon: 10[CFG] looking for peer configs matching 192.168.122.247[192.168.122.247]...192.168.122.235[C=NL, O=Example Company, CN=john@example.org]
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   candidate "IPSec-IKEv2", match: 20/1/28 (me/other/ike)
+Sep  6 15:08:52 ubuntu charon: 10[CFG] selected peer config 'IPSec-IKEv2'
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   using certificate "C=NL, O=Example Company, CN=john@example.org"
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   certificate "C=NL, O=Example Company, CN=john@example.org" key: 2048 bit RSA
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   using trusted ca certificate "C=NL, O=Example Company, CN=ubuntu Root CA"
+Sep  6 15:08:52 ubuntu charon: 10[CFG] checking certificate status of "C=NL, O=Example Company, CN=john@example.org"
+Sep  6 15:08:52 ubuntu charon: 10[CFG] ocsp check skipped, no ocsp found
+Sep  6 15:08:52 ubuntu charon: 10[CFG] certificate status is not available
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   certificate "C=NL, O=Example Company, CN=ubuntu Root CA" key: 4096 bit RSA
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   reached self-signed root ca with a path length of 0
+Sep  6 15:08:52 ubuntu charon: 10[IKE] authentication of 'C=NL, O=Example Company, CN=john@example.org' with RSA_EMSA_PKCS1_SHA2_256 successful
+Sep  6 15:08:52 ubuntu charon: 10[IKE] processing INTERNAL_IP4_ADDRESS attribute
+Sep  6 15:08:52 ubuntu charon: 10[IKE] processing INTERNAL_IP4_DNS attribute
+Sep  6 15:08:52 ubuntu charon: 10[IKE] peer supports MOBIKE
+Sep  6 15:08:52 ubuntu charon: 10[IKE] authentication of '192.168.122.247' (myself) with RSA_EMSA_PKCS1_SHA2_384 successful
+Sep  6 15:08:52 ubuntu charon: 10[IKE] IKE_SA IPSec-IKEv2[2] established between 192.168.122.247[192.168.122.247]...192.168.122.235[C=NL, O=Example Company, CN=john@example.org]
+Sep  6 15:08:52 ubuntu charon: 10[IKE] IKE_SA IPSec-IKEv2[2] state change: CONNECTING => ESTABLISHED
+Sep  6 15:08:52 ubuntu charon: 10[IKE] scheduling reauthentication in 9813s
+Sep  6 15:08:52 ubuntu charon: 10[IKE] maximum IKE_SA lifetime 10353s
+Sep  6 15:08:52 ubuntu charon: 10[IKE] sending end entity cert "C=NL, O=Example Company, CN=vpn.example.org"
+Sep  6 15:08:52 ubuntu charon: 10[IKE] peer requested virtual IP %any
+Sep  6 15:08:52 ubuntu charon: 10[CFG] assigning new lease to 'C=NL, O=Example Company, CN=john@example.org'
+Sep  6 15:08:52 ubuntu charon: 10[IKE] assigning virtual IP 10.42.42.1 to peer 'C=NL, O=Example Company, CN=john@example.org'
+Sep  6 15:08:52 ubuntu charon: 10[IKE] building INTERNAL_IP4_DNS attribute
+Sep  6 15:08:52 ubuntu charon: 10[IKE] building INTERNAL_IP6_DNS attribute
+Sep  6 15:08:52 ubuntu charon: 10[CFG] looking for a child config for 0.0.0.0/0 === 0.0.0.0/0
+Sep  6 15:08:52 ubuntu charon: 10[CFG] proposing traffic selectors for us:
+Sep  6 15:08:52 ubuntu charon: 10[CFG]  0.0.0.0/0
+Sep  6 15:08:52 ubuntu charon: 10[CFG] proposing traffic selectors for other:
+Sep  6 15:08:52 ubuntu charon: 10[CFG]  10.42.42.1/32
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   candidate "IPSec-IKEv2" with prio 5+1
+Sep  6 15:08:52 ubuntu charon: 10[CFG] found matching child config "IPSec-IKEv2" with prio 6
+Sep  6 15:08:52 ubuntu charon: 10[CFG] selecting proposal:
+Sep  6 15:08:52 ubuntu charon: 10[CFG]   proposal matches
+Sep  6 15:08:52 ubuntu charon: 10[CFG] received proposals: ESP:AES_CBC_128/HMAC_SHA2_256_128/NO_EXT_SEQ, ESP:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/BLOWFISH_CBC_256/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/HMAC_SHA1_96/AES_XCBC_96/HMAC_MD5_96/NO_EXT_SEQ
+Sep  6 15:08:52 ubuntu charon: 10[CFG] configured proposals: ESP:AES_CBC_128/AES_CBC_256/HMAC_SHA1_96/HMAC_SHA2_256_128/MODP_2048/MODP_4096/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/MODP_2048/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/ECP_256/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/MODP_2048/NO_EXT_SEQ, ESP:AES_GCM_12_128/AES_GCM_16_128/AES_GCM_12_256/AES_GCM_16_256/MODP_2048/MODP_4096/MODP_1024/NO_EXT_SEQ, ESP:AES_GCM_16_128/NO_EXT_SEQ, ESP:AES_GCM_16_128/ECP_256/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA1_96/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_2048/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_4096/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/ECP_384/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_2048/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_4096/NO_EXT_SEQ, ESP:AES_GCM_16_256/NO_EXT_SEQ, ESP:AES_GCM_16_256/ECP_384/NO_EXT_SEQ, ESP:3DES_CBC/HMAC_SHA1_96/NO_EXT_SEQ
+Sep  6 15:08:52 ubuntu charon: 10[CFG] selected proposal: ESP:AES_CBC_128/HMAC_SHA2_256_128/NO_EXT_SEQ
+Sep  6 15:08:52 ubuntu charon: 10[KNL] got SPI c1f8ff12
+Sep  6 15:08:52 ubuntu charon: 10[CFG] selecting traffic selectors for us:
+Sep  6 15:08:52 ubuntu charon: 10[CFG]  config: 0.0.0.0/0, received: 0.0.0.0/0 => match: 0.0.0.0/0
+Sep  6 15:08:52 ubuntu charon: 10[CFG] selecting traffic selectors for other:
+Sep  6 15:08:52 ubuntu charon: 10[CFG]  config: 10.42.42.1/32, received: 0.0.0.0/0 => match: 10.42.42.1/32
+Sep  6 15:08:52 ubuntu charon: 10[KNL] adding SAD entry with SPI c1f8ff12 and reqid {1}
+Sep  6 15:08:52 ubuntu charon: 10[KNL]   using encryption algorithm AES_CBC with key size 128
+Sep  6 15:08:52 ubuntu charon: 10[KNL]   using integrity algorithm HMAC_SHA2_256_128 with key size 256
+Sep  6 15:08:52 ubuntu charon: 10[KNL]   using replay window of 32 packets
+Sep  6 15:08:52 ubuntu charon: 10[KNL] adding SAD entry with SPI cc2d8a22 and reqid {1}
+Sep  6 15:08:52 ubuntu charon: 10[KNL]   using encryption algorithm AES_CBC with key size 128
+Sep  6 15:08:52 ubuntu charon: 10[KNL]   using integrity algorithm HMAC_SHA2_256_128 with key size 256
+Sep  6 15:08:52 ubuntu charon: 10[KNL]   using replay window of 0 packets
+Sep  6 15:08:52 ubuntu charon: 10[KNL] adding policy 0.0.0.0/0 === 10.42.42.1/32 out [priority 583615, refcount 1]
+Sep  6 15:08:52 ubuntu charon: 10[KNL] adding policy 10.42.42.1/32 === 0.0.0.0/0 in [priority 383615, refcount 1]
+Sep  6 15:08:52 ubuntu charon: 10[KNL] adding policy 10.42.42.1/32 === 0.0.0.0/0 fwd [priority 383615, refcount 1]
+Sep  6 15:08:52 ubuntu charon: 10[KNL] policy 0.0.0.0/0 === 10.42.42.1/32 out already exists, increasing refcount
+Sep  6 15:08:52 ubuntu charon: 10[KNL] updating policy 0.0.0.0/0 === 10.42.42.1/32 out [priority 383615, refcount 2]
+Sep  6 15:08:52 ubuntu charon: 10[KNL] getting a local address in traffic selector 0.0.0.0/0
+Sep  6 15:08:52 ubuntu charon: 10[KNL] using host %any
+Sep  6 15:08:52 ubuntu charon: 10[KNL] getting iface name for index 2
+Sep  6 15:08:52 ubuntu charon: 10[KNL] using 192.168.122.235 as nexthop and ens2 as dev to reach 192.168.122.235/32
+Sep  6 15:08:52 ubuntu charon: 10[KNL] installing route: 10.42.42.1/32 via 192.168.122.235 src %any dev ens2
+Sep  6 15:08:52 ubuntu charon: 10[KNL] getting iface index for ens2
+Sep  6 15:08:52 ubuntu charon: 10[IKE] CHILD_SA IPSec-IKEv2{1} established with SPIs c1f8ff12_i cc2d8a22_o and TS 0.0.0.0/0 === 10.42.42.1/32
+Sep  6 15:08:52 ubuntu charon: 10[ENC] generating IKE_AUTH response 1 [ IDr CERT AUTH CPRP(ADDR DNS DNS6) SA TSi TSr N(AUTH_LFT) N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Sep  6 15:08:52 ubuntu charon: 10[ENC] splitting IKE message with length of 2156 bytes into 2 fragments
+Sep  6 15:08:52 ubuntu charon: 10[ENC] generating IKE_AUTH response 1 [ EF(1/2) ]
+Sep  6 15:08:52 ubuntu charon: 10[ENC] generating IKE_AUTH response 1 [ EF(2/2) ]
+Sep  6 15:08:52 ubuntu charon: 10[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.235[4500] (1248 bytes)
+Sep  6 15:08:52 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.235[4500]
+Sep  6 15:08:52 ubuntu charon: 10[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.235[4500] (976 bytes)
+Sep  6 15:08:52 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.235[4500]
+Sep  6 15:08:52 ubuntu charon: 10[MGR] checkin IKE_SA IPSec-IKEv2[2]
+Sep  6 15:08:52 ubuntu charon: 10[MGR] checkin of IKE_SA successful
+Sep  6 15:08:56 ubuntu charon: 03[NET] received packet: from 192.168.122.182[500] to 192.168.122.247[500]
+Sep  6 15:08:56 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:56 ubuntu charon: 12[MGR] checkout IKEv2 SA by message with SPIs 71c82b0e6a69fc0b_i 0000000000000000_r
+Sep  6 15:08:56 ubuntu charon: 12[MGR] created IKE_SA (unnamed)[3]
+Sep  6 15:08:56 ubuntu charon: 12[NET] received packet: from 192.168.122.182[500] to 192.168.122.247[500] (454 bytes)
+Sep  6 15:08:56 ubuntu charon: 12[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Sep  6 15:08:56 ubuntu charon: 12[CFG] looking for an ike config for 192.168.122.247...192.168.122.182
+Sep  6 15:08:56 ubuntu charon: 12[CFG]   candidate: %any...%any, prio 28
+Sep  6 15:08:56 ubuntu charon: 12[CFG] found matching ike config: %any...%any with prio 28
+Sep  6 15:08:56 ubuntu charon: 12[IKE] 192.168.122.182 is initiating an IKE_SA
+Sep  6 15:08:56 ubuntu charon: 12[IKE] IKE_SA (unnamed)[3] state change: CREATED => CONNECTING
+Sep  6 15:08:56 ubuntu charon: 12[CFG] selecting proposal:
+Sep  6 15:08:56 ubuntu charon: 12[CFG]   no acceptable PSEUDO_RANDOM_FUNCTION found
+Sep  6 15:08:56 ubuntu charon: 12[CFG] selecting proposal:
+Sep  6 15:08:56 ubuntu charon: 12[CFG]   proposal matches
+Sep  6 15:08:56 ubuntu charon: 12[CFG] received proposals: IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/CURVE_25519, IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/AES_XCBC_96/AES_CMAC_96/HMAC_SHA1_96/HMAC_MD5_96/PRF_AES128_XCBC/PRF_AES128_CMAC/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_HMAC_SHA1/PRF_HMAC_MD5/CURVE_25519/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Sep  6 15:08:56 ubuntu charon: 12[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:56 ubuntu charon: 12[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:56 ubuntu charon: 12[CFG] received supported signature hash algorithms: sha1 sha256 sha384 sha512 identity
+Sep  6 15:08:56 ubuntu charon: 12[IKE] DH group CURVE_25519 inacceptable, requesting MODP_1024
+Sep  6 15:08:56 ubuntu charon: 12[ENC] generating IKE_SA_INIT response 0 [ N(INVAL_KE) ]
+Sep  6 15:08:56 ubuntu charon: 12[NET] sending packet: from 192.168.122.247[500] to 192.168.122.182[500] (38 bytes)
+Sep  6 15:08:56 ubuntu charon: 12[MGR] checkin and destroy IKE_SA (unnamed)[3]
+Sep  6 15:08:56 ubuntu charon: 12[IKE] IKE_SA (unnamed)[3] state change: CONNECTING => DESTROYING
+Sep  6 15:08:56 ubuntu charon: 12[MGR] checkin and destroy of IKE_SA successful
+Sep  6 15:08:56 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[500] to 192.168.122.182[500]
+Sep  6 15:08:56 ubuntu charon: 03[NET] received packet: from 192.168.122.182[500] to 192.168.122.247[500]
+Sep  6 15:08:56 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:56 ubuntu charon: 13[MGR] checkout IKEv2 SA by message with SPIs 71c82b0e6a69fc0b_i 0000000000000000_r
+Sep  6 15:08:56 ubuntu charon: 13[MGR] created IKE_SA (unnamed)[4]
+Sep  6 15:08:56 ubuntu charon: 13[NET] received packet: from 192.168.122.182[500] to 192.168.122.247[500] (550 bytes)
+Sep  6 15:08:56 ubuntu charon: 13[ENC] parsed IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Sep  6 15:08:56 ubuntu charon: 13[CFG] looking for an ike config for 192.168.122.247...192.168.122.182
+Sep  6 15:08:56 ubuntu charon: 13[CFG]   candidate: %any...%any, prio 28
+Sep  6 15:08:56 ubuntu charon: 13[CFG] found matching ike config: %any...%any with prio 28
+Sep  6 15:08:56 ubuntu charon: 13[IKE] 192.168.122.182 is initiating an IKE_SA
+Sep  6 15:08:56 ubuntu charon: 13[IKE] IKE_SA (unnamed)[4] state change: CREATED => CONNECTING
+Sep  6 15:08:56 ubuntu charon: 13[CFG] selecting proposal:
+Sep  6 15:08:56 ubuntu charon: 13[CFG]   no acceptable PSEUDO_RANDOM_FUNCTION found
+Sep  6 15:08:56 ubuntu charon: 13[CFG] selecting proposal:
+Sep  6 15:08:56 ubuntu charon: 13[CFG]   proposal matches
+Sep  6 15:08:56 ubuntu charon: 13[CFG] received proposals: IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/CURVE_25519, IKE:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/AES_XCBC_96/AES_CMAC_96/HMAC_SHA1_96/HMAC_MD5_96/PRF_AES128_XCBC/PRF_AES128_CMAC/PRF_HMAC_SHA2_256/PRF_HMAC_SHA2_384/PRF_HMAC_SHA2_512/PRF_HMAC_SHA1/PRF_HMAC_MD5/CURVE_25519/MODP_3072/MODP_4096/MODP_8192/MODP_2048/MODP_1024
+Sep  6 15:08:56 ubuntu charon: 13[CFG] configured proposals: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1536, IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_2048, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/ECP_256, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/AES_CBC_128/HMAC_SHA2_256_128/HMAC_SHA1_96/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:AES_CBC_256/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_4096, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/ECP_384, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1024, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_1536, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_2048, IKE:AES_CBC_256/HMAC_SHA2_384_192/PRF_HMAC_SHA2_384/MODP_4096, IKE:AES_GCM_16_256/AES_GCM_12_256/AES_GCM_16_128/AES_GCM_12_128/PRF_HMAC_SHA2_256/PRF_HMAC_SHA1/MODP_2048/MODP_4096/MODP_1024, IKE:3DES_CBC/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:56 ubuntu charon: 13[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA1_96/PRF_HMAC_SHA1/MODP_1024
+Sep  6 15:08:56 ubuntu charon: 13[CFG] received supported signature hash algorithms: sha1 sha256 sha384 sha512 identity
+Sep  6 15:08:56 ubuntu charon: 13[CFG] sending supported signature hash algorithms: sha1 sha256 sha384 sha512 identity
+Sep  6 15:08:56 ubuntu charon: 13[IKE] sending cert request for "C=NL, O=Example Company, CN=ubuntu Root CA"
+Sep  6 15:08:56 ubuntu charon: 13[ENC] generating IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) CERTREQ N(FRAG_SUP) N(HASH_ALG) N(MULT_AUTH) ]
+Sep  6 15:08:56 ubuntu charon: 13[NET] sending packet: from 192.168.122.247[500] to 192.168.122.182[500] (363 bytes)
+Sep  6 15:08:56 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[500] to 192.168.122.182[500]
+Sep  6 15:08:56 ubuntu charon: 13[MGR] checkin IKE_SA (unnamed)[4]
+Sep  6 15:08:56 ubuntu charon: 13[MGR] checkin of IKE_SA successful
+Sep  6 15:08:56 ubuntu charon: 03[NET] received packet: from 192.168.122.182[4500] to 192.168.122.247[4500]
+Sep  6 15:08:56 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:56 ubuntu charon: 14[MGR] checkout IKEv2 SA by message with SPIs 71c82b0e6a69fc0b_i 5784e30905251079_r
+Sep  6 15:08:56 ubuntu charon: 14[MGR] IKE_SA (unnamed)[4] successfully checked out
+Sep  6 15:08:56 ubuntu charon: 14[NET] received packet: from 192.168.122.182[4500] to 192.168.122.247[4500] (1248 bytes)
+Sep  6 15:08:56 ubuntu charon: 14[ENC] parsed IKE_AUTH request 1 [ EF(1/2) ]
+Sep  6 15:08:56 ubuntu charon: 14[ENC] received fragment #1 of 2, waiting for complete IKE message
+Sep  6 15:08:56 ubuntu charon: 14[MGR] checkin IKE_SA (unnamed)[4]
+Sep  6 15:08:56 ubuntu charon: 14[MGR] checkin of IKE_SA successful
+Sep  6 15:08:56 ubuntu charon: 03[NET] received packet: from 192.168.122.182[4500] to 192.168.122.247[4500]
+Sep  6 15:08:56 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:08:56 ubuntu charon: 15[MGR] checkout IKEv2 SA by message with SPIs 71c82b0e6a69fc0b_i 5784e30905251079_r
+Sep  6 15:08:56 ubuntu charon: 15[MGR] IKE_SA (unnamed)[4] successfully checked out
+Sep  6 15:08:56 ubuntu charon: 15[NET] received packet: from 192.168.122.182[4500] to 192.168.122.247[4500] (640 bytes)
+Sep  6 15:08:56 ubuntu charon: 15[ENC] parsed IKE_AUTH request 1 [ EF(2/2) ]
+Sep  6 15:08:56 ubuntu charon: 15[ENC] received fragment #2 of 2, reassembling fragmented IKE message
+Sep  6 15:08:56 ubuntu charon: 15[ENC] parsed IKE_AUTH request 1 [ IDi CERT N(INIT_CONTACT) CERTREQ IDr AUTH CPRQ(ADDR DNS) SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Sep  6 15:08:56 ubuntu charon: 15[IKE] received cert request for "C=NL, O=Example Company, CN=ubuntu Root CA"
+Sep  6 15:08:56 ubuntu charon: 15[IKE] received end entity cert "C=NL, O=Example Company, CN=carol@example.org"
+Sep  6 15:08:56 ubuntu charon: 15[CFG] looking for peer configs matching 192.168.122.247[192.168.122.247]...192.168.122.182[C=NL, O=Example Company, CN=carol@example.org]
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   candidate "IPSec-IKEv2", match: 20/1/28 (me/other/ike)
+Sep  6 15:08:56 ubuntu charon: 15[CFG] selected peer config 'IPSec-IKEv2'
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   using certificate "C=NL, O=Example Company, CN=carol@example.org"
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   certificate "C=NL, O=Example Company, CN=carol@example.org" key: 2048 bit RSA
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   using trusted ca certificate "C=NL, O=Example Company, CN=ubuntu Root CA"
+Sep  6 15:08:56 ubuntu charon: 15[CFG] checking certificate status of "C=NL, O=Example Company, CN=carol@example.org"
+Sep  6 15:08:56 ubuntu charon: 15[CFG] ocsp check skipped, no ocsp found
+Sep  6 15:08:56 ubuntu charon: 15[CFG] certificate status is not available
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   certificate "C=NL, O=Example Company, CN=ubuntu Root CA" key: 4096 bit RSA
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   reached self-signed root ca with a path length of 0
+Sep  6 15:08:56 ubuntu charon: 15[IKE] authentication of 'C=NL, O=Example Company, CN=carol@example.org' with RSA_EMSA_PKCS1_SHA2_256 successful
+Sep  6 15:08:56 ubuntu charon: 15[IKE] processing INTERNAL_IP4_ADDRESS attribute
+Sep  6 15:08:56 ubuntu charon: 15[IKE] processing INTERNAL_IP4_DNS attribute
+Sep  6 15:08:56 ubuntu charon: 15[IKE] peer supports MOBIKE
+Sep  6 15:08:56 ubuntu charon: 15[IKE] authentication of '192.168.122.247' (myself) with RSA_EMSA_PKCS1_SHA2_384 successful
+Sep  6 15:08:56 ubuntu charon: 15[IKE] IKE_SA IPSec-IKEv2[4] established between 192.168.122.247[192.168.122.247]...192.168.122.182[C=NL, O=Example Company, CN=carol@example.org]
+Sep  6 15:08:56 ubuntu charon: 15[IKE] IKE_SA IPSec-IKEv2[4] state change: CONNECTING => ESTABLISHED
+Sep  6 15:08:56 ubuntu charon: 15[IKE] scheduling reauthentication in 9969s
+Sep  6 15:08:56 ubuntu charon: 15[IKE] maximum IKE_SA lifetime 10509s
+Sep  6 15:08:56 ubuntu charon: 15[IKE] sending end entity cert "C=NL, O=Example Company, CN=vpn.example.org"
+Sep  6 15:08:56 ubuntu charon: 15[IKE] peer requested virtual IP %any
+Sep  6 15:08:56 ubuntu charon: 15[CFG] assigning new lease to 'C=NL, O=Example Company, CN=carol@example.org'
+Sep  6 15:08:56 ubuntu charon: 15[IKE] assigning virtual IP 10.42.42.2 to peer 'C=NL, O=Example Company, CN=carol@example.org'
+Sep  6 15:08:56 ubuntu charon: 15[IKE] building INTERNAL_IP4_DNS attribute
+Sep  6 15:08:56 ubuntu charon: 15[IKE] building INTERNAL_IP6_DNS attribute
+Sep  6 15:08:56 ubuntu charon: 15[CFG] looking for a child config for 0.0.0.0/0 === 0.0.0.0/0
+Sep  6 15:08:56 ubuntu charon: 15[CFG] proposing traffic selectors for us:
+Sep  6 15:08:56 ubuntu charon: 15[CFG]  0.0.0.0/0
+Sep  6 15:08:56 ubuntu charon: 15[CFG] proposing traffic selectors for other:
+Sep  6 15:08:56 ubuntu charon: 15[CFG]  10.42.42.2/32
+Sep  6 15:08:56 ubuntu charon: 15[CFG]   candidate "IPSec-IKEv2" with prio 5+1
+Sep  6 15:08:56 ubuntu charon: 15[CFG] found matching child config "IPSec-IKEv2" with prio 6
+Sep  6 15:08:56 ubuntu charon: 15[CFG] selecting proposal:
+Sep  6 15:08:57 ubuntu charon: 15[CFG]   proposal matches
+Sep  6 15:08:57 ubuntu charon: 15[CFG] received proposals: ESP:AES_CBC_128/HMAC_SHA2_256_128/NO_EXT_SEQ, ESP:AES_CBC_128/AES_CBC_192/AES_CBC_256/3DES_CBC/BLOWFISH_CBC_256/HMAC_SHA2_256_128/HMAC_SHA2_384_192/HMAC_SHA2_512_256/HMAC_SHA1_96/AES_XCBC_96/HMAC_MD5_96/NO_EXT_SEQ
+Sep  6 15:08:57 ubuntu charon: 15[CFG] configured proposals: ESP:AES_CBC_128/AES_CBC_256/HMAC_SHA1_96/HMAC_SHA2_256_128/MODP_2048/MODP_4096/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA1_96/MODP_2048/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/ECP_256/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_128/HMAC_SHA2_256_128/MODP_2048/NO_EXT_SEQ, ESP:AES_GCM_12_128/AES_GCM_16_128/AES_GCM_12_256/AES_GCM_16_256/MODP_2048/MODP_4096/MODP_1024/NO_EXT_SEQ, ESP:AES_GCM_16_128/NO_EXT_SEQ, ESP:AES_GCM_16_128/ECP_256/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA1_96/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_2048/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_256_128/MODP_4096/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/ECP_384/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_1024/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_1536/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_2048/NO_EXT_SEQ, ESP:AES_CBC_256/HMAC_SHA2_384_192/MODP_4096/NO_EXT_SEQ, ESP:AES_GCM_16_256/NO_EXT_SEQ, ESP:AES_GCM_16_256/ECP_384/NO_EXT_SEQ, ESP:3DES_CBC/HMAC_SHA1_96/NO_EXT_SEQ
+Sep  6 15:08:57 ubuntu charon: 15[CFG] selected proposal: ESP:AES_CBC_128/HMAC_SHA2_256_128/NO_EXT_SEQ
+Sep  6 15:08:57 ubuntu charon: 15[KNL] got SPI ccda8b87
+Sep  6 15:08:57 ubuntu charon: 15[CFG] selecting traffic selectors for us:
+Sep  6 15:08:57 ubuntu charon: 15[CFG]  config: 0.0.0.0/0, received: 0.0.0.0/0 => match: 0.0.0.0/0
+Sep  6 15:08:57 ubuntu charon: 15[CFG] selecting traffic selectors for other:
+Sep  6 15:08:57 ubuntu charon: 15[CFG]  config: 10.42.42.2/32, received: 0.0.0.0/0 => match: 10.42.42.2/32
+Sep  6 15:08:57 ubuntu charon: 15[KNL] adding SAD entry with SPI ccda8b87 and reqid {2}
+Sep  6 15:08:57 ubuntu charon: 15[KNL]   using encryption algorithm AES_CBC with key size 128
+Sep  6 15:08:57 ubuntu charon: 15[KNL]   using integrity algorithm HMAC_SHA2_256_128 with key size 256
+Sep  6 15:08:57 ubuntu charon: 15[KNL]   using replay window of 32 packets
+Sep  6 15:08:57 ubuntu charon: 15[KNL] adding SAD entry with SPI c6025c57 and reqid {2}
+Sep  6 15:08:57 ubuntu charon: 15[KNL]   using encryption algorithm AES_CBC with key size 128
+Sep  6 15:08:57 ubuntu charon: 15[KNL]   using integrity algorithm HMAC_SHA2_256_128 with key size 256
+Sep  6 15:08:57 ubuntu charon: 15[KNL]   using replay window of 0 packets
+Sep  6 15:08:57 ubuntu charon: 15[KNL] adding policy 0.0.0.0/0 === 10.42.42.2/32 out [priority 583615, refcount 1]
+Sep  6 15:08:57 ubuntu charon: 15[KNL] adding policy 10.42.42.2/32 === 0.0.0.0/0 in [priority 383615, refcount 1]
+Sep  6 15:08:57 ubuntu charon: 15[KNL] adding policy 10.42.42.2/32 === 0.0.0.0/0 fwd [priority 383615, refcount 1]
+Sep  6 15:08:57 ubuntu charon: 15[KNL] policy 0.0.0.0/0 === 10.42.42.2/32 out already exists, increasing refcount
+Sep  6 15:08:57 ubuntu charon: 15[KNL] updating policy 0.0.0.0/0 === 10.42.42.2/32 out [priority 383615, refcount 2]
+Sep  6 15:08:57 ubuntu charon: 15[KNL] getting a local address in traffic selector 0.0.0.0/0
+Sep  6 15:08:57 ubuntu charon: 15[KNL] using host %any
+Sep  6 15:08:57 ubuntu charon: 15[KNL] getting iface name for index 2
+Sep  6 15:08:57 ubuntu charon: 15[KNL] using 192.168.122.182 as nexthop and ens2 as dev to reach 192.168.122.182/32
+Sep  6 15:08:57 ubuntu charon: 15[KNL] installing route: 10.42.42.2/32 via 192.168.122.182 src %any dev ens2
+Sep  6 15:08:57 ubuntu charon: 15[KNL] getting iface index for ens2
+Sep  6 15:08:57 ubuntu charon: 15[IKE] CHILD_SA IPSec-IKEv2{2} established with SPIs ccda8b87_i c6025c57_o and TS 0.0.0.0/0 === 10.42.42.2/32
+Sep  6 15:08:57 ubuntu charon: 15[ENC] generating IKE_AUTH response 1 [ IDr CERT AUTH CPRP(ADDR DNS DNS6) SA TSi TSr N(AUTH_LFT) N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Sep  6 15:08:57 ubuntu charon: 15[ENC] splitting IKE message with length of 2156 bytes into 2 fragments
+Sep  6 15:08:57 ubuntu charon: 15[ENC] generating IKE_AUTH response 1 [ EF(1/2) ]
+Sep  6 15:08:57 ubuntu charon: 15[ENC] generating IKE_AUTH response 1 [ EF(2/2) ]
+Sep  6 15:08:57 ubuntu charon: 15[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.182[4500] (1248 bytes)
+Sep  6 15:08:57 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.182[4500]
+Sep  6 15:08:57 ubuntu charon: 15[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.182[4500] (976 bytes)
+Sep  6 15:08:57 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.182[4500]
+Sep  6 15:08:57 ubuntu charon: 15[MGR] checkin IKE_SA IPSec-IKEv2[4]
+Sep  6 15:08:57 ubuntu charon: 15[MGR] checkin of IKE_SA successful
+Sep  6 15:09:01 ubuntu charon: 06[CFG] proposing traffic selectors for us:
+Sep  6 15:09:01 ubuntu charon: 06[CFG]  0.0.0.0/0
+Sep  6 15:09:01 ubuntu charon: 06[CFG] proposing traffic selectors for other:
+Sep  6 15:09:01 ubuntu charon: 06[CFG]  dynamic
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying SAD entry with SPI ccda8b87
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying SAD entry with SPI c6025c57
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying SAD entry with SPI c1f8ff12
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying policy 10.42.42.1/32 === 0.0.0.0/0 in
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying policy 10.42.42.1/32 === 0.0.0.0/0 fwd
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying SAD entry with SPI cc2d8a22
+Sep  6 15:09:01 ubuntu charon: 06[KNL] querying policy 0.0.0.0/0 === 10.42.42.1/32 out
+Sep  6 15:09:22 ubuntu charon: 07[MGR] checkout IKEv2 SA with SPIs 3aff21651d33bb71_i 21db62588b7588f2_r
+Sep  6 15:09:22 ubuntu charon: 07[MGR] IKE_SA IPSec-IKEv2[2] successfully checked out
+Sep  6 15:09:22 ubuntu charon: 07[MGR] checkin IKE_SA IPSec-IKEv2[2]
+Sep  6 15:09:22 ubuntu charon: 07[MGR] checkin of IKE_SA successful
+Sep  6 15:09:26 ubuntu charon: 08[MGR] checkout IKEv2 SA with SPIs 71c82b0e6a69fc0b_i 5784e30905251079_r
+Sep  6 15:09:26 ubuntu charon: 08[MGR] IKE_SA IPSec-IKEv2[4] successfully checked out
+Sep  6 15:09:26 ubuntu charon: 08[MGR] checkin IKE_SA IPSec-IKEv2[4]
+Sep  6 15:09:26 ubuntu charon: 08[MGR] checkin of IKE_SA successful
+Sep  6 15:09:32 ubuntu charon: 03[NET] received packet: from 192.168.122.235[4500] to 192.168.122.247[4500]
+Sep  6 15:09:32 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:09:32 ubuntu charon: 09[MGR] checkout IKEv2 SA by message with SPIs 3aff21651d33bb71_i 21db62588b7588f2_r
+Sep  6 15:09:32 ubuntu charon: 09[MGR] IKE_SA IPSec-IKEv2[2] successfully checked out
+Sep  6 15:09:32 ubuntu charon: 09[NET] received packet: from 192.168.122.235[4500] to 192.168.122.247[4500] (76 bytes)
+Sep  6 15:09:32 ubuntu charon: 09[ENC] parsed INFORMATIONAL request 2 [ D ]
+Sep  6 15:09:32 ubuntu charon: 09[IKE] received DELETE for IKE_SA IPSec-IKEv2[2]
+Sep  6 15:09:32 ubuntu charon: 09[IKE] deleting IKE_SA IPSec-IKEv2[2] between 192.168.122.247[192.168.122.247]...192.168.122.235[C=NL, O=Example Company, CN=john@example.org]
+Sep  6 15:09:32 ubuntu charon: 09[IKE] IKE_SA IPSec-IKEv2[2] state change: ESTABLISHED => DELETING
+Sep  6 15:09:32 ubuntu charon: 09[IKE] IKE_SA deleted
+Sep  6 15:09:32 ubuntu charon: 09[ENC] generating INFORMATIONAL response 2 [ ]
+Sep  6 15:09:32 ubuntu charon: 09[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.235[4500] (76 bytes)
+Sep  6 15:09:32 ubuntu charon: 09[MGR] checkin and destroy IKE_SA IPSec-IKEv2[2]
+Sep  6 15:09:32 ubuntu charon: 09[IKE] IKE_SA IPSec-IKEv2[2] state change: DELETING => DESTROYING
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleting policy 0.0.0.0/0 === 10.42.42.1/32 out
+Sep  6 15:09:32 ubuntu charon: 09[KNL] policy still used by another CHILD_SA, not removed
+Sep  6 15:09:32 ubuntu charon: 09[KNL] updating policy 0.0.0.0/0 === 10.42.42.1/32 out [priority 583615, refcount 1]
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleting policy 10.42.42.1/32 === 0.0.0.0/0 in
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleting policy 10.42.42.1/32 === 0.0.0.0/0 fwd
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleting policy 0.0.0.0/0 === 10.42.42.1/32 out
+Sep  6 15:09:32 ubuntu charon: 09[KNL] getting iface index for ens2
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleting SAD entry with SPI c1f8ff12
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleted SAD entry with SPI c1f8ff12
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleting SAD entry with SPI cc2d8a22
+Sep  6 15:09:32 ubuntu charon: 09[KNL] deleted SAD entry with SPI cc2d8a22
+Sep  6 15:09:32 ubuntu charon: 09[CFG] lease 10.42.42.1 by 'C=NL, O=Example Company, CN=john@example.org' went offline
+Sep  6 15:09:32 ubuntu charon: 09[MGR] checkin and destroy of IKE_SA successful
+Sep  6 15:09:32 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.235[4500]
+Sep  6 15:09:36 ubuntu charon: 03[NET] received packet: from 192.168.122.182[4500] to 192.168.122.247[4500]
+Sep  6 15:09:36 ubuntu charon: 03[NET] waiting for data on sockets
+Sep  6 15:09:36 ubuntu charon: 10[MGR] checkout IKEv2 SA by message with SPIs 71c82b0e6a69fc0b_i 5784e30905251079_r
+Sep  6 15:09:36 ubuntu charon: 10[MGR] IKE_SA IPSec-IKEv2[4] successfully checked out
+Sep  6 15:09:36 ubuntu charon: 10[NET] received packet: from 192.168.122.182[4500] to 192.168.122.247[4500] (76 bytes)
+Sep  6 15:09:36 ubuntu charon: 10[ENC] parsed INFORMATIONAL request 2 [ D ]
+Sep  6 15:09:36 ubuntu charon: 10[IKE] received DELETE for IKE_SA IPSec-IKEv2[4]
+Sep  6 15:09:36 ubuntu charon: 10[IKE] deleting IKE_SA IPSec-IKEv2[4] between 192.168.122.247[192.168.122.247]...192.168.122.182[C=NL, O=Example Company, CN=carol@example.org]
+Sep  6 15:09:36 ubuntu charon: 10[IKE] IKE_SA IPSec-IKEv2[4] state change: ESTABLISHED => DELETING
+Sep  6 15:09:36 ubuntu charon: 10[IKE] IKE_SA deleted
+Sep  6 15:09:36 ubuntu charon: 10[ENC] generating INFORMATIONAL response 2 [ ]
+Sep  6 15:09:36 ubuntu charon: 10[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.182[4500] (76 bytes)
+Sep  6 15:09:36 ubuntu charon: 10[MGR] checkin and destroy IKE_SA IPSec-IKEv2[4]
+Sep  6 15:09:36 ubuntu charon: 10[IKE] IKE_SA IPSec-IKEv2[4] state change: DELETING => DESTROYING
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleting policy 0.0.0.0/0 === 10.42.42.2/32 out
+Sep  6 15:09:36 ubuntu charon: 10[KNL] policy still used by another CHILD_SA, not removed
+Sep  6 15:09:36 ubuntu charon: 10[KNL] updating policy 0.0.0.0/0 === 10.42.42.2/32 out [priority 583615, refcount 1]
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleting policy 10.42.42.2/32 === 0.0.0.0/0 in
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleting policy 10.42.42.2/32 === 0.0.0.0/0 fwd
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleting policy 0.0.0.0/0 === 10.42.42.2/32 out
+Sep  6 15:09:36 ubuntu charon: 10[KNL] getting iface index for ens2
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleting SAD entry with SPI ccda8b87
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleted SAD entry with SPI ccda8b87
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleting SAD entry with SPI c6025c57
+Sep  6 15:09:36 ubuntu charon: 10[KNL] deleted SAD entry with SPI c6025c57
+Sep  6 15:09:36 ubuntu charon: 10[CFG] lease 10.42.42.2 by 'C=NL, O=Example Company, CN=carol@example.org' went offline
+Sep  6 15:09:36 ubuntu charon: 10[MGR] checkin and destroy of IKE_SA successful
+Sep  6 15:09:36 ubuntu charon: 04[NET] sending packet: from 192.168.122.247[4500] to 192.168.122.182[4500]

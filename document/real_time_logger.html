@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module real_time_logger</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>real_time_logger</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/strong/workdir/StrongSwan_Log_analyzer/real_time_logger.py">/home/strong/workdir/StrongSwan_Log_analyzer/real_time_logger.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Set&nbsp;the&nbsp;Import&nbsp;file</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="socket.html">socket</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-follow"><strong>follow</strong></a>(file_data)</dt><dd><tt>Follow&nbsp;the&nbsp;syslog&nbsp;and&nbsp;analyze&nbsp;it</tt></dd></dl>
+ <dl><dt><a name="-form_maker"><strong>form_maker</strong></a>(Phase, IP, Time, Category, Message, Status)</dt><dd><tt>To&nbsp;write&nbsp;the&nbsp;file&nbsp;make&nbsp;the&nbsp;form</tt></dd></dl>
+ <dl><dt><a name="-item_init"><strong>item_init</strong></a>()</dt><dd><tt>initiating&nbsp;all&nbsp;global&nbsp;variables</tt></dd></dl>
+ <dl><dt><a name="-log_analyzer"><strong>log_analyzer</strong></a>(line)</dt><dd><tt>Analyze&nbsp;and&nbsp;make&nbsp;it&nbsp;Phase;;IP;;Time;;Category;;Message;;Status</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>The&nbsp;main&nbsp;function&nbsp;of&nbsp;analyzer</tt></dd></dl>
+ <dl><dt><a name="-null_checker"><strong>null_checker</strong></a>(Phase, IP, Time, Category, Message, Status)</dt><dd><tt>Check&nbsp;null&nbsp;and&nbsp;return&nbsp;False</tt></dd></dl>
+ <dl><dt><a name="-phase_checker"><strong>phase_checker</strong></a>()</dt><dd><tt>Checking&nbsp;phase&nbsp;is&nbsp;null&nbsp;or&nbsp;not<br>
+if&nbsp;there&nbsp;is&nbsp;a&nbsp;error&nbsp;initiate&nbsp;the&nbsp;variables</tt></dd></dl>
+ <dl><dt><a name="-preprocess_line"><strong>preprocess_line</strong></a>(line)</dt><dd><tt>Get&nbsp;a&nbsp;line&nbsp;from&nbsp;syslog&nbsp;throw&nbsp;meaningless&nbsp;log<br>
+Make&nbsp;a&nbsp;log&nbsp;to&nbsp;form&nbsp;as&nbsp;list</tt></dd></dl>
+ <dl><dt><a name="-read_file"><strong>read_file</strong></a>()</dt><dd><tt>Read&nbsp;syslog&nbsp;file&nbsp;to&nbsp;analyze&nbsp;because&nbsp;<br>
+all&nbsp;the&nbsp;log&nbsp;from&nbsp;strong&nbsp;swan&nbsp;stored&nbsp;<br>
+to&nbsp;syslog</tt></dd></dl>
+ <dl><dt><a name="-write_file"><strong>write_file</strong></a>(log_storage)</dt><dd><tt>Write&nbsp;file&nbsp;as&nbsp;csv&nbsp;form&nbsp;line&nbsp;by&nbsp;line<br>
+The&nbsp;Identifier&nbsp;is&nbsp;[;;]</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Category</strong> = ''<br>
+<strong>File_INIT</strong> = True<br>
+<strong>IKE_AUTH_FLAG</strong> = False<br>
+<strong>IKE_INIT_FLAG</strong> = False<br>
+<strong>IKE_SA</strong> = False<br>
+<strong>IP</strong> = ''<br>
+<strong>Message</strong> = ''<br>
+<strong>Phase</strong> = ''<br>
+<strong>Status</strong> = 'Fail'<br>
+<strong>Time</strong> = ''<br>
+<strong>file_stat</strong> = 918288<br>
+<strong>fp</strong> = ''<br>
+<strong>hostname</strong> = 'ubuntu'<br>
+<strong>log_list</strong> = []<br>
+<strong>log_storage</strong> = []<br>
+<strong>log_temp</strong> = []<br>
+<strong>path</strong> = '/var/log/'<br>
+<strong>saChange</strong> = False<br>
+<strong>squence</strong> = True<br>
+<strong>update</strong> = True<br>
+<strong>valid_dic</strong> = {}<br>
+<strong>walker</strong> = 0</td></tr></table>
+</body></html>

@@ -3,7 +3,7 @@ from datetime import datetime
 import time
 import os
 import socket
-import configparser
+clear = lambda: os.system('clear')
 
 # global valiable
 walker = 0
@@ -16,11 +16,8 @@ Status = "Fail"
 update = True
 fp = ''
 
-config = configparser.ConfigParser()
-config.read('system.ini')
-
-log_path = config.get("section",'log_path')
-result_path = config.get("section",'result_path')
+path  = "/var/log/"
+file_stat = os.stat(path+'syslog').st_ino
 
 log_temp = []
 log_list = []
@@ -33,12 +30,12 @@ IKE_SA = False
 saChange = False
 File_INIT = True
 valid_dic = {}
-
+client_dic = {}
 hostname = socket.gethostname()
+
 squence = True
 
 log_temp = []
-<<<<<<< HEAD
 
 def write_file(log_storage):
     """
@@ -46,43 +43,29 @@ def write_file(log_storage):
         The Identifier is [;;]
     """
 
-    if not os.path.exists(result_path):
-            os.makedirs(result_path)
-
-=======
-
-def write_file(log_storage):
-    """
-        Write file as csv form line by line
-        The Identifier is [;;]
-    """
-
-    if not os.path.exists(result_path):
-            os.makedirs(result_path)
-
->>>>>>> origin/master
     global walker
     filename = str(walker)[:-2]+".csv"
 
     try: 
-        f = open(result_path+filename, 'r')
+        f = open('./result/'+filename, 'r')
     except IOError:
-        f = open(result_path+filename, 'w')
+        f = open('./result/'+filename, 'w')
         header = "Phase;;IP;;Time;;Category;;Message;;Status\n"
         f.write(header)
         f.close()
-    f = open(result_path+filename, 'a')
-
+    f = open('./result/'+filename, 'a')
+    #print("start file write:",filename)
     count = 0
     length = len(log_storage)
-    print ("line :",log_storage)
-
+    #print ("line :",log_storage)
     for item in log_storage:
+        #print(str(word))
         f.write(str(item))
         if (count != length-1):
             f.write(";;")
         count += 1
     f.write("\n")
+    #print("File Write Done!","filename : ",filename)
     f.close()
 
 
@@ -144,6 +127,8 @@ def log_analyzer(line):
     Analyze and make it Phase;;IP;;Time;;Category;;Message;;Status
     """
 
+    global walker
+    
     global Phase
     global IP
     global Time
@@ -159,15 +144,10 @@ def log_analyzer(line):
     global IKE_SA
     global saChange
     global valid_dic
-<<<<<<< HEAD
+    global client_dic
 
     global log_temp
 
-=======
-
-    global log_temp
-
->>>>>>> origin/master
     sentence = ""
     log_list = []
     global security
@@ -216,21 +196,6 @@ def log_analyzer(line):
             # Status fail case 
             phase_checker()
 
-<<<<<<< HEAD
-        if (cmpSentence == "killing ourself, received"):
-            IKE_INIT_FLAG = False
-            Phase = "IKE_INIT"
-            # Phase IKE_INIT
-            Category = "Security"
-            Message = "-"
-            Status = "Failed"
-
-            # Status fail case 
-            phase_checker()
-
-
-=======
->>>>>>> origin/master
         # Get result of authentication
         if (keyWord_one == "authentication"):
             auth_result = line[3][8]
@@ -304,7 +269,6 @@ def log_analyzer(line):
             #print("dic",valid_dic)
 
             Status = "Successful"
-<<<<<<< HEAD
             
             phase_checker()   
                    
@@ -318,6 +282,17 @@ def log_analyzer(line):
     
             phase_checker()    
             
+
+            #### for the monitoring
+            temp_client = []
+            temp_client.append(spi)
+            temp_client.append(IP)
+            temp_client.append(Time)
+            temp_client.append(Message)
+            #print (temp_client)
+            client_dic[IP] = temp_client
+            print_list()
+
         if (keyWord_two == "deleted SAD"):
             spi = line[3][5]
 
@@ -345,103 +320,20 @@ def log_analyzer(line):
             Status = "Deleted"
             #print("KEY : ",IKE_SA)
             phase_checker()
-
-
+            #print(client_dic,IP)
+            del client_dic[IP]
+            print_list()
     except:
         pass
 
 
-
-
-
-def form_maker(Phase, IP, Time, Category, Message,Status):
-    """
-        To write the file make the form
-    """
-    
-    write_list = []
-    write_list.append(Phase)
-    write_list.append(IP)
-    write_list.append(Time)
-    write_list.append(Category)
-    write_list.append(Message)
-    write_list.append(Status)
-
-    write_file(write_list)
-  
-
-def follow(file_data):
-    """
-    Follow the syslog and analyze it
-    """
-
-    #file_data.seek(0,2)
-    while True:
-        try:
-            line = file_data.readline()
-            if not line:
-                time.sleep(0.1)
-                continue
-            yield line
-        except:
-            pass
-=======
-            
-            phase_checker()   
-                   
-            #print("KEY",IKE_SA,keyWord_two) 
-            Phase = "IKE_SA"
-            Category = "Validation"
-            Message = "Valid"
-            Status = "Successful"
-        
-            IKE_SA = True
-    
-            phase_checker()    
-            
-        if (keyWord_two == "deleted SAD"):
-            spi = line[3][5]
->>>>>>> origin/master
-
-        if (keyWord_two == "deleted SAD" and valid_dic[spi]):
-            saChange = False
-            
-            valid_dic[spi] = False
-
-<<<<<<< HEAD
-def preprocess_line(line):
-    """
-    Get a line from syslog throw meaningless log
-    Make a log to form as list
-    """
-
-=======
-            log_temp = log_temp[:-1]
-
-            Phase = "IKE_SA"
-            Category = "Validation"
-            Message = spi
-            Status = "Deleted"
-            #print("KEY : ",IKE_SA)
-            phase_checker()
-       
-        if (keyWord_two == "deleting IKE_SA" and IKE_SA == True):
-            saChange = False
-            log_temp = log_temp[:-1]
-
-            Phase = "IKE_SA"
-            Category = "Validation"
-            Message = "Invalid"
-            Status = "Deleted"
-            #print("KEY : ",IKE_SA)
-            phase_checker()
-
-
-    except:
-        pass
-
-
-
+def print_list():
+    global clear
+    global client_dic
+    clear()
+    print("Spi\tIP\tConnectedTime\tCertValidation")
+    for item in client_dic:
+        print (client_dic[item])
 
 
 def form_maker(Phase, IP, Time, Category, Message,Status):
@@ -480,7 +372,6 @@ def preprocess_line(line):
     Make a log to form as list
     """
 
->>>>>>> origin/master
     global hostname
 
     temp_log = []
@@ -497,19 +388,13 @@ def preprocess_line(line):
             if (item is not ''):
                 time.append(item)
 
-<<<<<<< HEAD
-        try:
-            time = time[0] + ' ' + time[1] + ' ' + time[2]
-        except:
-            pass
-=======
         time = time[0] + ' ' + time[1] + ' ' + time[2]
->>>>>>> origin/master
         datetime_object = datetime.strptime('2017 '+time, '%Y %b %d %H:%M:%S')
     
         temp_log.append(str(datetime_object))   
  
     # Content classifier
+    #print("line : ",line_data,len(line_data))
     if(line_data[1] is not None):
         
         content = str(line_data[1]).split(' ')
@@ -536,45 +421,21 @@ def read_file():
     to syslog
     """
 
-    file_data = open(log_path+"syslog","r")
+    file_data = open("/var/log/syslog","r")
     
     return file_data
-<<<<<<< HEAD
 
 def main():
     """
     The main function of analyzer
     """
-
+    
+    print("Start to Analyze log from Strong Swan!")
     global walker
+    global clear    
 
     walker = int(time.time())
-    print("Start to Analyze log from Strong Swan!")
-    # Read the log and file pointer
-    file_data = read_file()
 
-    # Follow the syslog
-    loglines = follow(file_data)
-    for line in loglines:
-        # Check only StrongSwan's log
-        try:
-            processed_line = preprocess_line(line)
-            # Analyze data
-            #print("read : ",processed_line)
-            log_analyzer(processed_line)
-        except:
-            pass
-=======
-
-def main():
-    """
-    The main function of analyzer
-    """
-
-    global walker
-
-    walker = int(time.time())
-    print("Start to Analyze log from Strong Swan!")
     # Read the log and file pointer
     file_data = read_file()
 
@@ -586,8 +447,9 @@ def main():
         # Analyze data
         #print("read : ",processed_line)
         log_analyzer(processed_line)
+ 
+        
 
->>>>>>> origin/master
     print("Analyzing is over")
 
 if __name__ == "__main__":
